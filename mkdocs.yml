@@ -1,0 +1,40 @@
+site_name: Unturned 3 Knowledgebase
+site_url: https://unturned.info
+site_description: >-
+  Documentation for various features of Unturned 3.0
+  Including modding, server hosting, and more.
+theme:
+  name: material
+  logo: assets/Unturned_Logo.png
+  favicon: assets/Unturned_Logo.png
+  palette:
+    primary: indigo
+    accent: green
+  features:
+    - tabs
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/unturned 
+      name: Unturned Official Discord
+    - icon: fontawesome/brands/discourse
+      link: https://forum.smartlydressedgames.com
+      name: SDG forums
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/app/304930/Unturned/
+    - icon: fontawesome/brands/wordpress  
+      link: https://smartlydressedgames.com
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
+
+# nav:
+#   - Home: index.md
+#   - Modding:
+#       - Vehicle Data: modding/Asset Properties References/VehicleData.md
+#       - Item Data: modding/Asset Properties References/itemData.md
