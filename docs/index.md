@@ -10,16 +10,6 @@ With information both written and pulled from official game documentation and mo
 - [Server Hosting]()
 - [Support]()
 
-## Commands
+## Contributing
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        modding  # The documentation homepage.
-               # Other markdown pages, images and other files.
+The knowledgebase is designed to be contributable to by everyone. You can find the source at https://github.com/Unturned-Official-Discord/unturned-3-knowledgebase

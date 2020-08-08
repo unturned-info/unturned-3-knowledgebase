@@ -9,7 +9,7 @@ theme:
   favicon: assets/Unturned_Logo.png
   palette:
     primary: indigo
-    accent: green
+    # accent: green
   features:
     - tabs
 extra:
@@ -19,11 +19,12 @@ extra:
       name: Unturned Official Discord
     - icon: fontawesome/brands/discourse
       link: https://forum.smartlydressedgames.com
-      name: SDG forums
+      name: SDG Forums
     - icon: fontawesome/brands/steam
       link: https://store.steampowered.com/app/304930/Unturned/
     - icon: fontawesome/brands/wordpress  
-      link: https://smartlydressedgames.com
+      link: https://blog.smartlydressedgames.com
+      name: SDG Blog
 markdown_extensions:
   - admonition
   - pymdownx.superfences
@@ -31,10 +32,3 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed
   - pymdownx.tilde
-
-
-# nav:
-#   - Home: index.md
-#   - Modding:
-#       - Vehicle Data: modding/Asset Properties References/VehicleData.md
-#       - Item Data: modding/Asset Properties References/itemData.md
