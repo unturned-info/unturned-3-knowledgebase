@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for various features of Unturned 3.0 Including modding, server hosting, and more.">
       
       
-        <link rel="canonical" href="https://unturned.info/Modding/modding/">
+        <link rel="canonical" href="https://unturned.info/Modding/AssetValidation/">
       
       
       <link rel="shortcut icon" href="../../assets/Unturned_Logo.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Unturned 3 Modding - Unturned 3 Knowledgebase</title>
+        <title>AssetValidation - Unturned 3 Knowledgebase</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unturned-3-modding" class="md-skip">
+        <a href="#asset-validation" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Unturned 3 Modding
+              AssetValidation
             
           </span>
         </div>
@@ -308,11 +308,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../AssetValidation/" title="AssetValidation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="AssetValidation" class="md-nav__link md-nav__link--active">
       AssetValidation
     </a>
+    
   </li>
 
         
@@ -536,53 +545,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Unturned 3 Modding
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Unturned 3 Modding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../modding/" title="Unturned 3 Modding" class="md-nav__link">
       Unturned 3 Modding
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -926,23 +893,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -957,14 +907,17 @@
                   
                 
                 
-                <h1 id="unturned-3-modding">Unturned 3 Modding<a class="headerlink" href="#unturned-3-modding" title="Permanent link">&para;</a></h1>
-<p>Helpful information for both new and returning modders.</p>
-<p>Those new to modding should beging at (Guides)[]</p>
-<h2 id="guides">Guides<a class="headerlink" href="#guides" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Guides/spawntables.md">Unturned Modding 101</a></li>
-<li><a href="Guides/spawntables.md">Spawn Tables 101</a></li>
-</ul>
+                <h1 id="asset-validation">Asset Validation<a class="headerlink" href="#asset-validation" title="Permanent link">&para;</a></h1>
+<p>During startup the game runs fast basic health checks on assets while loading, but there are a variety of slower tests available. These can be enabled with the <strong>-ValidateAssets</strong> command-line flag. Errors are logged to the Client.log file, as well as to the Asset Errors menu.</p>
+<p><strong>Navmesh Readable</strong>: Object navmeshes should have the CPU Readable flag enabled in Unity. This is required for Recast to be able to generate the level navmesh.</p>
+<p><strong>Mesh Readable</strong>: Most non-navmesh meshes do not need to have the CPU Readable flag enabled in Unity. This is not currently enforced however, as the core content has lots of cases which still need cleaning up.</p>
+<p><strong>Missing Meshes</strong>: Mesh filters without a mesh, or mesh renderers without a mesh filter are found and logged.</p>
+<p><strong>Mesh Vertex Counts</strong>: Meshes with unusually high numbers of vertices are recommended to be optimized. Typically this is simply a matter of removing unused faces and vertices. Colliders have a lower recommended target because collision against complex meshes is slower than rendering complex meshes.</p>
+<p><strong>Missing Materials</strong>: Renderers without materials are found and logged. One exception to this is "DepthMask" renderers which are set by the game.</p>
+<p><strong>Material Counts</strong>: Renderers with high numbers of materials are recommended to be merged and simplified. Each individual material needs to be rendered separately (usually), so less materials is better. Good practice is to have one material for each render type on an object, i.e. a material for the opaque surfaces and a material for the transparent surfaces (if any).</p>
+<p><strong>Texture Readable</strong>: Most textures do not need to have the CPU Readable flag enabled in Unity. Disabling means a copy is not kept in RAM. One exception is shirt and pants textures which are layered on the CPU.</p>
+<p><strong>Texture NPOT</strong>: Most textures should have power-of-two dimensions, e.g. 1 x 2, 4 x 4, 64 x 32, etc. GPUs are best equipped for drawing these resolutions. Unity has import options for scaling up or down to the nearest power of two.</p>
+<p><strong>Audio Samples:</strong> Long audio clips with high frequencies are found and logged. Generally the clips are fairly small files.</p>
                 
                   
                     
@@ -973,7 +926,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2020</span>
     
   </small>
 </div>
@@ -996,7 +949,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../WeatherAsset/" title="Weather Asset" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../AssetPtr/" title="Asset Pointer" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1005,19 +958,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Weather Asset
+                Asset Pointer
               </div>
             </div>
           </a>
         
         
-          <a href="../Asset%20Properties%20References/ItemData/" title="Item Data" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../AssetsV1/" title="AssetsV1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Item Data
+                AssetsV1
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

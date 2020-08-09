@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for various features of Unturned 3.0 Including modding, server hosting, and more.">
       
       
-        <link rel="canonical" href="https://unturned.info/Modding/modding/">
+        <link rel="canonical" href="https://unturned.info/Modding/ModHooks/">
       
       
       <link rel="shortcut icon" href="../../assets/Unturned_Logo.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Unturned 3 Modding - Unturned 3 Knowledgebase</title>
+        <title>Mod Hooks - Unturned 3 Knowledgebase</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unturned-3-modding" class="md-skip">
+        <a href="#mod-hooks" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Unturned 3 Modding
+              Mod Hooks
             
           </span>
         </div>
@@ -476,11 +476,176 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../ModHooks/" title="Mod Hooks" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Mod Hooks
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Mod Hooks" class="md-nav__link md-nav__link--active">
       Mod Hooks
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-listeners" class="md-nav__link">
+    Event Listeners
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Listeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activaton-event-hook" class="md-nav__link">
+    Activaton Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collision-event-hook" class="md-nav__link">
+    Collision Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactable-object-binary-state-event-hook-iobs" class="md-nav__link">
+    Interactable Object Binary State Event Hook (IOBS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-chat-event-hook" class="md-nav__link">
+    Text Chat Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timer-event-hook" class="md-nav__link">
+    Timer Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-event-hook" class="md-nav__link">
+    Vehicle Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weather-event-hook" class="md-nav__link">
+    Weather Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-weather-event-hook" class="md-nav__link">
+    Custom Weather Event Hook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-instigators" class="md-nav__link">
+    Event Instigators
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Instigators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-text-chat-messenger" class="md-nav__link">
+    Client Text Chat Messenger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-text-chat-messenger" class="md-nav__link">
+    Server Text Chat Messenger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-spawner" class="md-nav__link">
+    Effect Spawner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    Misc
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fall-damage-override" class="md-nav__link">
+    Fall Damage Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -536,53 +701,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Unturned 3 Modding
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Unturned 3 Modding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../modding/" title="Unturned 3 Modding" class="md-nav__link">
       Unturned 3 Modding
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -935,9 +1058,132 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-listeners" class="md-nav__link">
+    Event Listeners
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Listeners">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activaton-event-hook" class="md-nav__link">
+    Activaton Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collision-event-hook" class="md-nav__link">
+    Collision Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactable-object-binary-state-event-hook-iobs" class="md-nav__link">
+    Interactable Object Binary State Event Hook (IOBS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-chat-event-hook" class="md-nav__link">
+    Text Chat Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timer-event-hook" class="md-nav__link">
+    Timer Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vehicle-event-hook" class="md-nav__link">
+    Vehicle Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weather-event-hook" class="md-nav__link">
+    Weather Event Hook
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-weather-event-hook" class="md-nav__link">
+    Custom Weather Event Hook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-instigators" class="md-nav__link">
+    Event Instigators
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Instigators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#client-text-chat-messenger" class="md-nav__link">
+    Client Text Chat Messenger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-text-chat-messenger" class="md-nav__link">
+    Server Text Chat Messenger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect-spawner" class="md-nav__link">
+    Effect Spawner
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    Misc
+  </a>
+  
+    <nav class="md-nav" aria-label="Misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fall-damage-override" class="md-nav__link">
+    Fall Damage Override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -957,14 +1203,40 @@
                   
                 
                 
-                <h1 id="unturned-3-modding">Unturned 3 Modding<a class="headerlink" href="#unturned-3-modding" title="Permanent link">&para;</a></h1>
-<p>Helpful information for both new and returning modders.</p>
-<p>Those new to modding should beging at (Guides)[]</p>
-<h2 id="guides">Guides<a class="headerlink" href="#guides" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Guides/spawntables.md">Unturned Modding 101</a></li>
-<li><a href="Guides/spawntables.md">Spawn Tables 101</a></li>
-</ul>
+                <h1 id="mod-hooks">Mod Hooks<a class="headerlink" href="#mod-hooks" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Script Components can be added to Game Objects in Unity and exported in Asset Bundles <em>IF</em> they match a script in the base game code. These intentionally exportable scripts are referred to as <strong>Mod Hooks</strong>. They can be imported into a Unity project from the Project.unitypackage, and added to game objects inside the Unturned components menu. Each script makes several Events available which can drive other component properties like visibility or play an animation.</p>
+<p>Each script documents its purpose and members within its *.cs file.</p>
+<p>Originally proposed and coined by VitaxaRusModding in this GitHub issue: <a href="https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/435">Link</a></p>
+<h2 id="event-listeners">Event Listeners<a class="headerlink" href="#event-listeners" title="Permanent link">&para;</a></h2>
+<h3 id="activaton-event-hook">Activaton Event Hook<a class="headerlink" href="#activaton-event-hook" title="Permanent link">&para;</a></h3>
+<p>Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.</p>
+<h3 id="collision-event-hook">Collision Event Hook<a class="headerlink" href="#collision-event-hook" title="Permanent link">&para;</a></h3>
+<p>Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.</p>
+<h3 id="interactable-object-binary-state-event-hook-iobs">Interactable Object Binary State Event Hook (IOBS)<a class="headerlink" href="#interactable-object-binary-state-event-hook-iobs" title="Permanent link">&para;</a></h3>
+<p>(IOBS for short) are any prop placed from the level editor which can have F pressed on them to open, close, turn on/off, etc. This hook can be added to any GameObject within an IOBS to trigger events during state changes, and even control the IOBS from client and server side.</p>
+<h3 id="text-chat-event-hook">Text Chat Event Hook<a class="headerlink" href="#text-chat-event-hook" title="Permanent link">&para;</a></h3>
+<p>Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. Only fired on the server.</p>
+<h3 id="timer-event-hook">Timer Event Hook<a class="headerlink" href="#timer-event-hook" title="Permanent link">&para;</a></h3>
+<p>Allows events to set or cancel a timer, and triggers an event when the timer expires.</p>
+<h3 id="vehicle-event-hook">Vehicle Event Hook<a class="headerlink" href="#vehicle-event-hook" title="Permanent link">&para;</a></h3>
+<p>Events for driver entering and exiting the vehicle. These events are fired on server and client.</p>
+<h3 id="weather-event-hook">Weather Event Hook<a class="headerlink" href="#weather-event-hook" title="Permanent link">&para;</a></h3>
+<p>Events for day, night, full moon, and weather. These events are fired on server and client.</p>
+<h3 id="custom-weather-event-hook">Custom Weather Event Hook<a class="headerlink" href="#custom-weather-event-hook" title="Permanent link">&para;</a></h3>
+<p>Events for a specific custom <a href="../WeatherAsset/">Weather Asset</a>. Any map can have an unlimited number of weather types and weather listeners.</p>
+<h2 id="event-instigators">Event Instigators<a class="headerlink" href="#event-instigators" title="Permanent link">&para;</a></h2>
+<h3 id="client-text-chat-messenger">Client Text Chat Messenger<a class="headerlink" href="#client-text-chat-messenger" title="Permanent link">&para;</a></h3>
+<p>Allows Unity events to request a text chat message be sent on behalf of the client. For example, to execute a command.</p>
+<p>The <code>UnityEvents.Allow_Client_Messages</code> and/or <code>UnityEvents.Allow_Client_Commands</code> settings must be enabled in the server <code>Config.json</code> file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.</p>
+<h3 id="server-text-chat-messenger">Server Text Chat Messenger<a class="headerlink" href="#server-text-chat-messenger" title="Permanent link">&para;</a></h3>
+<p>Allows Unity events to broadcast messages from the server. Icons and rich text are optional. Can also execute commands that are not available (yet) to NPCs like changing the weather or triggering an airdrop.</p>
+<p>The <code>UnityEvents.Allow_Server_Messages</code> and/or <code>UnityEvents.Allow_Server_Commands</code> settings must be enabled in the server <code>Config.json</code> file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.</p>
+<h3 id="effect-spawner">Effect Spawner<a class="headerlink" href="#effect-spawner" title="Permanent link">&para;</a></h3>
+<p>Allows Unity events to spawn effect assets. When the <code>AuthorityOnly</code> field is enabled only the server will spawn effects and replicate them to clients.</p>
+<h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
+<h3 id="fall-damage-override">Fall Damage Override<a class="headerlink" href="#fall-damage-override" title="Permanent link">&para;</a></h3>
+<p>Allows any game object to override the fall damage when a character lands on it or one of its descendants.</p>
                 
                   
                     
@@ -973,7 +1245,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2020</span>
     
   </small>
 </div>
@@ -996,7 +1268,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../WeatherAsset/" title="Weather Asset" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../MasterBundlePtr/" title="MasterBundlePtr" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1005,19 +1277,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Weather Asset
+                MasterBundlePtr
               </div>
             </div>
           </a>
         
         
-          <a href="../Asset%20Properties%20References/ItemData/" title="Item Data" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../StereoSongAsset/" title="StereoSongAsset" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Item Data
+                StereoSongAsset
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

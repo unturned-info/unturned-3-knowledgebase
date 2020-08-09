@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for various features of Unturned 3.0 Including modding, server hosting, and more.">
       
       
-        <link rel="canonical" href="https://unturned.info/Modding/modding/">
+        <link rel="canonical" href="https://unturned.info/Modding/WeatherAsset/">
       
       
       <link rel="shortcut icon" href="../../assets/Unturned_Logo.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Unturned 3 Modding - Unturned 3 Knowledgebase</title>
+        <title>Weather Asset - Unturned 3 Knowledgebase</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unturned-3-modding" class="md-skip">
+        <a href="#weather-asset" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Unturned 3 Modding
+              Weather Asset
             
           </span>
         </div>
@@ -524,18 +524,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../WeatherAsset/" title="Weather Asset" class="md-nav__link">
-      Weather Asset
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -547,14 +535,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Unturned 3 Modding
+        Weather Asset
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Unturned 3 Modding" class="md-nav__link md-nav__link--active">
-      Unturned 3 Modding
+    <a href="./" title="Weather Asset" class="md-nav__link md-nav__link--active">
+      Weather Asset
     </a>
     
       
@@ -573,8 +561,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
+  <a href="#how-to-test" class="md-nav__link">
+    How to test?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-reference" class="md-nav__link">
+    Properties Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-of-day-properties" class="md-nav__link">
+    Time of Day Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-properties" class="md-nav__link">
+    Effect Properties
   </a>
   
 </li>
@@ -583,6 +592,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modding/" title="Unturned 3 Modding" class="md-nav__link">
+      Unturned 3 Modding
+    </a>
   </li>
 
         
@@ -935,8 +956,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
+  <a href="#how-to-test" class="md-nav__link">
+    How to test?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-reference" class="md-nav__link">
+    Properties Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-of-day-properties" class="md-nav__link">
+    Time of Day Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-properties" class="md-nav__link">
+    Effect Properties
   </a>
   
 </li>
@@ -957,14 +999,32 @@
                   
                 
                 
-                <h1 id="unturned-3-modding">Unturned 3 Modding<a class="headerlink" href="#unturned-3-modding" title="Permanent link">&para;</a></h1>
-<p>Helpful information for both new and returning modders.</p>
-<p>Those new to modding should beging at (Guides)[]</p>
-<h2 id="guides">Guides<a class="headerlink" href="#guides" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="Guides/spawntables.md">Unturned Modding 101</a></li>
-<li><a href="Guides/spawntables.md">Spawn Tables 101</a></li>
-</ul>
+                <h1 id="weather-asset">Weather Asset<a class="headerlink" href="#weather-asset" title="Permanent link">&para;</a></h1>
+<p>Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.</p>
+<p>This is an <a href="../AssetsV2/">Asset v2</a> class.</p>
+<h2 id="how-to-test">How to test?<a class="headerlink" href="#how-to-test" title="Permanent link">&para;</a></h2>
+<p>When a GUID is passed to the weather command it will start a custom weather event, and 0 can be used to end it.</p>
+<pre><code>/weather 819982d7a2b6453488a8c4c5d9efe67f
+</code></pre>
+<h2 id="properties-reference">Properties Reference<a class="headerlink" href="#properties-reference" title="Permanent link">&para;</a></h2>
+<p><code>Fade_In_Duration</code> <em>float</em>: seconds between weather event starting and reaching full intensity.</p>
+<p><code>Fade_Out_Duration</code> <em>float</em>: seconds between weather event ending and reaching zero intensity.</p>
+<p><code>Ambient_Audio_Clip</code> <a href="../MasterBundlePtr/">Master Bundle Pointer</a>: audio clip to play globally. Volume matches intensity.</p>
+<p><code>Override_Fog</code> <em>bool</em>: should fog configured in the lighting be overridden?</p>
+<p><code>Override_Atmospheric_Fog</code> <em>bool</em>: should fog affect the skybox?</p>
+<p><code>Dawn</code>, <code>Midday</code>, <code>Dusk</code> and <code>Midnight</code>: refer to the Time of Day section.</p>
+<p><code>Effects</code> <em>array</em>: refer to Effects section.</p>
+<h2 id="time-of-day-properties">Time of Day Properties<a class="headerlink" href="#time-of-day-properties" title="Permanent link">&para;</a></h2>
+<p>Each of the four main times of day can override certain properties.</p>
+<p><code>Fog_Color</code> <em>color</em>: distance-based fog. Optionally overrides the skybox color.</p>
+<p><code>Fog_Density</code> <em>float</em>: [0, 1] similar to fog intensity in ambiance volume.</p>
+<h2 id="effect-properties">Effect Properties<a class="headerlink" href="#effect-properties" title="Permanent link">&para;</a></h2>
+<p>Multiple effects can be instantiated while the weather is active.</p>
+<p><code>Prefab</code> <a href="../MasterBundlePtr/">Master Bundle Pointer</a>: game object with a particle system. PlayOnAwake should be disabled. For effects tied to the view it may be helpful to change the culling mode to Always Simulate.</p>
+<p><code>Emission_Exponent</code> <em>float</em>: power applied to weather intensity multiplied by default constant rate over time.</p>
+<p><code>Pitch</code> <em>float</em>: x-axis rotation when <code>Rotate_Yaw_With_Wind</code> is enabled.</p>
+<p><code>Translate_With_View</code> <em>bool</em>: should position in world-space match the camera? The built-in snow and rain move with the view. Position is zeroed when false. May be useful for transition effects like dust blowing into the map signaling the start of a sandstorm.</p>
+<p><code>Rotate_Yaw_With_Wind</code> <em>bool</em>: should y-axis rotation match the wind direction? The built-in snow and rain rotate with wind.</p>
                 
                   
                     
@@ -973,7 +1033,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2020</span>
     
   </small>
 </div>
@@ -996,7 +1056,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../WeatherAsset/" title="Weather Asset" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../VehiclePhysicsProfile/" title="VehiclePhysicsProfile" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1005,19 +1065,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Weather Asset
+                VehiclePhysicsProfile
               </div>
             </div>
           </a>
         
         
-          <a href="../Asset%20Properties%20References/ItemData/" title="Item Data" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../modding/" title="Unturned 3 Modding" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Item Data
+                Unturned 3 Modding
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

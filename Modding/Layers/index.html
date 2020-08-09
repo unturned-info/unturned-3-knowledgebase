@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for various features of Unturned 3.0 Including modding, server hosting, and more.">
       
       
-        <link rel="canonical" href="https://unturned.info/Modding/modding/">
+        <link rel="canonical" href="https://unturned.info/Modding/Layers/">
       
       
       <link rel="shortcut icon" href="../../assets/Unturned_Logo.png">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Unturned 3 Modding - Unturned 3 Knowledgebase</title>
+        <title>Layers - Unturned 3 Knowledgebase</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unturned-3-modding" class="md-skip">
+        <a href="#layers" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Unturned 3 Modding
+              Layers
             
           </span>
         </div>
@@ -428,11 +428,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Layers/" title="Layers" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Layers
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Layers" class="md-nav__link md-nav__link--active">
       Layers
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-collision-matrix" class="md-nav__link">
+    Layer Collision Matrix
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -536,53 +585,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Unturned 3 Modding
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Unturned 3 Modding" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../modding/" title="Unturned 3 Modding" class="md-nav__link">
       Unturned 3 Modding
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -935,8 +942,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#guides" class="md-nav__link">
-    Guides
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layer-collision-matrix" class="md-nav__link">
+    Layer Collision Matrix
   </a>
   
 </li>
@@ -957,13 +971,82 @@
                   
                 
                 
-                <h1 id="unturned-3-modding">Unturned 3 Modding<a class="headerlink" href="#unturned-3-modding" title="Permanent link">&para;</a></h1>
-<p>Helpful information for both new and returning modders.</p>
-<p>Those new to modding should beging at (Guides)[]</p>
-<h2 id="guides">Guides<a class="headerlink" href="#guides" title="Permanent link">&para;</a></h2>
+                <h1 id="layers">Layers<a class="headerlink" href="#layers" title="Permanent link">&para;</a></h1>
+<p>Upfront: obviously Unturned makes poor use of Unity's Layers. This document exists as much for my personal reference as yours. My only defense is that these layers are entrenched from the earliest versions back in 2013, when I was 15 or 16.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Built-in Layers</p>
 <ul>
-<li><a href="Guides/spawntables.md">Unturned Modding 101</a></li>
-<li><a href="Guides/spawntables.md">Spawn Tables 101</a></li>
+<li>0 Default</li>
+<li>1 TransparentFX</li>
+<li>2 Ignore Raycast</li>
+<li>4 Water: ocean and water tiles.</li>
+<li>5 UI: devkit and plugin menus using uGUI.</li>
+</ul>
+<p>User Layers</p>
+<ul>
+<li>8 Logic: clickable overlays like the position, rotation and scale handles. Editor debug visuals that can be seen through walls are on this layer.</li>
+<li>9 Player: character capsule (not body hitboxes). Exists for all players server-side, but only the local player client-side.</li>
+<li>10 Enemy: player body hitboxes.</li>
+<li>11 Viewmodel: local first-person arms and weapon.</li>
+<li>12 Debris: typically small simulated objects like ragdolls, grenades, falling tree trunks, destroyed structures, and fragmented objects.</li>
+<li>13 Item: dropped interactable items.</li>
+<li>14 Resource: trees and boulders. Barricades attached to vehicles are moved to this layer.</li>
+<li>15 Large: large props placed in the level editor.</li>
+<li>16 Medium: medium props placed in the level editor.</li>
+<li>17 Small: small props without collision placed in the level editor.</li>
+<li>18 Sky: distant effects without collision like the clouds and stars.</li>
+<li>19 Environment: roads, grass and pebbles.</li>
+<li>20 Ground: landscape / terrain.</li>
+<li>21 Clip: invisible collision.</li>
+<li>22 Navmesh: invisible zombie-only collision. Navmesh graphs are generated from this collision, but the collision is also loaded on the server to help push zombies around.</li>
+<li>23 Entity: zombie and animal body hitboxes.</li>
+<li>24 Agent: zombie and animal character capsules (not body hitboxes).</li>
+<li>25 Ladder: invisible climbable trigger.</li>
+<li>26 Vehicle: all vehicle colliders.</li>
+<li>27 Barricade: barricade item placed in the world. Barricades attached to vehicles are moved to the Resource layer.</li>
+<li>28 Structure: structure item placed in the world.</li>
+<li>29 Tire: wheel colliders. Allows wheels to mask what they collide with.</li>
+<li>30 Trap: typically trigger colliders including rocket launcher projectiles and kill volumes.</li>
+<li>31 Ground2: out-of-bounds terrain on older maps.</li>
+</ul>
+<h2 id="layer-collision-matrix">Layer Collision Matrix<a class="headerlink" href="#layer-collision-matrix" title="Permanent link">&para;</a></h2>
+<p>Note that these comments do <strong>NOT</strong> apply to collision queries like raycasts, spherecasts, etc.</p>
+<p>No physics collision:</p>
+<ul>
+<li>Default</li>
+<li>TransparentFX</li>
+<li>Ignore Raycast</li>
+<li>Water</li>
+<li>UI</li>
+<li>Logic</li>
+<li>Enemy</li>
+<li>Viewmodel</li>
+<li>Small</li>
+<li>Sky</li>
+<li>Environment</li>
+<li>Ground</li>
+<li>Entity</li>
+<li>Ladder</li>
+<li>Ground2</li>
+</ul>
+<p>Has physics collision:</p>
+<ul>
+<li>Player: character controller layer is used by Unity as the underlying query mask.</li>
+<li>Debris</li>
+<li>Item</li>
+<li>Resource</li>
+<li>Large</li>
+<li>Medium</li>
+<li>Environment</li>
+<li>Ground</li>
+<li>Clip: collides with Player and Vehicle for its original purpose. Makeshift vehicles have invisible colliders on this layer to expand their simulation size without affecting barricade placement, so Clip also collides with some of the same layers as Vehicle.</li>
+<li>Navmesh</li>
+<li>Agent: character controller layer is used by Unity as the underlying query mask.</li>
+<li>Vehicle</li>
+<li>Barricade</li>
+<li>Structure</li>
+<li>Tire: wheel collider layer is used by Unity as the underlying query mask.</li>
+<li>Trap</li>
 </ul>
                 
                   
@@ -973,7 +1056,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2020</span>
     
   </small>
 </div>
@@ -996,7 +1079,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../WeatherAsset/" title="Weather Asset" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Landscape/" title="Landscape" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1005,19 +1088,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Weather Asset
+                Landscape
               </div>
             </div>
           </a>
         
         
-          <a href="../Asset%20Properties%20References/ItemData/" title="Item Data" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../LevelAsset/" title="LevelAsset" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Item Data
+                LevelAsset
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
