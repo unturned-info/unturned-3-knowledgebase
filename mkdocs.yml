@@ -12,16 +12,17 @@ theme:
     # accent: green
   features:
     - tabs
+    - instant
 extra:
   social:
+    - icon: fontawesome/brands/steam
+      link: https://store.steampowered.com/app/304930/Unturned/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/unturned 
       name: Unturned Official Discord
     - icon: fontawesome/brands/discourse
       link: https://forum.smartlydressedgames.com
       name: SDG Forums
-    - icon: fontawesome/brands/steam
-      link: https://store.steampowered.com/app/304930/Unturned/
     - icon: fontawesome/brands/wordpress  
       link: https://blog.smartlydressedgames.com
       name: SDG Blog
@@ -32,3 +33,15 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed
   - pymdownx.tilde
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      provider: 'github'
+      repo: 'unturned-3-knowledgebase'
+  - toc:
+      permalink: true
+plugins:
+  - git-revision-date-localized:
+      type: date
+  - search
+  

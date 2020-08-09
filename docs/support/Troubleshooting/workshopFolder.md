@@ -11,6 +11,6 @@ Steam stores all your workshop downloads within a game specific folder. For untu
 2. Now that you've navigated to the folder, you can delete the folders inside of it
 
 !!! warning
-    if you're a modder or edit anything in this folder, make sure you back up your unpublished/edited work **before deleting**
+    if you're a modder **or** edit anything in this folder, make sure you back up your unpublished/edited work **before deleting**
 
 Now your game should launch faster, and should have a significantly reduced memory footprint. Any mods you've subscribed to will be downloaded again by steam automatically.
