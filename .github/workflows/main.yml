@@ -8,8 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          # This is needed for article revision dates, it fetches all git history 
+              fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
+      - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: mkdocs gh-deploy --force
