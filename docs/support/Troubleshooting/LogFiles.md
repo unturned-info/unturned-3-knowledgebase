@@ -1,6 +1,6 @@
 # Uploading Log Files
 
-Your log files contain important troubleshooting information. 
+Your log files contain important troubleshooting information.
 
 ## finding your log files
 
@@ -12,7 +12,7 @@ Your log files contain important troubleshooting information.
 
     !!! note
         `Client.log` is your most recent sessions log
-        
+
         `Client_Prev.log` is your previous sessions log
 
 3. upload your logs to discord or a service like [pastebin](https://pastebin.com/), [Hastebin](https://hastebin.com/) or [paste.gg](https://paste.gg) and share it with a supporter.

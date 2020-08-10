@@ -1,4 +1,4 @@
-# Troubleshooting
+# Troubleshooting common issues
 
 ## Menus are big and overlapping
 
@@ -6,7 +6,6 @@
 2. Select Properties then "Set Launch Options..."
 3. Type `-ui_scale 1.0`
 4. Click Ok and launch the game
-
 
 - how to claim beta access
 - how to enable Steam DLC

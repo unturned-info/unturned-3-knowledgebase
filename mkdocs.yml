@@ -1,12 +1,16 @@
 site_name: Unturned 3 Knowledgebase
 site_url: https://unturned.info
+repo_name: unturned-3-knowledgebase
+repo_url: https://github.com/Unturned-Official-Discord/unturned-3-knowledgebase
 site_description: >-
   Documentation for various features of Unturned 3.0
   Including modding, server hosting, and more.
 theme:
   name: material
   logo: assets/Unturned_Logo.png
-  favicon: assets/Unturned_Logo.png
+  favicon: assets/Unturned_Logo.png\
+  icon:
+    repo: fontawesome/brands/github
   palette:
     primary: indigo
     # accent: green

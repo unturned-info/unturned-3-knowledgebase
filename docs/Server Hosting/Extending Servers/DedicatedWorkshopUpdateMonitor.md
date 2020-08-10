@@ -1,5 +1,4 @@
-Dedicated Workshop Update Monitor
-=================================
+# Dedicated Workshop Update Monitor
 
 When hosting a server with content from the [Steam Workshop](https://steamcommunity.com/app/304930/workshop/) it may be desirable to restart the server when updates are released by creators. In particular, maps have their own version numbers which the server list uses to test compatibility before players connect.
 
