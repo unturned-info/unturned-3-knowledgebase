@@ -24,14 +24,6 @@
      <lastmod>2020-08-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://unturned.info/Modding/AssetsV1/</loc>
-     <lastmod>2020-08-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://unturned.info/Modding/AssetsV2/</loc>
-     <lastmod>2020-08-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://unturned.info/Modding/CharacterMeshReplacement/</loc>
      <lastmod>2020-08-10</lastmod>
      <changefreq>daily</changefreq>
@@ -61,14 +53,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://unturned.info/Modding/Layers/</loc>
-     <lastmod>2020-08-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://unturned.info/Modding/LevelAsset/</loc>
-     <lastmod>2020-08-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://unturned.info/Modding/LevelConfig/</loc>
      <lastmod>2020-08-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -108,7 +92,23 @@
      <lastmod>2020-08-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://unturned.info/Modding/Asset%20Types/AssetsV1/</loc>
+     <lastmod>2020-08-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://unturned.info/Modding/Asset%20Types/AssetsV2/</loc>
+     <lastmod>2020-08-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://unturned.info/Modding/mapmaking/Foliage/</loc>
+     <lastmod>2020-08-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://unturned.info/Modding/mapmaking/LevelAsset/</loc>
+     <lastmod>2020-08-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://unturned.info/Modding/mapmaking/LevelConfig/</loc>
      <lastmod>2020-08-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
