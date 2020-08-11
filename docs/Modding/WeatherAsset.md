@@ -2,7 +2,7 @@
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 
-This is an [Asset v2](AssetsV2.md) class.
+This is an [Asset v2](Asset%20Types/AssetsV2.md) class.
 
 ## How to test?
 

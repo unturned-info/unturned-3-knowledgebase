@@ -12,6 +12,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
+    # options: default, slate, preference
+    scheme: preference
     primary: indigo
     # accent: green
   features:

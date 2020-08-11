@@ -8,7 +8,7 @@ __Multiplatform:__
 - [How to Host Curated Maps](#How-to-Host-Curated-Maps)
 - [How to Host Over Internet](#How-to-Host-Over-Internet)
 - [Port Forwarding](PortForwarding.md)
-- [RocketMod](RocketMod.md)
+- [RocketMod](Rocket.md)
 
 __Windows:__
 
@@ -129,7 +129,7 @@ Each individual ServerID has its own savedata and configuration.
 
 ### Launch Commands
 
-Launch commands are setup in the Server > `Commands.dat` file. Each line should have one command.
+Launch commands are setup in the Server > `Commands.dat` file. Each line should have only one command.
 
 Common useful commands are:
 

@@ -75,7 +75,7 @@ __Center_Of_Mass__:  This
 
 __Wheel_Collider_Mass_Override__: Overrides the setting of your wheel colliders mass to provided value. Should default to `3`.
 
-__Physics_Profile__: Physics Profile GUID. [Documentation can be found here](VehiclePhysicsProfile.md)
+__Physics_Profile__: Physics Profile GUID. [Documentation can be found here](../VehiclePhysicsProfile.md)
 
 __Traction__: Changes the wheels physics on ice and off-road.
 

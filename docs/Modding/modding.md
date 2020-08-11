@@ -2,7 +2,7 @@
 
 Helpful information for both new and returning modders.
 
-Those new to modding should beging at (Guides)[]
+Those new to modding should begin at (Guides)[]
 
 ## Guides
 

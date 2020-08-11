@@ -12,6 +12,7 @@ Menu Visibility
 One key component of sharing a curated map, trending popular workshop item, or specifically featured map is spotlighting it on the main menu. In any of these cases an article is placed above the recent news and announcements showcasing the preview image, and an expandable description.
 
 In-game the description supports the following BBCode tags:
+
 - [b]
 - [i]
 - [list]
@@ -33,7 +34,7 @@ The primary focus of this article at the time of posting is to begin laying out 
 
 __Map Variety__: New maps should feel noticeably different in order to be a candidate for curation. This is a subjective rule, and is covered by factors like interesting progression, new items, new environments, new architecture styles, new buildings, etc.
 
-__Asset Validation__: Running the game with the [-ValidateAssets](ValidateAssets.md) command-line flag should not produce any warnings or errors.
+__Asset Validation__: Running the game with the [-ValidateAssets](../AssetValidation.md) command-line flag should not produce any warnings or errors.
 
 __English Text__: Having an English-speaking member of the mod team is recommended, and [MoltonMontro](mailto:moltonmontro@smartlydressedgames.com) has offered to help with English-related questions. Most importantly in this regard is proper punctuation and grammar: while native English speakers can easily read incorrect punctuation, it is very helpful for non-native readers. Ironically this paragraph probably has some punctuation errors.
 

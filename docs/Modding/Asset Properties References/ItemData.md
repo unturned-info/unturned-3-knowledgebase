@@ -238,7 +238,7 @@ __Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Rag`, `Craft_Seed`
 
 ## Asset Bundles and Error Handling
 
-See [AssetBundles.md](AssetBundles.md) for full documentation regarding asset bundles.
+See [AssetBundles.md](../AssetBundles.md) for full documentation regarding asset bundles.
 
 __Ignore_TexRW__: Specified if read/writeable texture errors for the item should be hidden from the error logs.
 
@@ -534,7 +534,7 @@ __Vision__: `Civilian`, `Headlamp`, `Military`
 
 ### Body Mesh Replacements
 
-Body mesh replacements are only applicable to shirts. See [CharacterMeshReplacement.md](CharacterMeshReplacement.md) for full documentation.
+Body mesh replacements are only applicable to shirts. See [CharacterMeshReplacement.md](../CharacterMeshReplacement.md) for full documentation.
 
 __Has_1P_Character_Mesh_Override__: `false`, `true`
 

@@ -5,10 +5,10 @@ Each map can be associated with a **Level Asset**. These assets contain gameplay
 
 For examples check the `Assets/Levels` directory.
 
-`Dropship` [Master Bundle Pointer](MasterBundlePtr.md): Overrides the model seen flying over the map when a care package is dropped.
+`Dropship` [Master Bundle Pointer](../MasterBundlePtr.md): Overrides the model seen flying over the map when a care package is dropped.
 
-`Airdrop` [Asset Pointer](AssetPtr.md): to an [Airdrop Asset](AirdropAsset.md). Overrides the falling care package model.
+`Airdrop` [Asset Pointer](../AssetPtr.md): to an [Airdrop Asset](../AirdropAsset.md). Overrides the falling care package model.
 
-`Crafting_Blacklists` array of [Asset Pointers](AssetPtr.md) to [Crafting Blacklist(s)](CraftingBlacklistAsset.md). Prevents specific items or blueprints from being used while crafting in the level.
+`Crafting_Blacklists` array of [Asset Pointers](../AssetPtr.md) to [Crafting Blacklist(s)](../../Server%20Hosting/CraftingBlacklistAsset.md). Prevents specific items or blueprints from being used while crafting in the level.
 
-This is an [Asset v2](AssetsV2.md) class.
+This is an [Asset v2](../Asset%20Types/AssetsV2.md) class.

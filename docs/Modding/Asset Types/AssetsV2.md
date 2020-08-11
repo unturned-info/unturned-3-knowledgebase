@@ -34,7 +34,7 @@ Header
 
 Each asset has a `Metadata` section for preparing to load.
 
-`GUID` *string*: Refer to [GUID](GUID.md) documentation.
+`GUID` *string*: Refer to [GUID](../GUID.md) documentation.
 
 `Type` *string*: Fully qualified name of any class in any module.
 

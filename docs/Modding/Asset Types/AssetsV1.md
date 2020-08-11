@@ -30,7 +30,7 @@ Game Data
 
 `ID` *int*: 16-bit identifier. Unfortunately this id must be unique within each category of assets (vehicles, items, animals, etc). Objects are the exception from this legacy restriction because they have been upgraded to fully use GUIDs.
 
-`GUID` *string*: Refer to [GUID](GUID.md) documentation. Several newer features refer to v1 assets by their GUID. If left empty the game will prepend a GUID during startup.
+`GUID` *string*: Refer to [GUID](../GUID.md) documentation. Several newer features refer to v1 assets by their GUID. If left empty the game will prepend a GUID during startup.
 
 Unity Asset Bundles
 -------------------
