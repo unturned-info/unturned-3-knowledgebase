@@ -28,10 +28,6 @@
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://unturned.info/Modding/CuratedMaps/</loc>
-     <lastmod>2020-08-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://unturned.info/Modding/Currency/</loc>
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
@@ -45,10 +41,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://unturned.info/Modding/GettingStarted/</loc>
-     <lastmod>2020-08-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://unturned.info/Modding/Landscape/</loc>
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -84,6 +76,10 @@
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://unturned.info/Modding/thirdPartyGuides/</loc>
+     <lastmod>2020-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://unturned.info/Modding/Asset%20Properties%20References/ItemData/</loc>
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
@@ -100,7 +96,15 @@
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://unturned.info/Modding/mapmaking/CuratedMaps/</loc>
+     <lastmod>2020-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://unturned.info/Modding/mapmaking/Foliage/</loc>
+     <lastmod>2020-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://unturned.info/Modding/mapmaking/Landscape/</loc>
      <lastmod>2020-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
