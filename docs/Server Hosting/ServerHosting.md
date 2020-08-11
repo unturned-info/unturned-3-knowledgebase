@@ -46,7 +46,8 @@ Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using
 
         app_update 1110390
 
-    _Note: this command can also be used to update the server._
+    !!! note
+        this command can also be used to update the server.
 
 3. Close SteamCMD:
 
@@ -93,7 +94,6 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
 
 ### How to Launch Server on Linux
 
-
 1. Navigate to the SteamCMD > steamapps > common > U3DS directory.
 2. For an internet server run the following command:
 
@@ -107,7 +107,8 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
         ./ServerHelper.sh +LanServer/MyServer
         ```
 
-    !!! note: In this example MyServer is used as the ServerID for savedata and configuration purposes._
+    !!! note
+        In this example MyServer is used as the ServerID for savedata and configuration purposes.
 
 3. Cleanly shutdown the server once it finishes loading:
 
