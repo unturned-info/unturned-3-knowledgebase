@@ -8,7 +8,7 @@ With information both written and pulled from official game documentation and mo
 
 - [Modding](Modding/modding.md)
 - [Server Hosting](Server%20Hosting/ServerHosting.md)
-- [Support]()
+- [Support](support/Common%20Issues.md)
 
 ## Contributing
 

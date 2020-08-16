@@ -50,4 +50,52 @@ plugins:
   - git-revision-date-localized:
       type: date
   - search
+
+  # Site page tree
+nav:
+  - Overview: 'index.md'
+  - Modding:
+    - 'Modding/GettingStarted.md'
+    - 'Modding\Layers.md'
+    - 'Modding/AssetBundles.md'
+    - 'Modding\GUID.md'
+    - 'Modding\ModHooks.md'
+    - Assets:
+      - 'Modding\Asset Types\AssetsV1.md'
+      - 'Modding\Asset Types\AssetsV2.md'
+      - 'Modding\AssetPtr.md'
+      - 'Modding\MasterBundlePtr.md'
+    - 'Modding\AirdropAsset.md'
+    - 'Modding\Animation.md'
+    - 'Modding\AssetValidation.md'
+    - 'Modding\CharacterMeshReplacement.md'
+    - 'Modding\Currency.md'
+    - 'Modding\StereoSongAsset.md'
+    - 'Modding\Unity2018.md'
+    - 'Modding\WeatherAsset.md'
+    - Asset Properties References:
+      - 'Modding\Asset Properties References\ItemData.md'
+      - 'Modding\Asset Properties References\VehicleData.md'
+      - 'Modding\VehiclePhysicsProfile.md'
+    - Mapmaking:
+      - 'Modding\mapmaking\FavoriteSearches.md'
+      - 'Modding\mapmaking\CuratedMaps.md'
+      - 'Modding\mapmaking\Foliage.md'
+      - 'Modding\mapmaking\Landscape.md'
+      - 'Modding\mapmaking\LevelAsset.md'
+      - 'Modding\mapmaking\LevelConfig.md'
+  - Server Hosting:
+    - Server Hosting: 'Server Hosting/ServerHosting.md'
+    - 'Server Hosting/PortForwarding.md'
+    - 'Server Hosting/Rocket.md'
+    - 'Server Hosting/GameServerLoginTokens.md'
+    - Extending Servers:
+      - 'Server Hosting/Extending Servers/CommandIO.md'
+      - 'Server Hosting/Extending Servers/CraftingBlacklistAsset.md'
+      - 'Server Hosting/Extending Servers/DedicatedWorkshopUpdateMonitor.md'
+  - Support:
+    - 'support/Troubleshooting/LogFiles.md'
+    - 'support/Troubleshooting/verifyGameFiles.md'
+    - 'support/Troubleshooting/workshopFolder.md'
+
   
