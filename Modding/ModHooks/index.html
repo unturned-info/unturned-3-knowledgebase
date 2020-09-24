@@ -16,7 +16,7 @@
       
       
       <link rel="shortcut icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d3202873.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ff0a5ce4.min.css">
       
@@ -381,8 +381,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#activaton-event-hook" class="md-nav__link">
-    Activaton Event Hook
+  <a href="#activation-event-hook" class="md-nav__link">
+    Activation Event Hook
   </a>
   
 </li>
@@ -642,8 +642,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../StereoSongAsset/" title="StereoSongAsset" class="md-nav__link">
-      StereoSongAsset
+    <a href="../StereoSongAsset/" title="Stereo Song Asset" class="md-nav__link">
+      Stereo Song Asset
     </a>
   </li>
 
@@ -1074,8 +1074,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#activaton-event-hook" class="md-nav__link">
-    Activaton Event Hook
+  <a href="#activation-event-hook" class="md-nav__link">
+    Activation Event Hook
   </a>
   
 </li>
@@ -1211,32 +1211,52 @@
                 <h1 id="mod-hooks">Mod Hooks<a class="headerlink" href="#mod-hooks" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Script Components can be added to Game Objects in Unity and exported in Asset Bundles <em>IF</em> they match a script in the base game code. These intentionally exportable scripts are referred to as <strong>Mod Hooks</strong>. They can be imported into a Unity project from the Project.unitypackage, and added to game objects inside the Unturned components menu. Each script makes several Events available which can drive other component properties like visibility or play an animation.</p>
-<p>Each script documents its purpose and members within its *.cs file.</p>
+<div class="admonition cite">
+<p class="admonition-title">Cite</p>
 <p>Originally proposed and coined by VitaxaRusModding in this GitHub issue: <a href="https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/435">Link</a></p>
+</div>
 <h2 id="event-listeners">Event Listeners<a class="headerlink" href="#event-listeners" title="Permanent link">&para;</a></h2>
-<h3 id="activaton-event-hook">Activaton Event Hook<a class="headerlink" href="#activaton-event-hook" title="Permanent link">&para;</a></h3>
+<h3 id="activation-event-hook">Activation Event Hook<a class="headerlink" href="#activation-event-hook" title="Permanent link">&para;</a></h3>
 <p>Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.</p>
 <h3 id="collision-event-hook">Collision Event Hook<a class="headerlink" href="#collision-event-hook" title="Permanent link">&para;</a></h3>
 <p>Events for player overlaps with a trigger collider. Primarily useful for server-side objects as collisions are not triggered by other players client-side, but this limitation may be resolved in the future.</p>
 <h3 id="interactable-object-binary-state-event-hook-iobs">Interactable Object Binary State Event Hook (IOBS)<a class="headerlink" href="#interactable-object-binary-state-event-hook-iobs" title="Permanent link">&para;</a></h3>
 <p>(IOBS for short) are any prop placed from the level editor which can have F pressed on them to open, close, turn on/off, etc. This hook can be added to any GameObject within an IOBS to trigger events during state changes, and even control the IOBS from client and server side.</p>
 <h3 id="text-chat-event-hook">Text Chat Event Hook<a class="headerlink" href="#text-chat-event-hook" title="Permanent link">&para;</a></h3>
-<p>Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. Only fired on the server.</p>
+<p>Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Only fired on the server.</p>
+</div>
 <h3 id="timer-event-hook">Timer Event Hook<a class="headerlink" href="#timer-event-hook" title="Permanent link">&para;</a></h3>
 <p>Allows events to set or cancel a timer, and triggers an event when the timer expires.</p>
 <h3 id="vehicle-event-hook">Vehicle Event Hook<a class="headerlink" href="#vehicle-event-hook" title="Permanent link">&para;</a></h3>
-<p>Events for driver entering and exiting the vehicle. These events are fired on server and client.</p>
+<p>Events for driver entering and exiting the vehicle.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These events are fired on server and client.</p>
+</div>
 <h3 id="weather-event-hook">Weather Event Hook<a class="headerlink" href="#weather-event-hook" title="Permanent link">&para;</a></h3>
-<p>Events for day, night, full moon, and weather. These events are fired on server and client.</p>
+<p>Events for day, night, full moon, and weather.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These events are fired on server and client.</p>
+</div>
 <h3 id="custom-weather-event-hook">Custom Weather Event Hook<a class="headerlink" href="#custom-weather-event-hook" title="Permanent link">&para;</a></h3>
 <p>Events for a specific custom <a href="../WeatherAsset/">Weather Asset</a>. Any map can have an unlimited number of weather types and weather listeners.</p>
 <h2 id="event-instigators">Event Instigators<a class="headerlink" href="#event-instigators" title="Permanent link">&para;</a></h2>
 <h3 id="client-text-chat-messenger">Client Text Chat Messenger<a class="headerlink" href="#client-text-chat-messenger" title="Permanent link">&para;</a></h3>
 <p>Allows Unity events to request a text chat message be sent on behalf of the client. For example, to execute a command.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>The <code>UnityEvents.Allow_Client_Messages</code> and/or <code>UnityEvents.Allow_Client_Commands</code> settings must be enabled in the server <code>Config.json</code> file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.</p>
+</div>
 <h3 id="server-text-chat-messenger">Server Text Chat Messenger<a class="headerlink" href="#server-text-chat-messenger" title="Permanent link">&para;</a></h3>
 <p>Allows Unity events to broadcast messages from the server. Icons and rich text are optional. Can also execute commands that are not available (yet) to NPCs like changing the weather or triggering an airdrop.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>The <code>UnityEvents.Allow_Server_Messages</code> and/or <code>UnityEvents.Allow_Server_Commands</code> settings must be enabled in the server <code>Config.json</code> file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.</p>
+</div>
 <h3 id="effect-spawner">Effect Spawner<a class="headerlink" href="#effect-spawner" title="Permanent link">&para;</a></h3>
 <p>Allows Unity events to spawn effect assets. When the <code>AuthorityOnly</code> field is enabled only the server will spawn effects and replicate them to clients.</p>
 <h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
@@ -1250,7 +1270,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 24, 2020</span>
     
   </small>
 </div>
