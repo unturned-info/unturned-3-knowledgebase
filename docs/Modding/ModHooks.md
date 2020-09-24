@@ -5,12 +5,12 @@
 Script Components can be added to Game Objects in Unity and exported in Asset Bundles _IF_ they match a script in the base game code. These intentionally exportable scripts are referred to as __Mod Hooks__. They can be imported into a Unity project from the Project.unitypackage, and added to game objects inside the Unturned components menu. Each script makes several Events available which can drive other component properties like visibility or play an animation.
 
 Each script documents its purpose and members within its *.cs file.
-
-Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/435)
+!!! cite
+    Originally proposed and coined by VitaxaRusModding in this GitHub issue: [Link](https://github.com/SmartlyDressedGames/Unturned-3.x-Community/issues/435)
 
 ## Event Listeners
 
-### Activaton Event Hook
+### Activation Event Hook
 
 Events when a component or game object are enabled and disabled. Useful for extending toggleable actions in the base game.
 
@@ -24,7 +24,10 @@ Events for player overlaps with a trigger collider. Primarily useful for server-
 
 ### Text Chat Event Hook
 
-Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. Only fired on the server.
+Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. 
+
+!!! info
+    Only fired on the server.
 
 ### Timer Event Hook
 
@@ -32,11 +35,17 @@ Allows events to set or cancel a timer, and triggers an event when the timer exp
 
 ### Vehicle Event Hook
 
-Events for driver entering and exiting the vehicle. These events are fired on server and client.
+Events for driver entering and exiting the vehicle.
+
+!!! info
+    These events are fired on server and client.
 
 ### Weather Event Hook
 
-Events for day, night, full moon, and weather. These events are fired on server and client.
+Events for day, night, full moon, and weather.
+
+!!! info
+    These events are fired on server and client.
 
 ### Custom Weather Event Hook
 
@@ -48,13 +57,15 @@ Events for a specific custom [Weather Asset](WeatherAsset.md). Any map can have 
 
 Allows Unity events to request a text chat message be sent on behalf of the client. For example, to execute a command.
 
-The `UnityEvents.Allow_Client_Messages` and/or `UnityEvents.Allow_Client_Commands` settings must be enabled in the server `Config.json` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
+!!! warning
+    The `UnityEvents.Allow_Client_Messages` and/or `UnityEvents.Allow_Client_Commands` settings must be enabled in the server `Config.json` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
 
 ### Server Text Chat Messenger
 
 Allows Unity events to broadcast messages from the server. Icons and rich text are optional. Can also execute commands that are not available (yet) to NPCs like changing the weather or triggering an airdrop.
 
-The `UnityEvents.Allow_Server_Messages` and/or `UnityEvents.Allow_Server_Commands` settings must be enabled in the server `Config.json` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
+!!! warning
+    The `UnityEvents.Allow_Server_Messages` and/or `UnityEvents.Allow_Server_Commands` settings must be enabled in the server `Config.json` file before these can be triggered. This ensures hosts are aware of their usage. Singleplayer defaults to enabled.
 
 ### Effect Spawner
 
