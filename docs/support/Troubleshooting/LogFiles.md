@@ -11,8 +11,11 @@ Your log files contain important troubleshooting information.
 2. Open the Logs folder
 
     !!! note
-        `Client.log` is your most recent sessions log
+        `Client.log` is from your most recent session
 
-        `Client_Prev.log` is your previous sessions log
+        `Client_Prev.log` is from the session before then
 
 3. upload your logs to discord or a service like [pastebin](https://pastebin.com/), [Hastebin](https://hastebin.com/) or [paste.gg](https://paste.gg) and share it with a supporter.
+
+    !!! info
+        Log files posted in the Unturned Official Discord are automatically uploaded to hastebin by a bot.
