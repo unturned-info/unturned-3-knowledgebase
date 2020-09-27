@@ -11,9 +11,17 @@ jobs:
         with:
           # This is needed for article revision dates, it fetches all git history 
               fetch-depth: 0
+      - uses: actions/cache@v2.1.1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: mkdocs gh-deploy --force
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build MKdocs
+        run: mkdocs gh-deploy --force
