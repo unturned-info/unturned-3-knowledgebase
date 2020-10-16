@@ -19,6 +19,9 @@ theme:
   features:
     - tabs
     - instant
+google_analytics:
+  - UA-172735417-2
+  - auto
 extra:
   social:
     - icon: fontawesome/brands/steam
