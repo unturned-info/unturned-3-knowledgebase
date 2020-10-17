@@ -55,7 +55,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at khakers202 [at] gmail.com. All
+reported by contacting the project team via discord to khakers#1754 (<@184473972446986240>) or another reviewer or via email to conduct[at]unturned.info. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
