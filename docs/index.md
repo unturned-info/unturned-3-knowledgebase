@@ -1,15 +1,15 @@
 # Overview
 
-The Unturned 3 Knowledgebase is the home of documentation for all things unturned 3.
+The Unturned 3 Knowledgebase is *unofficial* the home of documentation for all things unturned 3.
 
-With information both written and pulled from official game documentation and modified for improved readability. The goal of this site is to be a one stop shop for all the more technical features of the game including modding, server hosting, and issue troubleshooting. It is maintained by members of the Unturned Official Discord and pulls from U3 docs.
+With information both written by contributors and pulled from official game documentation and modified for improved readability. The goal of this site is to be a one stop shop for all the more technical features of the game including modding, server hosting, and issue troubleshooting. It is maintained by khakers and indirectly pulls from Nelsons U3 docs.
 
-## Categories
+## Discord
 
-- [Modding](Modding/modding.md)
-- [Server Hosting](Server%20Hosting/ServerHosting.md)
-- [Support](support/Common%20Issues.md)
+You can join our discord to discuss contributions or Unturned.
+
+[:fontawesome-brands-discord: Join our discord](https://discord.gg/PgJCPh6){: .md-button .md-button--primary }
 
 ## Contributing
 
-The knowledgebase is designed to be contributable to by everyone. You can find the source at <https://github.com/Unturned-Official-Discord/unturned-3-knowledgebase>
+Anyone can contribute to *unturned.info*. You can find the source at <https://github.com/Unturned-Official-Discord/unturned-3-knowledgebase>

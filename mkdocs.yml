@@ -24,6 +24,10 @@ google_analytics:
   - auto
 extra:
   social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/PgJCPh6
+      name: unturned.info Discord
+    - icon: material/keyboard-space
     - icon: fontawesome/brands/steam
       link: https://store.steampowered.com/app/304930/Unturned/
     - icon: fontawesome/brands/discord
@@ -47,6 +51,9 @@ markdown_extensions:
       repo_url_shorthand: true
       provider: 'github'
       repo: 'unturned-3-knowledgebase'
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
 plugins:
