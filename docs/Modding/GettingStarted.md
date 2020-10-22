@@ -25,5 +25,5 @@ This package contains vanilla content examples, and several useful prefabs:
 - Animations directory has all of the vanilla item animations for re-use.
 - Assets/Resources/Characters/Preview.prefab is helpful for previewing clothes.
 
-!!! note
+!!! warning
     Custom content should NOT be placed into the CoreMasterBundle, instead create a separate directory.
