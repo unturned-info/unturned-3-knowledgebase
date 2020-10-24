@@ -2,6 +2,10 @@
 
 All multiplayer servers are hosted using the Unturned Dedicated Server tool, which is installed and updated through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
+!!! Info
+    Nelson has created an video tutorial for [hosting a dedicated server on windows](https://www.youtube.com/watch?v=8axVrnSLlx4).
+    The video does not cover Linux based hosting or [**Port Forwading**](docs/../PortForwarding.md) which is *required* for internet accesible servers.
+
 __Multiplatform:__
 
 - [How to Configure Server](#How-to-Configure-Server)
