@@ -60,6 +60,8 @@ plugins:
   - git-revision-date-localized:
       type: date
   - search
+  - minify:
+      minify_html: true
 
   # Site page tree
 nav:
