@@ -1,4 +1,4 @@
-mkdocs-material>= 6.0.1
+mkdocs-material>= 6.2.2
 mkdocs-git-revision-date-localized-plugin
 mkdocs-minify-plugin
 mkdocs-redirects
