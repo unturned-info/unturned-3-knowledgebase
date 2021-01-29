@@ -12,4 +12,4 @@ You can join our discord to discuss contributions or Unturned.
 
 ## Contributing
 
-Anyone can contribute to *unturned.info*. You can find the source at <https://github.com/Unturned-Official-Discord/unturned-3-knowledgebase>
+Anyone can contribute to *unturned.info*. You can find the source at <https://github.com/unturned-info/unturned-3-knowledgebase>
