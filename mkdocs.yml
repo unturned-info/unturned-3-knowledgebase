@@ -17,7 +17,7 @@ theme:
     primary: indigo
     # accent: green
   features:
-    - tabs
+    - navigation.tabs
     - instant
 google_analytics:
   - UA-172735417-2
