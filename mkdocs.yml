@@ -7,6 +7,7 @@ site_description: >-
   Including modding, server hosting, and more.
 theme:
   name: material
+  custom_dir: overrides
   logo: img/Unturned_Logo.png
   favicon: img/favicon.ico
   icon:
@@ -16,6 +17,7 @@ theme:
     scheme: preference
     primary: indigo
     # accent: green
+  language: en
   features:
     - navigation.tabs
     - instant
@@ -39,6 +41,9 @@ extra:
     - icon: fontawesome/brands/wordpress  
       link: https://blog.smartlydressedgames.com
       name: SDG Blog
+  unity:
+    version: '2019.4'
+    download-link: 
 markdown_extensions:
   - admonition
   - pymdownx.superfences
@@ -110,5 +115,3 @@ nav:
     - 'support/Troubleshooting/LogFiles.md'
     - 'support/Troubleshooting/verifyGameFiles.md'
     - 'support/Troubleshooting/workshopFolder.md'
-
-  
