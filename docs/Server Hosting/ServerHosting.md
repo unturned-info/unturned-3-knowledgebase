@@ -4,9 +4,8 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool, whi
 
 ???+ Tip "Windows Server Hosting Tutorial Video"
     A video created by nelson that covers the basics of a windows server setup using the dedicated server app.
-    The video does not cover Linux based hosting or [**Port Forwarding**](docs/../PortForwarding.md) which is *required* for internet accessible servers.
+    The video does not cover Linux-based hosting or [**Port Forwarding**](docs/../PortForwarding.md) which is *required* for internet-accessible servers.
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8axVrnSLlx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 __Multiplatform:__
 
@@ -44,7 +43,7 @@ Continue to: [How to Install Server using SteamCMD](#How-to-Install-Server-using
 
 ## How to Install Server using SteamCMD
 
-1. Login to Steam anonymously:
+1. Log in to Steam anonymously:
 
         login anonymous
 
@@ -85,7 +84,7 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
         ```
 
     !!! note
-        In this example MyServer is used as the ServerID for savedata and configuration purposes.
+        In this example, MyServer is used as the ServerID for save data and configuration purposes.
 
 7. Save your changes.
 8. Double-click the batch script to launch the server.
@@ -93,7 +92,7 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
 
         shutdown
 
-    Running it will have created a "MyServer" directory in U3DS > Servers. This is where all savedata and configuration files are kept. Changing the `MyServer` ServerID in the batch script can be done to run multiple servers at once, or to keep savedata separate.
+    Running it will have created a "MyServer" directory in U3DS > Servers. This is where all save data and configuration files are kept. Changing the `MyServer` ServerID in the batch script can be done to run multiple servers at once, or to keep save data separately.
 
 !!! example
     The included `ExampleServer.bat` serves as an example script
@@ -114,28 +113,28 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
         ```
 
     !!! note
-        In this example MyServer is used as the ServerID for savedata and configuration purposes.
+        In this example, MyServer is used as the ServerID for save data and configuration purposes.
 
 3. Cleanly shutdown the server once it finishes loading:
 
         shutdown
 
-    Running it will have created a "MyServer" directory in U3DS > Servers. This is where all savedata and configuration files are kept. Changing the `MyServer` ServerID in the launch arguments can be done to run multiple servers at once, or to keep savedata separate.
+    Running it will have created a "MyServer" directory in U3DS > Servers. This is where all save data and configuration files are kept. Changing the `MyServer` ServerID in the launch arguments can be done to run multiple servers at once, or to keep save data separately.
 
-For an example script open the built-in `ExampleServer.sh` file.
+For an example script, open the built-in `ExampleServer.sh` file.
 !!! example
     The included `ExampleServer.sh` serves as an example script
 
 ## How to Configure a Server
 
-Each individual ServerID has its own savedata and configuration.
+Each individual ServerID has its own save data and configuration.
 
 1. Determine the ServerID. This is the name after the +InternetServer/ or +LanServer/ command.
 2. Navigate to U3DS > Servers > ServerID.
 
 ### Launch Commands
 
-Launch commands are setup in the Server > `Commands.dat` file. Each line should have only one command.
+Launch commands are set up in the Server > `Commands.dat` file. Each line should have only one command.
 
 Common useful commands are:
 
@@ -147,7 +146,7 @@ Common useful commands are:
         Map Washington
         Map Russia
 
-- __Port__: Running multiple internet servers simultaneously requires specifying different ports. Unturned will use the set port for game traffic, port + 1 for server list queries and port + 2 for the Steam backend. Recommended port values are 27015 for the first server, 27018 for the second server, so on and so forth.
+- __Port__: Running multiple internet servers simultaneously requires specifying different ports. Unturned will use the set port for game traffic, port + 1 for server list queries, and port + 2 for the Steam backend. Recommended port values are 27015 for the first server, 27018 for the second server, so on and so forth.
 
     Examples:
 
@@ -155,15 +154,15 @@ Common useful commands are:
         Port 27018
 
 - __Name__: Name of the server on the server list; set as "Unturned" by default.
-- __Password__: Requires password to join server. Note that password is only SHA1 hashed, so don't use the same password anywhere else.
+- __Password__: Requires password to join the server. Note that the password is only SHA1 hashed, so don't use the same password anywhere else.
 - __Perspective__: Can be set to "First", "Third", "Both", or "Vehicle" to change camera options.
 - __Cheats__: Allows admins to invoke cheat commands like spawning items or vehicles from the chat.
 
-Game rules, listing display, and many other options are available in the `Config.json` file. Game options mirror the in-game Play > Singleplayer > Config menu. This file deserves further documentation, but is not officially documented yet.
+Game rules, listing display, and many other options are available in the `Config.json` file. Game options mirror the in-game Play > Singleplayer > Config menu. This file deserves further documentation but is not officially documented yet.
 
 ### Workshop add-ons
 
-Steam Workshop add-ons (e.g., maps, items, vehicles) are setup in the `WorkshopDownloadConfig.json` file.
+Steam Workshop add-ons (e.g., maps, items, vehicles) are set up in the `WorkshopDownloadConfig.json` file.
 To include a Workshop file on your server:
 
 1. Browse to its web page, for example: [Hawaii](https://steamcommunity.com/sharedfiles/filedetails/?id=1753134636)
@@ -191,7 +190,7 @@ To include a Workshop file on your server:
 
 ## How to Host Curated Maps
 
-Curated maps are available as workshop items, so are configured in the `WorkshopDownloadConfig.json` file. During startup the Map command searches installed workshop items for a matching name.
+Curated maps are available as workshop items, so are configured in the `WorkshopDownloadConfig.json` file. During startup, the Map command searches installed workshop items for a matching name.
 
 ???+ info "Curated Map file IDs"
 
@@ -213,8 +212,8 @@ Curated maps are available as workshop items, so are configured in the `Workshop
 
 ## How to Host Over the Internet
 
-Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network [Port Forwarding](PortForwarding.md) is required in order to direct traffic to the host computer.
+Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network [Port Forwarding](PortForwarding.md) is required to direct traffic to the host computer.
 
-One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case port forwarding specifies which LAN device is the host.
+One way to think of it is that when there are multiple devices (e.g. computers and phones) connected to the LAN, the outside internet does not know which device is the Unturned server. In this case, port forwarding specifies which LAN device is the host.
 
 For port ranges and other details: [Port Forwarding](PortForwarding.md)
