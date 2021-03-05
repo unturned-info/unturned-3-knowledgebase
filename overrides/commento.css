@@ -1,0 +1,34 @@
+[data-md-color-scheme="slate"] .commento-name {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* 
+    Sets font to match mkdocs-material
+ */
+.commento-root-font * {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+    sans-serif;
+}
+
+[data-md-color-scheme="slate"] .commento-root * {
+  color: inherit;
+}
+
+[data-md-color-scheme="slate"]
+  .commento-root
+  .commento-logged-container
+  .commento-profile-button {
+  color: inherit;
+}
+  .commento-root
+  .commento-logged-container
+  .commento-profile-button {
+  color: inherit;
+}
+.commento-root textarea {
+  background: var(--md-admonition-bg-color);
+  box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 5%), 0 0 0.05rem rgb(0 0 0 / 10%);
+}
+
+.commento-root .commento-card {
+    border-radius: .1rem
+}
