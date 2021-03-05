@@ -21,6 +21,7 @@ theme:
   features:
     - navigation.tabs
     - instant
+    - navigation.expand
 google_analytics:
   - UA-172735417-2
   - auto
