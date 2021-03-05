@@ -1,5 +1,9 @@
 # Troubleshooting common issues
 
+## Your files are missing a custom asset (12345)
+
+Can generally be fixed by [clearing your downloaded workshop items](/docs/support/Troubleshooting/workshopFolder.md)
+
 ## Menus are big and overlapping
 
 1. Right-click Unturned in your Steam Library
