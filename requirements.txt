@@ -1,4 +1,4 @@
-mkdocs-material == 6.*
+mkdocs-material == 7.*
 mkdocs-git-revision-date-localized-plugin
 mkdocs-minify-plugin
 mkdocs-redirects

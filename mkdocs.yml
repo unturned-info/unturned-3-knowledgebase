@@ -68,6 +68,15 @@ plugins:
   - search
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        'Server Hosting/ServerHosting.md': 'Server-Hosting/ServerHosting.md'
+        'Server Hosting/PortForwarding.md': 'Server-Hosting/PortForwarding.md'
+        'Server Hosting/Rocket.md': 'Server-Hosting/Rocket.md'
+        'Server Hosting/GameServerLoginTokens.md': 'Server-Hosting/GameServerLoginTokens.md'
+        'Server Hosting/Extending Servers/CommandIO.md': 'Server-Hosting/Extending-Servers/CommandIO.md'
+        'Server Hosting/Extending Servers/CraftingBlacklistAsset.md': 'Server-Hosting/Extending-Servers/CommandIO.md/CraftingBlacklistAsset.md'
+        'Server Hosting/Extending Servers/DedicatedWorkshopUpdateMonitor.md': 'Server-Hosting/Extending-Servers/DedicatedWorkshopUpdateMonitor.md'
 
   # Site page tree
 nav:
@@ -104,14 +113,14 @@ nav:
       - 'Modding/mapmaking/LevelAsset.md'
       - 'Modding/mapmaking/LevelConfig.md'
   - Server Hosting:
-    - Server Hosting: 'Server Hosting/ServerHosting.md'
-    - 'Server Hosting/PortForwarding.md'
-    - 'Server Hosting/Rocket.md'
-    - 'Server Hosting/GameServerLoginTokens.md'
+    - Server Hosting: 'Server-Hosting/ServerHosting.md'
+    - 'Server-Hosting/PortForwarding.md'
+    - 'Server-Hosting/Rocket.md'
+    - 'Server-Hosting/GameServerLoginTokens.md'
     - Extending Servers:
-      - 'Server Hosting/Extending Servers/CommandIO.md'
-      - 'Server Hosting/Extending Servers/CraftingBlacklistAsset.md'
-      - 'Server Hosting/Extending Servers/DedicatedWorkshopUpdateMonitor.md'
+      - 'Server-Hosting/Extending-Servers/CommandIO.md'
+      - 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
+      - 'Server-Hosting/Extending-Servers/DedicatedWorkshopUpdateMonitor.md'
   - Support:
     - 'support/Troubleshooting/LogFiles.md'
     - 'support/Troubleshooting/verifyGameFiles.md'
