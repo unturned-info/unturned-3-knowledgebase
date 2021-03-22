@@ -117,6 +117,7 @@ nav:
     - 'Server-Hosting/PortForwarding.md'
     - 'Server-Hosting/Rocket.md'
     - 'Server-Hosting/GameServerLoginTokens.md'
+    - 'Server-Hosting/GameUpdateNotifications.md'
     - Extending Servers:
       - 'Server-Hosting/Extending-Servers/CommandIO.md'
       - 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
