@@ -19,9 +19,7 @@
   .commento-profile-button {
   color: inherit;
 }
-  .commento-root
-  .commento-logged-container
-  .commento-profile-button {
+.commento-root .commento-logged-container .commento-profile-button {
   color: inherit;
 }
 .commento-root textarea {
@@ -30,5 +28,21 @@
 }
 
 .commento-root .commento-card {
-    border-radius: .1rem
+  border-radius: 0.1rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.commento-root .commento-footer .commento-logo-container .commento-logo-text {
+  color: inherit;
+}
+
+.commento-root .commento-card .commento-option-collapse {
+  color: var(--md-default-fg-color--lighter);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 0 20 0 22 20 22 22 22 42 22" fill="%231e2127"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 0 20 0 22 20 22 22 22 42 22" fill="%231e2127"/></svg>');
+}
+.commento-root .commento-card .commento-option-uncollapse {
+  color: var(--md-default-fg-color--lighter);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 22 20 22 0 20 0 20 20 0 20 0 22 20 22 20 42 22 42 22 22 42 22" fill="%231e2127"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg enable-background="new 0 0 42 42" version="1.1" viewBox="0 0 42 42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon points="42 20 22 20 22 0 20 0 20 20 0 20 0 22 20 22 20 42 22 42 22 22 42 22" fill="%231e2127"/></svg>');
 }
