@@ -13,14 +13,26 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    # options: default, slate, preference
-    scheme: preference
-    primary: indigo
-    # accent: green
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   language: en
   features:
     - navigation.tabs
-    - instant
     - navigation.expand
 google_analytics:
   - UA-172735417-2
