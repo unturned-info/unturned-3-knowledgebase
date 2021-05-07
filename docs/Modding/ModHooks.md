@@ -44,6 +44,13 @@ Events for driver entering and exiting the vehicle.
 !!! info
     These events are fired on server and client.
 
+### Vehicle Turret Event Hook
+
+Events for when Turret_X gameobjects are used.
+
+!!! info
+    These events are fired on server and client.
+
 ### Weather Event Hook
 
 Events for day, night, full moon, and weather.
