@@ -1,5 +1,8 @@
 # Item Data
 
+!!! info inline end
+    This page is likely outdated, you can help by submitting a pull request
+
 __Items__ in _Unturned_ encompass anything that can be carried in a player's in-game inventory. All items share some properties, while each item type has its own unique data. All of the data applicable to each possible item type can be found below.
 
 - [Item Data](#item-data)
@@ -108,9 +111,9 @@ __Override_Show_Quality__:
 
 __Durability__: Either a decimal probability chance of quality loss upon action, or guaranteed loss and durability value is instead representative of the amount lost.
 
-* _Canteens_: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
-* _Melee Weapons_: Decimal probability chance of quality loss occurs upon hitting.
-* _Ranged Weapons_: Decimal probability chance of quality loss occurs upon shooting.
+- _Canteens_: Guaranteed quality loss occurs upon drinking. Durability value represents the amount of quality loss.
+- _Melee Weapons_: Decimal probability chance of quality loss occurs upon hitting.
+- _Ranged Weapons_: Decimal probability chance of quality loss occurs upon shooting.
 
 __Wear__: Increment to degrade quality by. Only applicable to items where durability represents a decimal probability chance of quality loss.
 
@@ -440,7 +443,7 @@ __Useable__: `Barricade`
 
 __Build__: `Oil`
 
-__Fuel_Capacity__: Numerical maximum capacity of fuel units able to be stored. 
+__Fuel_Capacity__: Numerical maximum capacity of fuel units able to be stored.
 
 ### Plants
 
