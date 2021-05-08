@@ -1,5 +1,4 @@
-Assets v2
-=========
+# Assets v2
 
 For the vast majority of older features like items, vehicles, effects, etc refer to [Assets v1](AssetsV1.md).
 
@@ -11,26 +10,24 @@ The main advantages of the newer assets are:
 
 3. Visual editor. There has been work on an inspector in the devkit for creating and editing assets rather than manually modifying files. At the time of writing (early 2020) this is no longer a priority sadly.
 
-File Format
------------
+## File Format
 
 Any `.asset` file is treated as v2. Lines starting with `//` are comments. Keys and values are wrapped in quotes. Curly braces `{ }` wrap objects and square brackets `[ ]` wrap arrays.
 
-	"Key" "Value"
-	"Object"
-	{
-		"Key" "Value"
-	}
-	"Array"
-	[
-		{
-			"Key" "Value"
-		}
-		{ "Key" "Value" }
-	]
+    "Key" "Value"
+    "Object"
+    {
+        "Key" "Value"
+    }
+    "Array"
+    [
+        {
+            "Key" "Value"
+        }
+        { "Key" "Value" }
+    ]
 
-Header
-------
+## Header
 
 Each asset has a `Metadata` section for preparing to load.
 
@@ -38,18 +35,17 @@ Each asset has a `Metadata` section for preparing to load.
 
 `Type` *string*: Fully qualified name of any class in any module.
 
-	"Metadata"
-	{
-		"GUID" "7e4b847061b64272b42ea8869fd053c7"
-		"Type" "SDG.Unturned.Asset"
-	}
+    "Metadata"
+    {
+        "GUID" "7e4b847061b64272b42ea8869fd053c7"
+        "Type" "SDG.Unturned.Asset"
+    }
 
-Body
-----
+## Body
 
 The `Asset` body contains any class properties. Individual asset type documentation elaborates on these.
 
-	"Asset"
-	{
-		"Key" "Value"
-	}
+    "Asset"
+    {
+        "Key" "Value"
+    }

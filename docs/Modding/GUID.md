@@ -1,5 +1,4 @@
-GUID
-====
+# GUID
 
 Globally Unique Identifiers (**GUID**s) are 32 digit numbers used to identify assets. They are preferable to file names because the files can be moved without redirectors.
 

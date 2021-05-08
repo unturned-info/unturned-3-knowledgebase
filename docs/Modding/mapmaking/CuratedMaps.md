@@ -1,13 +1,10 @@
-Curated Maps
-============
+# Curated Maps
 
-Overview
---------
+## Overview
 
 Community-created updates and maps that are officially linked from the game are considered __Curated Maps__. They help players find high-quality new experiences, and keep the game updated with fresh content. Modders can then earn money from their work on their hobby, and get their creations highlighted.
 
-Menu Visibility
----------------
+## Menu Visibility
 
 One key component of sharing a curated map, trending popular workshop item, or specifically featured map is spotlighting it on the main menu. In any of these cases an article is placed above the recent news and announcements showcasing the preview image, and an expandable description.
 
@@ -27,8 +24,7 @@ By default popular items are surfaced, but workshop items can be specifically fe
 
 Additionally, curated maps are linked from the singleplayer curated maps list, and will inherit the main menu "new" or "updated" label.
 
-Quality Assurance
------------------
+## Quality Assurance
 
 The primary focus of this article at the time of posting is to begin laying out standards to help ensure top quality between maps. This will be an iterative process, and is open to collaboration and feedback from the community.
 
@@ -50,8 +46,7 @@ __Visibility Overlay__: The visibility menu in the editor sums the mesh complexi
 
 __Item Icons__: Each item should have a proper icon in the inventory. One way to quickly preview the icon is to attach an orthographic camera in Unity, and tune the orthographic size before setting the size in the .dat file.
 
-Stockpile Preparation
----------------------
+## Stockpile Preparation
 
 Each curated map release is usually accompanied by a few cosmetics and skins in the game's item store. Royalties from the sales are shared with the mod team. Even if a project is not eligible for curation, it may be appropriate to have some support-the-creator items in the Stockpile e.g. the Candyland map.
 
@@ -63,9 +58,7 @@ __Bundles__: Two or three collections of sets of four to six items.
 
 __Mystery Boxes__: Fifteen to twenty items that have individual value (not parts of sets like a shirt/pants).
 
-
-Eligibility for Curation
-------------------------
+## Eligibility for Curation
 
 Even if a map is of substantial quality, it may not be eligible for curation. When considering eligibility, it is important that the map fits the vanilla style of the game.
 

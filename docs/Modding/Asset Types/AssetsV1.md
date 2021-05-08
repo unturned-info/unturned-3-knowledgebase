@@ -1,30 +1,27 @@
-Assets v1
-=========
+# Assets v1
 
 Unturned **assets** associate game data with Unity asset bundles. They are stored in `.dat` files. When scanning a folder for assets the game looks for a `.dat` file with the same name as the folder, or an `Asset.dat` file.
 
 Newer features use [Assets v2](AssetsV2.md), but it is unlikely that older features will be ported.
 
-File Format
------------
+## File Format
 
 Empty lines and lines starting with `//` are treated as comments. Otherwise every line is a key-value pair with a space separating the key from the value. Keys must be unique within the file.
 
 Arrays or lists are typically handled by a key specifying the number of items, and then appending the index number to each element's key. For example:
 
-	// Total number of elements in list
-	Blueprints 2
+    // Total number of elements in list
+    Blueprints 2
 
-	// First element has an index of 0
-	Blueprint_0 A
+    // First element has an index of 0
+    Blueprint_0 A
 
-	// Second element has an index of 1
-	Blueprint_1 B
+    // Second element has an index of 1
+    Blueprint_1 B
 
 Occasionally there are asset types that simply look for the presence of a particular key, not its value. These are referred to as flags. For example: item assets check for the `Pro` flag marking that it is a Steam economy item.
 
-Game Data
----------
+## Game Data
 
 `Type` *string*: Specific guides will list individual type names. This determines which keys the game will read.
 
@@ -32,8 +29,7 @@ Game Data
 
 `GUID` *string*: Refer to [GUID](../GUID.md) documentation. Several newer features refer to v1 assets by their GUID. If left empty the game will prepend a GUID during startup.
 
-Unity Asset Bundles
--------------------
+## Unity Asset Bundles
 
 Each Unturned asset is associated with a Unity asset bundle. If there is a master bundle in the file hierarchy that takes priority, otherwise a `.unity3d` bundle with the same name as the `.dat` file is used. There are several keys available to control the asset bundle:
 
@@ -45,7 +41,6 @@ Each Unturned asset is associated with a Unity asset bundle. If there is a maste
 
 `Bundle_Override_Path` *string*: path within the master bundle to load rather than this asset's file path.
 
-Localization
-------------
+## Localization
 
 Each asset looks for a localization `.dat` file in the same directory based on the current language. For example: `English.dat` or `French.dat`.

@@ -1,5 +1,4 @@
-Asset Validation
-================
+# Asset Validation
 
 During startup the game runs fast basic health checks on assets while loading, but there are a variety of slower tests available. These can be enabled with the __-ValidateAssets__ command-line flag. Errors are logged to the Client.log file, as well as to the Asset Errors menu.
 

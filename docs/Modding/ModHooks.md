@@ -28,10 +28,10 @@ Invoked when a GameObject or component is removed from the scene.
 
 ### Text Chat Event Hook
 
-Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase. 
+Event when a text chat message passes certain filters such as channel, within a radius, and containing a secret phrase.
 
 !!! info
-    Only fired on the server.
+    These events are fired on the server.
 
 ### Timer Event Hook
 
@@ -42,21 +42,21 @@ Allows events to set or cancel a timer, and triggers an event when the timer exp
 Events for driver entering and exiting the vehicle.
 
 !!! info
-    These events are fired on server and client.
+    These events are fired on the server and client.
 
 ### Vehicle Turret Event Hook
 
 Events for when Turret_X gameobjects are used.
 
 !!! info
-    These events are fired on server and client.
+    These events are fired on the server and client.
 
 ### Weather Event Hook
 
 Events for day, night, full moon, and weather.
 
 !!! info
-    These events are fired on server and client.
+    These events are fired on the server and client.
 
 ### Custom Weather Event Hook
 

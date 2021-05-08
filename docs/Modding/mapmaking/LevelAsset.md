@@ -1,5 +1,4 @@
-Level Asset
-===========
+# Level Asset
 
 Each map can be associated with a **Level Asset**. These assets contain gameplay information not necessary for the main menus. Refer to [Level Config](LevelConfig.md) for information on linking a level asset to a map.
 

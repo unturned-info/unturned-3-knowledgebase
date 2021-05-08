@@ -1,5 +1,4 @@
-Character Mesh Replacement
-==========================
+# Character Mesh Replacement
 
 The player's character mesh can be entirely replaced with a special shirt item. There's an example CharacterMeshReplacementTest item (ID 1522), as well as example source files in the ExampleAssets.unitypackage under the Shirts directory.
 

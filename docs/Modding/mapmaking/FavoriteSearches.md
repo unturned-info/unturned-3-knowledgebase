@@ -1,5 +1,4 @@
-Favorite Searches
-=================
+# Favorite Searches
 
 The objects editor supports __Favorite Searches__ which allows lists of objects to be quickly looked up.
 
@@ -7,10 +6,10 @@ Entering "fv:xyz" in the search bar loads xyz.txt from the game folder, and will
 
 For example this matches anything with "fire" in the name or Road Line Cap #1:
 
-	// Fire related props
-	Fire
+    // Fire related props
+    Fire
 
-	// Specific road prop
-	Cap #1 Road Line
+    // Specific road prop
+    Cap #1 Road Line
 
 Recursive usage of filters is supported, so multiple favorite searches can be nested, or other filter types e.g. "Tunnel mb:core" includes tunnels from the vanilla objects.

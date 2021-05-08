@@ -1,8 +1,6 @@
-Foliage
-=======
+# Foliage
 
-Upgrade Devkit Foliage from V1 to V2
-------------------------------------
+## Upgrade Devkit Foliage from V1 to V2
 
 V1 of devkit foliage unfortunately saved small individual regions into their own files, which makes maps slow to copy, download and install. V2 fixes this by storing pointers for each region into a single file at the cost of RAM in editor.
 
