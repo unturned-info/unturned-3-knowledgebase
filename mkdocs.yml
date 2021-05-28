@@ -128,6 +128,7 @@ nav:
     - Server Hosting: 'Server-Hosting/ServerHosting.md'
     - 'Server-Hosting/PortForwarding.md'
     - 'Server-Hosting/Rocket.md'
+    - 'Server-Hosting/Monetization.md'
     - 'Server-Hosting/GameServerLoginTokens.md'
     - 'Server-Hosting/GameUpdateNotifications.md'
     - Extending Servers:
