@@ -8,6 +8,6 @@ For examples check the `Assets/Levels` directory.
 
 `Airdrop` [Asset Pointer](../AssetPtr.md): to an [Airdrop Asset](../AirdropAsset.md). Overrides the falling care package model.
 
-`Crafting_Blacklists` array of [Asset Pointers](../AssetPtr.md) to [Crafting Blacklist(s)](../../Server%20Hosting/Extending%20Servers/CraftingBlacklistAsset.md). Prevents specific items or blueprints from being used while crafting in the level.
+`Crafting_Blacklists` array of [Asset Pointers](../AssetPtr.md) to [Crafting Blacklist(s)](../../Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md). Prevents specific items or blueprints from being used while crafting in the level.
 
 This is an [Asset v2](../Asset%20Types/AssetsV2.md) class.
