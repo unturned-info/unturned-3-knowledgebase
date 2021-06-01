@@ -89,6 +89,12 @@ plugins:
         'Server Hosting/Extending Servers/CommandIO.md': 'Server-Hosting/Extending-Servers/CommandIO.md'
         'Server Hosting/Extending Servers/CraftingBlacklistAsset.md': 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
         'Server Hosting/Extending Servers/DedicatedWorkshopUpdateMonitor.md': 'Server-Hosting/Extending-Servers/DedicatedWorkshopUpdateMonitor.md'
+        'Modding/Asset Properties References/ItemData.md': 'Modding/AssetPropertiesReferences/ItemData.md'
+        'Modding/Asset Properties References/VehicleData.md': 'Modding/AssetPropertiesReferences/VehicleData.md'
+        'Modding/Asset Types/AssetsV1.md': 'Modding/AssetTypes/AssetsV1.md'
+        'Modding/Asset Types/AssetsV2.md': 'Modding/AssetTypes/AssetsV2.md'
+        'support/Common Issues.md': 'support/CommonIssues.md'
+
 
   # Site page tree
 nav:
@@ -101,8 +107,8 @@ nav:
     - 'Modding/GUID.md'
     - 'Modding/ModHooks.md'
     - Assets:
-      - 'Modding/Asset Types/AssetsV1.md'
-      - 'Modding/Asset Types/AssetsV2.md'
+      - 'Modding/AssetTypes/AssetsV1.md'
+      - 'Modding/AssetTypes/AssetsV2.md'
       - 'Modding/AssetPtr.md'
       - 'Modding/MasterBundlePtr.md'
     - 'Modding/AirdropAsset.md'
@@ -114,8 +120,8 @@ nav:
     - 'Modding/Unity2018.md'
     - 'Modding/WeatherAsset.md'
     - Asset Properties References:
-      - 'Modding/Asset Properties References/ItemData.md'
-      - 'Modding/Asset Properties References/VehicleData.md'
+      - 'Modding/AssetPropertiesReferences/ItemData.md'
+      - 'Modding/AssetPropertiesReferences/VehicleData.md'
       - 'Modding/VehiclePhysicsProfile.md'
     - Mapmaking:
       - 'Modding/mapmaking/FavoriteSearches.md'

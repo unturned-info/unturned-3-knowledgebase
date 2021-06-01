@@ -1,6 +1,6 @@
 # Vehicle Physics Profile
 
-!!! note "This is an [Asset v2](Asset%20Types/AssetsV2.md) class."
+!!! note "This is an [Asset v2](AssetTypes/AssetsV2.md) class."
 
 This asset exists to tune vehicle physics in bulk without rebuilding asset bundles, and exposes more control than the individual vehicle assets.
 

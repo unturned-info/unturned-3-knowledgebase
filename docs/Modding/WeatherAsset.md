@@ -1,6 +1,6 @@
 # Weather Asset
 
-!!! note "This is an [Asset v2](Asset%20Types/AssetsV2.md) class."
+!!! note "This is an [Asset v2](AssetTypes/AssetsV2.md) class."
 
 Overrides the built-in snow and rain weather with custom events. This is feature is a work-in-progress.
 

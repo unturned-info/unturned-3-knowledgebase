@@ -32,4 +32,4 @@ Prevents specific items or blueprints from being used while crafting. They are h
 ```
 
 !!! note
-    This is an [Asset v2](../../Modding/Asset%20Types/AssetsV2.md) class.
+    This is an [Asset v2](../../Modding/AssetTypes/AssetsV2.md) class.

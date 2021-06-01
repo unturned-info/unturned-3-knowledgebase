@@ -1,6 +1,6 @@
 # Currency
 
-!!! note "This is an [Asset v2](Asset%20Types/AssetsV2.md) class."
+!!! note "This is an [Asset v2](AssetTypes/AssetsV2.md) class."
 
 Any collection of items with different numeric values can be associated together in a __Currency__ asset. NPCs can then automatically convert between the different items, and vendor menus can display information using the linked currency. This is intended to be useful beyond real-world currencies, e.g. bartering ammunition.
 
