@@ -515,19 +515,25 @@ __Useable__: `Backpack`, `Glasses`, `Hat`, `Mask`, `Pants`, `Shirt`, `Vest`
 
 __Armor__: Decimal multiplier on incoming damage.
 
+__Armor_Explosion__: Decimal multiplier on incoming explosive damage. Defaults to Armor value.
+
+__Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
+
+__Proof_Water__: Specified if the item should .
+
+__Proof_Fire__: Specified if .
+
 __Width__: The amount of horizontal storage space.
 
 __Height__: The amount of vertical storage space.
 
-__Hair__: Specified if hair shows up when wearing. Only applicable to hats, masks, and glasses.
+__Hair_Visible__: Specified if hair should show up when worn. Only applicable to hats, masks, and glasses.
 
-__Beard__: Specified if beard shows up when wearing. Only applicable to hats, masks, and glasses.
+__Beard_Visible__: Specified if beard should show up when worn. Only applicable to hats, masks, and glasses.
 
 __Hair_Override__: Specified if hair material should be used. Only applicable to hats, masks, and glasses.
 
 __Pro__: Specified if the item should be unable to spawn. Intended for cosmetics.
-
-__Visible_On_Ragdoll__: `false`, `true`. Defaults to true.
 
 ### Glasses
 
