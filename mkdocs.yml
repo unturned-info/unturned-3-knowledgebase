@@ -34,10 +34,13 @@ theme:
   features:
     - navigation.tabs
     - navigation.expand
-google_analytics:
-  - UA-172735417-2
-  - auto
+# google_analytics:
+#   - UA-172735417-2
+#   - auto
 extra:
+  analytics:
+    provider: google
+    property: G-251173623
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/PgJCPh6
