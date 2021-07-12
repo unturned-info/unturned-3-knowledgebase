@@ -19,4 +19,8 @@ _site/
 # Ignore all local history of files
 .history
 
+site/
+
+*.pyc
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jekyll
