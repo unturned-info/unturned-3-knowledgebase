@@ -48,13 +48,6 @@
 
 ## About
 
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions - just the ones relevant to your project.
-
 A dedicated knowledgebase for Unturned 3 housing documentation for modding, server hosting, and other misc features designed to be easy to read and community focused.
 
 ### Built With
