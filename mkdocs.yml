@@ -34,9 +34,10 @@ theme:
   features:
     - navigation.tabs
     - navigation.expand
-# google_analytics:
-#   - UA-172735417-2
-#   - auto
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
 extra:
   analytics:
     provider: google
