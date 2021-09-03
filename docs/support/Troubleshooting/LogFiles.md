@@ -2,7 +2,7 @@
 
 Your log files contain important troubleshooting information.
 
-## finding your log files
+## Finding your log files
 
 1. Navigate to your unturned folder
     1. Open your steam library
