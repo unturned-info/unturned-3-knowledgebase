@@ -22,7 +22,7 @@ Forwarding the ports directs them to a LAN address, i.e. the computer hosting th
     2. Type `cmd` and press enter.
     3. Type `ipconfig` in the command prompt and press enter.
     4. Find the `Wireless LAN adapter Wi-Fi` or `Ethernet adapter Ethernet` header.
-    5. Look for the `IPv4 Address` value and make note of it. This is the local address to forward the ports to. It likely looks something like `192.168.0.6`.
+    5. Look for the `IPv4 Address` value and make note of it. This is the internal IP you will forward the ports to. It likely looks something like `192.168.0.6`.
 
 === "Ubuntu"
     1. Open a terminal of your choice.
@@ -32,7 +32,7 @@ Forwarding the ports directs them to a LAN address, i.e. the computer hosting th
 !!! note
     You can also find your localhost address under the networking menu within the GUI.
 
-## How to Forward Ports
+## Forwarding Ports
 
 Instructions vary by router but should be doable from the web browser without any extra tools or software. This third-party website has a thorough list of routers with simple steps for each model: <https://portforward.com/router.htm>
 
@@ -53,8 +53,11 @@ In general, the steps are along the lines of:
 6. Input 27015 as the starting port(s), and 27017 as the ending port(s).
 
     !!! Note
-        On some routers, it might not be possible to input multiple ports within a single rule. In that case, multiple rules can be set up; one for each of the three ports.
+        On some routers, it may not be possible to input multiple ports within a single rule. In that case, multiple rules can be set up; one for each of the three ports.
 
 7. Enable TCP **and** UDP protocols.
 8. Set destination internal IP to the localhost address. In the previous example, our localhost address was `192.168.0.6`
 9. Save the new rule.
+
+!!! Important
+    Other players outside of your LAN will need to use your public IP to direct connect to your server.

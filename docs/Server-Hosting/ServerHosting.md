@@ -1,5 +1,10 @@
 # Server Hosting
 
+!!! Warning
+    **New Unturned server hosting rules are in effect**
+
+    Read [the Server Monetization Policy page](/docs/Server-Hosting/Monetization.md) for more info.
+
 All multiplayer servers are hosted using the Unturned Dedicated Server tool, which is installed and updated through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
 ???+ Tip "Windows Server Hosting Tutorial Video"
@@ -9,9 +14,9 @@ All multiplayer servers are hosted using the Unturned Dedicated Server tool, whi
 
 __Multiplatform:__
 
-- [How to Configure Server](#How-to-Configure-Server)
+- [How to Configure Server](#How-to-Configure-a-Server)
 - [How to Host Curated Maps](#How-to-Host-Curated-Maps)
-- [How to Host Over Internet](#How-to-Host-Over-Internet)
+- [How to Host Over Internet](#How-to-Host-Over-the-Internet)
 - [Port Forwarding](PortForwarding.md)
 - [RocketMod](Rocket.md)
 
