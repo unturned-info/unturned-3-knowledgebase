@@ -209,6 +209,8 @@ Curated maps are available as workshop items, so are configured in the `Workshop
     | Greece          | 1702240229 |
     | Hawaii          | 1753134636 |
     | Rio de Janeiro  | 1821848824 |
+    | Elver           | 2136497468 |
+    | Kuwait          | 2483365750 |
 
 ## How to Host Over the Internet
 
