@@ -42,11 +42,19 @@ __Arena\_Loadouts__: Array of items to grant when spawning into arena. Each entr
 
 ## General
 
-__Asset__: Object with GUID of [Level Asset](LevelAsset.md) to instantiate on this map. For example:
+__Asset__: Object with GUID of a [Level Asset](LevelAsset.md) to instantiate on this map. For example:
 
 ```json
 "Asset": { "GUID": "12dc9fdbe9974022afd21158ad54b76a" }
 ```
+For instance, to add Yukon's gentle constant snowfall to your map, you would add this JSON to your config (assuming you have no Asset key alread):
+```json
+"Asset":
+{
+    "GUID": "537278c5f6eb45198994ff2915d3107b"
+}
+```
+This adds a [Weather Asset](WeatherAsset.md) type Asset V2 to your map.
 
 __Trains__: Array of train vehicles to spawn. Only one of each train asset can exist at a given time because the vehicle ID is used to match saved trains to tracks. Road index can be seen by selecting a road in the level editor. Placement is normalized between the start and end of the track length. For example:
 
