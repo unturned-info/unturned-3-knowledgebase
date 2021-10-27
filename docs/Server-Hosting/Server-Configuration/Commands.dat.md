@@ -154,10 +154,10 @@ Advanced Game rules you can change in [Config.json](../Config.json)
 	Example: "Queue_size 10"
 ---
 ### GSLT
-About [GSLT](../../GameServerLoginTokens/)
+About [GSLT](../../Explanations/GameServerLoginTokens)
 
 	Example: "GSLT 45GB94HDF654HFDDFHD6546FD" (45GB94HDF654HFDDFHD6546FD=Login Token changed it to your own Token)
 ---
 
 
-Game rules, listing display, and many other options for server are available in the [Config.json](Config.json) file.
+Game rules, listing display, and many other options for server are available in the [Config.json](../Config.json) file.
