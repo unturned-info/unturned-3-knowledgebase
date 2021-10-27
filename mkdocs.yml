@@ -128,23 +128,31 @@ nav:
       - 'Modding/AssetPropertiesReferences/VehicleData.md'
       - 'Modding/VehiclePhysicsProfile.md'
     - Mapmaking:
-      - 'Modding/mapmaking/FavoriteSearches.md'
+      - 'Modding/mapmaking/FavqqoriteSearches.md'
       - 'Modding/mapmaking/CuratedMaps.md'
       - 'Modding/mapmaking/Foliage.md'
       - 'Modding/mapmaking/Landscape.md'
       - 'Modding/mapmaking/LevelAsset.md'
       - 'Modding/mapmaking/LevelConfig.md'
   - Server Hosting:
-    - Server Hosting: 'Server-Hosting/ServerHosting.md'
-    - 'Server-Hosting/PortForwarding.md'
-    - 'Server-Hosting/Rocket.md'
-    - 'Server-Hosting/Monetization.md'
-    - 'Server-Hosting/GameServerLoginTokens.md'
-    - 'Server-Hosting/GameUpdateNotifications.md'
+    - Getting Started:
+      - 'Server-Hosting/Getting-Started/ServerHosting.md'
+      - 'Server-Hosting/Getting-Started/PortForwarding.md'
+    - Server Configuration:
+      - 'Server-Hosting/Server-Configuration/Commands.dat.md'
+      - 'Server-Hosting/Server-Configuration/Config.json.md'
+      - 'Server-Hosting/Server-Configuration/WorkshopDownloadConfig.json.md'
+    - Modules & Plugins:
+      - 'Server-Hosting/Modules-Plugins/Rocket.md'
     - Extending Servers:
       - 'Server-Hosting/Extending-Servers/CommandIO.md'
       - 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
       - 'Server-Hosting/Extending-Servers/DedicatedWorkshopUpdateMonitor.md'
+    - Explanations:
+      - 'Server-Hosting/Explanations/CuratedMaps.md'
+      - 'Server-Hosting/Explanations/Monetization.md'
+      - 'Server-Hosting/Explanations/GameServerLoginTokens.md'
+      - 'Server-Hosting/Explanations/GameUpdateNotifications.md'
   - Support:
     - 'support/Troubleshooting/LogFiles.md'
     - 'support/Troubleshooting/verifyGameFiles.md'
