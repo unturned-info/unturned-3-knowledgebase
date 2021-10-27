@@ -12,11 +12,11 @@ Use Unturned's app ID `304930`, and a memo to remind you which server the token 
 
 The GSLT can be set in one of two places depending on your preference:
 
-- With the `Login_Token` property in each server's `Config.json` file under the `Browser` section.
+- With the `Login_Token` property in each server's [`Config.json`](../../Server-Configuration/Config.json) file under the `Browser` section.
 
 OR
 
-- Using the `GSLT` command during startup. This can be specified in the `Commands.dat` file or on the command-line.
+- Using the `GSLT` command during startup. This can be specified in the [`Commands.dat`](../../Server-Configuration/Commands.dat) file or on the [command-line](../../Server-Configuration/Commands.dat/#startup-command-line).
 
 ## Automating GSLTs
 
