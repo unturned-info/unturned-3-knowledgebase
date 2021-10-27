@@ -7,7 +7,7 @@
 
 ## Server Monetization Filter
 
-To accompany the Server Monetization Policy, servers can now specify their level of Monetization in the `config.json` file. By default, your server will be set to `Unspecified`. Users will be able to filter out servers based on their monetization policy, so it is likely in your best interest to set it accurately.
+To accompany the Server Monetization Policy, servers can now specify their level of Monetization in the [`Config.json`](../../Server-Configuration/Config.json) file. By default, your server will be set to `Unspecified`. Users will be able to filter out servers based on their monetization policy, so it is likely in your best interest to set it accurately.
 
 !!! warning
     If you choose to set this field, ensure it is accurate.
