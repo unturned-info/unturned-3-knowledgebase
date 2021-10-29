@@ -86,10 +86,10 @@ plugins:
       minify_html: true
   - redirects:
       redirect_maps:
-        'Server Hosting/ServerHosting.md': 'Server-Hosting/ServerHosting.md'
-        'Server Hosting/PortForwarding.md': 'Server-Hosting/PortForwarding.md'
-        'Server Hosting/Rocket.md': 'Server-Hosting/Rocket.md'
-        'Server Hosting/GameServerLoginTokens.md': 'Server-Hosting/GameServerLoginTokens.md'
+        'Server Hosting/ServerHosting.md': 'Server-Hosting/Getting-Started/ServerHosting.md'
+        'Server Hosting/PortForwarding.md': 'Server-Hosting/Getting-Started/PortForwarding.md'
+        'Server Hosting/Rocket.md': 'Server-Hosting/Modules-Plugins/Rocket.md'
+        'Server Hosting/GameServerLoginTokens.md': 'Server-Hosting/Explanations/GameServerLoginTokens.md'
         'Server Hosting/Extending Servers/CommandIO.md': 'Server-Hosting/Extending-Servers/CommandIO.md'
         'Server Hosting/Extending Servers/CraftingBlacklistAsset.md': 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
         'Server Hosting/Extending Servers/DedicatedWorkshopUpdateMonitor.md': 'Server-Hosting/Extending-Servers/DedicatedWorkshopUpdateMonitor.md'
@@ -98,6 +98,12 @@ plugins:
         'Modding/Asset Types/AssetsV1.md': 'Modding/AssetTypes/AssetsV1.md'
         'Modding/Asset Types/AssetsV2.md': 'Modding/AssetTypes/AssetsV2.md'
         'support/Common Issues.md': 'support/CommonIssues.md'
+        'Server-Hosting/ServerHosting.md': 'Server-Hosting/Getting-Started/ServerHosting.md'
+        'Server-Hosting/PortForwarding.md': 'Server-Hosting/Getting-Started/PortForwarding.md'
+        'Server-Hosting/Rocket.md': 'Server-Hosting/Modules-Plugins/Rocket.md'
+        'Server-Hosting/GameServerLoginTokens.md': 'Server-Hosting/Explanations/GameServerLoginTokens.md'
+        'Server-Hosting/Monetization.md': 'Server-Hosting/Explanations/Monetization.md'
+        'Server-Hosting/GameUpdateNotifications.md': 'Server-Hosting/Explanations/GameUpdateNotifications.md'
 
 
   # Site page tree
