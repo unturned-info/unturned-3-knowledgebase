@@ -144,6 +144,15 @@ Meaning the each individual ServerID has its own save data and configuration.
 Startup commands can be specified in the 
 `ServerID > Server >` [`Commands.dat`](../../Server-Configuration/Commands.dat) file, or on the command-line (script) with [`-CommandName/Argument`](../../Server-Configuration/Commands.dat).
 
+### Launch Commands
+ Launch Commands was moved to the [`Commands.dat`](../../Server-Configuration/Commands.dat) file.
+ 
+## How to Host Curated Maps
+ This explanation was moved to the [Curated Maps](../../Explanations/CuratedMaps) site.
+ 
+### Workshop add-ons
+ Workshop add-ons was moved to the [`WorkshopDownloadConfig.json`](../../Server-Configuration/WorkshopDownloadConfig.json) file.
+
 ## How to Host Over the Internet
 
 Hosting a publicly-accessible internet server requires an extra step compared to a LAN server. When on a home network [Port Forwarding](PortForwarding.md) is required to direct traffic to the host computer.
