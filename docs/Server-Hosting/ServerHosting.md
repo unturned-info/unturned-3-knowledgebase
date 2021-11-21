@@ -3,13 +3,12 @@
 !!! Warning
     **New Unturned server hosting rules are in effect**
 
-    Read [the Server Monetization Policy page](/docs/Server-Hosting/Monetization.md) for more info.
+    Read [the Server Monetization Policy page](/docs/Server-Hosting/Monetization.md) for more info
     
- !!! Warning
+!!! Warning
      ***All* servers must use a valid Game Server Login Token in order to appear on the server list.**
 
     Read the [GSLT page](/docs/Server-Hosting/GameServerLoginTokens.md) for more information    
-   Read the [GSLT page](/docs/Server-Hosting/GameServerLoginTokens.md) for more information    
 
 All multiplayer servers are hosted using the Unturned Dedicated Server tool, which is installed and updated through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
