@@ -2,7 +2,7 @@
 
 Curated maps are available as workshop items, so are configured in the [WorkshopDownloadConfig.json](../../Server-Configuration/WorkshopDownloadConfig.json) file. During startup, the [Map command](../../Server-Configuration/Commands.dat/#map) searches installed workshop items for a matching name.
 
-???+ info "Curated Map file IDs"
+??? info "Curated Map file IDs"
 
     | Map             | File ID    |
     | --------------- | ---------- |
