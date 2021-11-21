@@ -4,6 +4,12 @@
     **New Unturned server hosting rules are in effect**
 
     Read [the Server Monetization Policy page](/docs/Server-Hosting/Monetization.md) for more info.
+    
+ !!! Warning
+     ***All* servers must use a valid Game Server Login Token in order to appear on the server list.**
+
+    Read the [GSLT page](/docs/Server-Hosting/GameServerLoginTokens.md) for more information    
+   Read the [GSLT page](/docs/Server-Hosting/GameServerLoginTokens.md) for more information    
 
 All multiplayer servers are hosted using the Unturned Dedicated Server tool, which is installed and updated through Valve's [SteamCMD](https://developer.valvesoftware.com/wiki/SteamCMD) tool.
 
@@ -151,7 +157,8 @@ Common useful commands are:
         Map Washington
         Map Russia
 
-- __Port__: Running multiple internet servers simultaneously requires specifying different ports. Unturned will use the set port for game traffic, port + 1 for server list queries, and port + 2 for the Steam backend. Recommended port values are 27015 for the first server, 27018 for the second server, so on and so forth.
+- __
+__: Running multiple internet servers simultaneously requires specifying different ports. Unturned will use the set port for game traffic, port + 1 for server list queries, and port + 2 for the Steam backend. Recommended port values are 27015 for the first server, 27018 for the second server, so on and so forth.
 
     Examples:
 
