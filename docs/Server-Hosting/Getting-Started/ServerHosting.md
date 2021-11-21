@@ -133,7 +133,7 @@ For an example script, open the built-in `ExampleServer.sh` file.
 ## How to Configure a Server
 
 !!! note 
-    ServerID is the name after the `+InternetServer/` or `+LanServer/` command. For example `+InternetServer/TestServer` will cause server folder named TestServer in the Servers folder.
+    ServerID is the name specified after the `+InternetServer/` or `+LanServer/` argument. For example `+InternetServer/TestServer` will create a server folder named TestServer in the Servers folder.
     Navigate to U3DS > Servers > ServerID.
     See also the [Server Configuration](../../Server-Configuration/Commands.dat) sections.
 
