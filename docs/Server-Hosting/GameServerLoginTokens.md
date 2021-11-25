@@ -1,6 +1,6 @@
 # Game Server Login Tokens
 
-Beginning in version 3.20.4 Unturned dedicated servers can be authenticated using a **Game Server Login Token** or **GSLT**. Verified servers may be given preferential placement on the server list.
+Beginning in version 3.21.31.0, Unturned dedicated servers **must** be authenticated using a **Game Server Login Token** or **GSLT** in order to be displayed on the server list. 
 
 ## Creating GSLTs
 
