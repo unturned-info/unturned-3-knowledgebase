@@ -88,7 +88,7 @@ Together, we can make Unturned.Info **better**!
 
 First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
 
-We have set up a separate document containing our [contribution guidelines](docs/CONTRIBUTING.md).
+We have set up a separate document containing our [contribution guidelines](https://github.com/Nonanti/unturned-3-knowledgebase/blob/master/contributing.md).
 
 Thank you for being involved!
 
