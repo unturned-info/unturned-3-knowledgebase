@@ -1,5 +1,7 @@
-mkdocs-material >= 7.2.6
+mkdocs-material >= 7.2.6, == 7.*
 Jinja2>=2.11.1, <3.0.0
 mkdocs-git-revision-date-localized-plugin
 mkdocs-minify-plugin
 mkdocs-redirects
+# versions 2.1 and above remove a method that is required, and Jinja2 doesn't appear to have locked their versions to stop this from breaking everything
+MarkupSafe < 2.1
