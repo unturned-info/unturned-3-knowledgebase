@@ -85,12 +85,12 @@ Continue to: [How to Launch Server on Windows](#How-to-Launch-Server-on-Windows)
 
     === "Internet"
         ```batch
-        start %~dp0ServerHelper.bat +InternetServer/MyServer
+        start "" "%~dp0ServerHelper.bat" +InternetServer/MyServer
         ```
 
     === "LAN"
         ```batch
-        start %~dp0ServerHelper.bat +LanServer/MyServer
+        start "" "%~dp0ServerHelper.bat" +LanServer/MyServer
         ```
 
     !!! note
