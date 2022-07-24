@@ -239,9 +239,9 @@ __Action\_#\_Blueprint\_#\_Index__: ID of the specific blueprint this action sho
 
 __Action\_#\_Key__: `Craft_Bandage`, `Craft_Dressing`, `Craft_Rag`, `Craft_Seed`
 
-__Action_\_#\Text__: Text shown on the action button.
+__Action\_#\_Text__: Text shown on the action button.
 
-__Action_\_#\Tooltip__: Tooltip shown when hovering over the action button.
+__Action\_#\_Tooltip__: Tooltip shown when hovering over the action button.
 
 ## Asset Bundles and Error Handling
 
