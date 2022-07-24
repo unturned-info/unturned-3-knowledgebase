@@ -1,7 +1,7 @@
 # Upgrading from Unity 2017.4 LTS to 2018.4 LTS
 
 !!! attention
-    Unturned is now running on Unity 2019.4
+    Unturned is now running on Unity 2020.3 LTS.
 
 ## Asset Bundles
 
