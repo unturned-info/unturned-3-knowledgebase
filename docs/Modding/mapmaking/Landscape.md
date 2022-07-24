@@ -12,9 +12,13 @@ Pros:
 Cons:
 
 - Devkit is not user-friendly, and improvements to it have been voted low priority.
-- Not all legacy editor features were ported (yet?), so the landscape has to be edited separately from roads, lighting, etc.
+- Not all legacy editor features were ported (yet?).
 
 ## Upgrade Legacy Terrain to Landscape
+
+
+!!! info
+    As of version [3.22.9.0](https://store.steampowered.com/news/app/304930/view/3212766758952510190 "3.22.9.0"), all legacy terrain will be converted automatically to the devkit landscape terrain. Along with that, in this version and future versions of the game, the devkit landscape terrain can now be edited within the regular legacy map editor.
 
 1. Level should have only one Landscape instance spawned from the Type Browser.
 2. Open the Ground Upgrade Wizard.
