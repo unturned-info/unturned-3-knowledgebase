@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://unturned.info/Modding/AssetTesting/</loc>
+         <lastmod>2022-07-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://unturned.info/Modding/AssetValidation/</loc>
          <lastmod>2022-07-24</lastmod>
          <changefreq>daily</changefreq>
