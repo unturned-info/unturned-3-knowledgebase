@@ -12,7 +12,7 @@ Pros:
 Cons:
 
 - Devkit is not user-friendly, and improvements to it have been voted low priority.
-- Not all legacy editor features were ported (yet?).
+- Not all legacy editor features have been ported.
 
 ## Upgrade Legacy Terrain to Landscape
 
