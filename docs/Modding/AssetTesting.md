@@ -1,6 +1,6 @@
 # Testing Assets
 
-When creating custom content for Unturned, you'll need to test your assets for bugs and kinks. Here are some methods of easily reloading your assets.
+When creating custom content for Unturned, you'll need to test your assets for bugs. Here are some methods of easily reloading your assets.
 
 ## Reload Command
 
