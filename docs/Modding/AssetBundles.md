@@ -32,7 +32,7 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 ## Content Bundles (*.content)
 
 !!! warning
-    The game will no longer load .content files due to the fact that master bundles can now support all the features of a .content file. Alongside that, the tool for it has been removed from the Project.unitypackage
+    The game no longer loads .content files. MasterBundles now support all the features of a .content file, and the .content file tooling has been removed from Project.unitypackage
 
 This format was by devkit landscapes, material palettes and radio songs, but has now replaced by master bundles.
 
