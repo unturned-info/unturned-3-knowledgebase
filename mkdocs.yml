@@ -111,7 +111,7 @@ nav:
     - Assets:
       - 'Modding/AssetTypes/AssetsV1.md'
       - 'Modding/AssetTypes/AssetsV2.md'
-      - 'Modding/AssetPtr.md
+      - 'Modding/AssetPtr.md'
       - 'Modding/AssetTesting.md'
       - 'Modding/MasterBundlePtr.md'
     - 'Modding/AirdropAsset.md'
