@@ -31,7 +31,10 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 
 ## Content Bundles (*.content)
 
-This format is used by devkit landscapes, material palettes and radio songs, but is unlikely to see any further use in favor of master bundles. Ideally support for these usages will be transitioned to master bundles.
+!!! warning
+    The game will no longer load .content files due to the fact that master bundles can now support all the features of a .content file. Alongside that, the tool for it has been removed from the Project.unitypackage
+
+This format was by devkit landscapes, material palettes and radio songs, but has now replaced by master bundles.
 
 ### Tool Usage
 
