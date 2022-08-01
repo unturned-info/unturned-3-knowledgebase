@@ -1,4 +1,4 @@
-# Testing Assets
+# Asset Testing
 
 When creating custom content for Unturned, you'll need to test your assets for bugs. Here are some methods of easily reloading your assets.
 
