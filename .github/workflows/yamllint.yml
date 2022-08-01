@@ -2,6 +2,10 @@ name: yaml linter
 on: [pull_request]
 jobs:
   yamllint:
+    permissions:
+      checks: write
+      contents: read
+      pull-requests: write
     name: runner / yamllint
     runs-on: ubuntu-latest
     steps:
