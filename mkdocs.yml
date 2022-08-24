@@ -96,7 +96,9 @@ plugins:
         'Modding/Asset Types/AssetsV1.md': 'Modding/AssetTypes/AssetsV1.md'
         'Modding/Asset Types/AssetsV2.md': 'Modding/AssetTypes/AssetsV2.md'
         'support/Common Issues.md': 'support/CommonIssues.md'
-
+        
+extra_css:
+  - stylesheets/extra.css
 
   # Site page tree
 nav:
