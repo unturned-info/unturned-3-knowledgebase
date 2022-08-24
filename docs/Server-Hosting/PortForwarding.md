@@ -11,7 +11,7 @@ Two pieces of information: the [port range](#port-range) and [local device addre
 
 Each Unturned server uses three consecutive ports while running. The first is used for game traffic, the second for server list queries, and the third for communicating with the Steam backend services.
 
-By default 27015 and 27016 are used. Setting a different value with the `Port` command uses that value and value + 1. Recommended `Port` command settings are 27015 for the first server, 27017 for the second server, 27020 for the third server, so on and so forth.
+By default 27015 and 27016 are used. Setting a different value with the `Port` command uses that value and value + 1. Recommended `Port` command settings are 27015 for the first server, 27017 for the second server, 27019 for the third server, so on and so forth.
 
 ## Local Device Address
 
