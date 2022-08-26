@@ -34,4 +34,3 @@ Raymask layers are used for auto foundation in the map editor as of Unturned ver
 `TIRE` `536870912`
 `TRAP` `1073741824`
 `GROUND2` `-2147483648`
-```
