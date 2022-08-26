@@ -17,3 +17,11 @@ Identifies a Unity asset like a prefab, material or audio clip within a master b
 If the asset default master bundle should be used then the path can be specified inline:
 
 ```"MyMasterBundlePtr" "path/to/file.extension"```
+
+## in \*.dat files
+
+For .dat files, you'll want to put the masterbundle name and its extension behind a `:` in the front of your file path. For example, if I want to get an AudioClip from the core masterbundle:
+
+```core.masterbundle:Sounds/DrinkSwallow.mp3```
+
+This works for .dat lines like ConsumeAudioClip and HornAudioClip.
