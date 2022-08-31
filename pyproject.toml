@@ -6,12 +6,10 @@ authors = [
     { name = "Khakers", email = "22665282+khakers@users.noreply.github.com" },
 ]
 dependencies = [
-    "mkdocs-material==7.*,>=7.2.6",
-    "jinja2<3.0.0,>=2.11.1",
+    "mkdocs-material==8.*,>=8.4.1",
     "mkdocs-git-revision-date-localized-plugin",
     "mkdocs-minify-plugin",
-    "mkdocs-redirects",
-    "markupsafe<2.1",
+    "mkdocs-redirects"
 ]
 requires-python = ">=3.7"
 

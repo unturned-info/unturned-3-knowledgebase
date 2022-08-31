@@ -2,14 +2,12 @@
 
 
 {% block announce %}
-  <style>
-      .md-announce a,
-      .md-announce a:focus,
-      .md-announce a:hover{color:currentColor}.md-announce
-      strong{white-space:nowrap}.md-announce}
-  </style>
-
-<a href="https://discord.gg/PgJCPh6">
+<style>
+  .announcement:not(:hover) {
+    color: #6c91d5;
+  }
+</style>
+<a href="https://discord.gg/PgJCPh6" class="announcement">
     For updates & questions join our
     <span class="twemoji">
             {% include ".icons/fontawesome/brands/discord.svg" %}
