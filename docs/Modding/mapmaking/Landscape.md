@@ -42,6 +42,6 @@ Cons:
 To make sure that people don't glitch under your map, you can use underground whitelist volumes. These will teleport players under the map outside of any whitelist volume to the surface.
 
 1. To enable this feature, go to your map's Config.json and set the `Use_Underground_Whitelist` line to `true`.
-2. Open your map in the DevKit and navigate to your type browser.
-3. Click on core and then on underground whitelist volume, then using the selection tool press `E` to place a underground whitelist volume.
+2. Open your map in the legacy map editor and navigate to the Volumes tab within the Level tab.
+3. Click on underground whitelist volume, then press `E` to place a underground whitelist volume.
 4. You can cycle between different types of tools using `Q`, `W`, and `R`, which allow you to transform, rotate, and scale the volume.
