@@ -44,3 +44,14 @@ __Value__: Total value of currency.
 The built-in "give" command accepts currency GUIDs as an alternative to item IDs. For example the following grants $1,000 CAD to the local player:
 
     /give 5150ca8f765d4a68bfe54912146da410/1000
+
+## Programmer Methods & Properties
+
+`public string valueFormat { get; protected set; }` - The format in which the currency is displayed to the user. For example, `"{0:N0} USD"`.
+
+`public uint getInventoryValue(Player player)` - Returns an unsigned 32-bit integer which is the inventory value based on the currency asset.
+
+`public bool canAfford(Player player, uint value)` - Returns a true or false statement based on if the player can afford to spend a certain amount in that custom currency.
+
+`public void grantValue(Player player, uint requiredValue)` - Gives the player items that add up to the required value based on the currency asset.
+
