@@ -123,6 +123,7 @@ nav:
       - 'Modding/AirdropAsset.md'
       - 'Modding/WeatherAsset.md'
       - 'Modding/mapmaking/LevelAsset.md'
+      - 'Modding/VehiclePhysicsProfile.md'
     - 'Modding/Animation.md'
     - 'Modding/CharacterMeshReplacement.md'
     - 'Modding/Unity2018.md'
