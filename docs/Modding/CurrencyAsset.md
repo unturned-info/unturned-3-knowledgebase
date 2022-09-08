@@ -1,4 +1,4 @@
-# Currency
+# Currency Asset
 
 !!! note "This is an [Asset v2](AssetTypes/AssetsV2.md) class."
 
