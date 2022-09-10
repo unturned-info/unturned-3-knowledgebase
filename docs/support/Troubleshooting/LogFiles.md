@@ -15,7 +15,4 @@ Your log files contain important troubleshooting information.
 
         `Client_Prev.log` is from the session before then
 
-3. upload your logs to discord or a service like [pastebin](https://pastebin.com/), [Hastebin](https://hastebin.com/) or [paste.gg](https://paste.gg) and share it with a supporter.
-
-    !!! info
-        Log files posted in the Unturned Official Discord are automatically uploaded to hastebin by a bot.
+3. Optionally, upload your logs a service like [pastebin](https://pastebin.com/), [Hastebin](https://hastebin.com/) or [paste.gg](https://paste.gg) to make sharing easier.
