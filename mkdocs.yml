@@ -64,7 +64,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - attr_list
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.tilde
   - pymdownx.magiclink:
       repo_url_shortener: true
