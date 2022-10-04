@@ -1,0 +1,169 @@
+# yaml-language-server: $schema=./AssetSchema.json
+
+className: ItemAsset
+classPrettyName: Item
+classDescription: |-
+  A complex description
+  that last for multiple
+  lines
+assetProperties:
+  - name: Pro
+    dataType: flag
+    description: Should Item be a cosmetic
+  - name: Type
+    dataType: enum
+    description: type
+    options:
+    - HAT
+    - PANTS
+    - SHIRT
+    - MASK
+    - BACKPACK
+    - VEST
+    - GLASSES
+    - GUN
+    - SIGHT
+    - TACTICAL
+    - GRIP
+    - BARREL
+    - MAGAZINE
+    - FOOD
+    - WATER
+    - MEDICAL
+    - MELEE
+    - FUEL
+    - TOOL
+    - BARRICADE
+    - STORAGE
+    - BEACON
+    - FARM
+    - TRAP
+    - STRUCTURE
+    - SUPPLY
+    - THROWABLE
+    - GROWER
+    - OPTIC
+    - REFILL
+    - FISHER
+    - CLOUD
+    - MAP
+    - KEY
+    - BOX
+    - ARREST_START
+    - ARREST_END
+    - TANK
+    - GENERATOR
+    - DETONATOR
+    - CHARGE
+    - LIBRARY
+    - FILTER
+    - SENTRY
+    - VEHICLE_REPAIR_TOOL
+    - TIRE
+    - COMPASS
+    - OIL_PUMP
+  - name: Rarity
+    description: Rarity of the Item
+    dataType: enum
+    default: COMMON
+    options:
+    - COMMON
+    - UNCOMMON
+    - RARE
+    - EPIC
+    - LEGENDARY
+    - MYTHICAL
+  - name: Econ_Icon_Use_Id
+    dataType: boolean
+  - name: Size_X
+    dataType: uint8
+    default: 1
+    description: Minimum of 1.
+  - name: Size_Y
+    dataType: uint8
+    default: 1
+  - name: Size_Z
+    dataType: float
+    default: -1
+    description: Icon orthographic camera size.
+  - name: Use_Auto_Icon_Measurements
+    dataType: boolean
+    default: true
+  - name: Size2_Z
+    dataType: float
+    default: -1
+    description: Econ icon orthographic camera size.
+  - name: Shared_Skin_Lookup_ID
+    dataType: uint16
+    default: id
+  - name: Amount
+    dataType: uint8
+  - name: Count_Min
+    dataType: uint8
+  - name: count_Max
+    dataType: uint8
+  - name: Quality_Min
+    dataType: uint8
+    default: 10
+  - name: Quality_Max
+    dataType: uint8
+    default: 90
+  - name: Backward
+    dataType: flag
+  - name: Useable
+    dataType: string
+  - name: Can_Player_Equip
+    dataType: boolean
+    description: False if the item is not a useable.
+  - name: Slot
+    dataType: enum
+    options:
+    - NONE
+    - PRIMARY
+    - SECONDARY
+    - TERTIARY
+    - ANY
+  - name: Can_Use_Underwater
+    dataType: boolean
+    default: true if not PRIMARY
+  - name: Blueprints
+    dataType: uint8
+    description: Count of blueprints provided.
+  - name: Actions
+    dataType: uint8
+    description: Count of Actions.
+
+subclasses:
+  - className: ClothingAsset
+    classPrettyName: Clothing
+    assetProperties:
+      - name: uint8_data_type
+        dataType: uint8
+    subclasses:
+      - className: BagAsset
+        classPrettyName: Bag
+        assetProperties:
+          - name: width
+            dataType: uint8
+          - name: height
+            dataType: uint8
+        subclasses:
+          - className: ShirtAsset
+            classPrettyName: Shirt
+            assetProperties:
+              - name: Has_1P_Character_Mesh_Override
+                dataType: boolean
+                default: false
+              - name: Character_Mesh_3P_Override_LODs
+                dataType: uint16
+              - name: Has_Character_Material_Override
+                dataType: boolean
+                default: false
+              - name: Ignore_Hand
+                dataType: flag
+  - className: BarricadeAsset
+    classPrettyName: Barricade
+    assetProperties:
+      - name: uint16_data_type
+        dataType: uint16
+        default: 12

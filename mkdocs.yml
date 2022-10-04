@@ -81,6 +81,9 @@ plugins:
   - git-revision-date-localized:
       type: date
   - search
+  - macros:
+      include_yaml:
+        - item_data: data/ItemData.yml
   - minify:
       minify_html: true
   - redirects:
