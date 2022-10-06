@@ -25,7 +25,7 @@ Recursive usage of filters is supported, so multiple favorite searches can be ne
 
 If many objects need to be replaced on a map the old object guid can be redirected to a new guid rather than manually replacing them. This works similarly to the automatic holiday object replacements, but applies while loading a map in the editor, and changes are kept when the map is saved.
 
-The game looks for a file named "EditorAssetRedirectors.txt" in the Unturned folder. Empty lines and lines starting with "//" or "#" (comments) are ignored. The .txt file extension was chosen because it is the notepad default. Each line contains two guids separated by an arrow "->".
+The game looks for a file named "EditorAssetRedirectors.txt" in the Unturned folder. Empty lines and lines starting with `//` or `#` (comments) are ignored. The .txt file extension was chosen because it is the notepad default. Each line contains two guids separated by an arrow `->`.
 
 For example:
 
