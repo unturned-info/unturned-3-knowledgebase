@@ -1,4 +1,4 @@
-# Generating Item Icons
+# Item Icons
 
 To generate .png files of item icons for your own usage, follow these steps:
 
