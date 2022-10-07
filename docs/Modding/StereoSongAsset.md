@@ -39,3 +39,17 @@ OR
     }
 
 `Link_URL` string: optional URL to open in web browser when external link button is clicked.
+
+## Programmer Methods & Properties
+
+`public string linkURL { get; protected set; }` - The url to the song as a string.
+
+`public bool isLoop` - Specifies if the song should be replayed.
+
+`public TranslationReference titleLocRef` - The TranslationReference that was created from the Title asset property.
+
+`public string titleTextOverride` - Supposedly the title for the song.
+
+`public ContentReference<AudioClip> songContentRef` - The ContentReference that was created if the song is from a .content file.
+
+`public MasterBundleReference<AudioClip> songMbRef` - The MasterBundleReference that was created if the song is from a .masterbundle file.
