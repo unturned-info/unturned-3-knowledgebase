@@ -112,6 +112,7 @@ nav:
     - 'Modding/AssetBundles.md'
     - 'Modding/GUID.md'
     - 'Modding/ModHooks.md'
+    - 'Modding/ItemIcons.md'
     - Assets:
       - 'Modding/AssetTypes/AssetsV1.md'
       - 'Modding/AssetTypes/AssetsV2.md'
