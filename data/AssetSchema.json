@@ -47,7 +47,8 @@
               "flag",
               "enum",
               "boolean",
-              "string"
+              "string",
+              "RGB"
             ]
           },
           "default": {

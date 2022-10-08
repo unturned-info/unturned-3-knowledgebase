@@ -134,13 +134,242 @@ assetProperties:
     description: Count of Actions.
 
 subclasses:
-  - className: ClothingAsset
+  - className: ItemArrestEnd
+  - className: ItemArrestStart
+  - className: BarricadeAsset
+    classPrettyName: Barricade
+    assetProperties:
+      - name: Has_Clip_Prefab
+        dataType: flag
+      - name: Health
+        dataType: uint16
+      - name: Range
+        dataType: float
+        description: Maximum distance away from the player at which the barricade can be placed.
+      - name: Radius
+        dataType: float
+      - name: Offset
+        dataType: float
+        description: Vertical offset from the point the player is looking when placed.
+      - name: Explosion
+        dataType: uint16
+        description: ID of the effect to play when destroyed.
+      - name: Can_Be_Damaged
+        dataType: boolean
+      - name: Eligible_For_Pooling
+        dataType: boolean
+      - name: Locked
+        dataType: flag
+        description: Specified if Usability/interactivity access should be restricted to the owner.
+      - name: Vulnerable
+        dataType: flag
+        description: Specified if the barricade can be destroyed by low-power weaponry.
+      - name: Bypass_Claim
+        dataType: flag
+      - name: Allow_Placement_On_Vehicle
+        dataType: boolean
+        description: Defaults to false for beds and robotic turrets.
+      - name: Unrepairable
+        dataType: flag
+        description: Cannot be repaired.
+      - name: Proof_Explosion
+        dataType: flag
+        description: Specified if the barricade should be immune to explosive damage.
+      - name: Unpickupable
+        dataType: flag
+        description: If specified, Cannot be salvaged.
+      - name: Bypass_Pickup_Ownership
+        dataType: boolean
+      - name: Allow_Placement_Inside_Clip_Volumes
+        dataType: boolean
+      - name: Unsalvageable
+        dataType: flag
+        description: If damaged, salvaging will not yield partial ingredients.
+      - name: Salvage_Duration_Multiplier
+        dataType: float
+        description: Multiplies salvage duration by given amount.
+      - name: Unsaveable
+        dataType: flag
+        description: Cannot be saved by the game.
+      - name: Allow_Collision_While_Animating
+        dataType: boolean
+        description: Allows animated interactables (e.g., doors) to perform collision movement upon players.
+      - name: Use_Water_Height_Transparent_Sort
+        dataType: flag
+      - name: Armor_Tier
+        dataType: enum
+        options:
+        - LOW
+        - HIGH
+        description: Set to `HIGH` if the name contains "Metal".
+    subclasses:
+      - className: ItemBeaconAsset
+        classPrettyName: Beacon
+        assetProperties:
+          - name: Wave
+            dataType: uint16
+            description: Number of zombies that must be killed.
+          - name: Rewards
+            dataType: uint8
+            description: Number of rewards spawned.
+          - name: Reward_ID
+            dataType: uint16
+            description: Spawn table ID for rewards.
+          - name: Enable_Participant_Scaling
+            dataType: boolean
+            default: true
+      - className: ItemChargeAsset
+        classPrettyName: Explosive Charge
+        assetProperties:
+          - name: Range2
+            dataType: float
+            description: Radius of explosive damage in meters.
+          - name: Player_Damage
+            dataType: float
+          - name: Zombie_Damage
+            dataType: float
+          - name: Animal_Damage
+            dataType: float
+          - name: Barricade_Damage
+            dataType: float
+          - name: Structure_Damage
+            dataType: float
+          - name: Vehicle_Damage
+            dataType: float
+          - name: Resource_Damage
+            dataType: float
+          - name: Object_Damage
+            dataType: float
+            default: Resource_Damage
+          - name: Explosion_Launch_Speed
+            dataType: float
+            default: Player_Damage * 0.1
+          - name: Explosion2
+            dataType: uint16
+            description: ID of explosion effect.
+      - className: ItemFarmAsset
+        classPrettyName: Plants & Growables
+        assetProperties:
+          - name: Growth
+            dataType: uint32
+            description: Number of seconds required to fully grow.
+          - name: Grow
+            dataType: uint16
+            description: ID of the item generated when harvesting a fully grown plant.
+          - name: Grow_SpawnTable
+            dataType: GUID
+          - name: Ignore_Soil_Restrictions
+            dataType: flag
+          - name: Allow_Fertilizer
+            dataType: boolean
+            default: true
+          - name: Harvest_Reward_Experience
+            dataType: uint32
+            default: 1
+      - className: ItemGeneratorAsset
+        classPrettyName: Generator
+        assetProperties:
+          - name: Capacity
+            dataType: uint16
+            description: Internal fuel tank capacity.
+          - name: Wirerange
+            dataType: float
+            description: Spherical radius in meters within which is considered powered. Maximum range of 256.
+          - name: Burn
+            dataType: float
+            description: Number of seconds taken to burn one unity of fuel.
+      - className: ItemLibraryAsset
+        classPrettyName: Library
+        assetProperties:
+          - name: Capacity
+            dataType: uint32
+            description: Maximum capacity of stored experience.
+          - name: Tax
+            dataType: uint8
+            description: Percent tax on deposits.
+      - className: OilPumpAsset
+        classPrettyName: Oil Pump
+        assetProperties:
+          - name: Fuel_Capacity
+            dataType: uint16
+            description: Fuel unit capacity.
+      - className: ItemStorageAsset
+        classPrettyName: Storage
+        assetProperties:
+          - name: Storage_X
+            dataType: uint8
+            description: Horizontal storage size.
+          - name: Storage_Y
+            dataType: uint8
+            description: Vertical storage size.
+          - name: Display
+            dataType: flag
+            description: Should the stored item be visible.
+          - name: Should_Close_When_Outside_Range
+            dataType: boolean
+        subclasses:
+          - className: ItemSentryAsset
+            classPrettyName: Sentry
+            assetProperties:
+              - name: Mode
+                dataType: enum
+                options:
+                - NEUTRAL
+                - FRIENDLY
+                - HOSTILE
+              - name: Requires_Power
+                dataType: boolean
+              - name: Infinite_Ammo
+                dataType: boolean
+              - name: Infinite_Quality
+                dataType: boolean
+              - name: Detection_Radius
+                dataType: float
+                default: 48
+              - name: Target_Loss_Radius
+                dataType: float
+                default: Detection_Radius * 1.2
+              - name: Target_Acquired_Effect 
+                dataType: guid
+              - name: Target_Lost_Effect
+                dataType: guid
+  - className: ItemClothingAsset
     classPrettyName: Clothing
     assetProperties:
-      - name: uint8_data_type
-        dataType: uint8
+      - name: Armor
+        dataType: float
+        default: 1
+        description: Incoming damage is multiplied by this value. i.e. `.50` would half incoming damage.
+      - name: Armor_Explosion
+        dataType: float
+        default: "`Armor`"
+        description: Incoming explosive damage is multiplied by the given value.
+      - name: Proof_Water
+        dataType: flag
+      - name: Proof_Fire
+        dataType: flag
+      - name: Proof_Radation
+        dataType: flag
+      - name: Movement_Speed_Multiplier
+        dataType: float
+        default: 1
+      - name: Visible_On_Ragdoll
+        dataType: boolean
+        default: true
+      - name: Hair_Visible
+        dataType: boolean
+        default: true
+        description: Specifies if the players hair should be visible when worn.
+      - name: Beard_Visible
+        dataType: boolean
+        default: true
+        description: Specifies if the players beard should be visible when worn.
+      - name: Mirror_Left_Handed_Model
+        dataType: boolean
+        default: true
+        description: Specifies if the should the mesh be mirrored for left handed player models.
     subclasses:
-      - className: BagAsset
+      - className: ItemBagAsset
         classPrettyName: Bag
         assetProperties:
           - name: width
@@ -148,7 +377,11 @@ subclasses:
           - name: height
             dataType: uint8
         subclasses:
-          - className: ShirtAsset
+          - className: ItemBackpackAsset
+            classPrettyName: Backpack
+          - className: ItemPantsAsset
+            classPrettyName: Pants
+          - className: ItemShirtAsset
             classPrettyName: Shirt
             assetProperties:
               - name: Has_1P_Character_Mesh_Override
@@ -161,9 +394,43 @@ subclasses:
                 default: false
               - name: Ignore_Hand
                 dataType: flag
-  - className: BarricadeAsset
-    classPrettyName: Barricade
-    assetProperties:
-      - name: uint16_data_type
-        dataType: uint16
-        default: 12
+          - className: ItemVestAsset
+            classPrettyName: Vest
+      - className: ItemGearAsset
+        classPrettyName: Gear
+        assetProperties:
+          - name: Hair
+            dataType: flag
+          - name: Beard
+            dataType: flag
+          - name: Hair_Override
+            dataType: string
+        subclasses:
+          - className: ItemGlassesAsset
+            classPrettyName: Glasses
+            assetProperties:
+              - name: Vision
+                dataType: enum
+                options:
+                - NONE
+                - MILITARY
+                - CIVILIAN
+                - HEADLAMP
+                description: Type of night vision device. MILITARY does not impose any limits on colors. Civilian clamps all colors to whatever the R values is. HEADLAMP allows you to set spotlight options.
+              - name: Nightvision_Color
+                dataType: RGB
+                default: 102, 102, 102 (CIVILIAN), 20, 120, 80 (MILITARY)
+                description: This key is entered as 3 seperate keys, `Nightvision_Color_R`, `Nightvision_Color_G`, and `Nightvision_Color_B`. Each is a uint8.
+              - name: Nightvision_Fog_Intensity
+                dataType: float
+                default: 0.5(CIVILIAN), 0.25(MILITARY)
+              - name: Blindfold
+                dataType: flag
+                description: If set, the item will blindfold the player when worn.
+          - className: ItemHatAsset
+          - className: ItemMaskAsset
+            classPrettyName: Mask
+            assetProperties:
+              - name: Earpiece
+                dataType: flag
+  
