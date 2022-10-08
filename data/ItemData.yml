@@ -333,6 +333,253 @@ subclasses:
                 dataType: guid
               - name: Target_Lost_Effect
                 dataType: guid
+      - className: ItemTankAsset
+        assetProperties:
+          - name: Source
+            dataType: enum
+            options:
+            - NONE
+            - WATER
+            - FUEL
+          - name: Resource
+            dataType: uint16
+      - className: ItemTrapAsset
+        assetProperties:
+          - name: Range2
+            dataType: float
+            description: Radius of explosive damage in meters.
+          - name: Player_Damage
+            dataType: float
+          - name: Zombie_Damage
+            dataType: float
+          - name: Animal_Damage
+            dataType: float
+          - name: Barricade_Damage
+            dataType: float
+          - name: Structure_Damage
+            dataType: float
+          - name: Vehicle_Damage
+            dataType: float
+          - name: Resource_Damage
+            dataType: float
+          - name: Object_Damage
+            dataType: float
+            default: Resource_Damage
+          - name: Trap_Setup_Delay
+            dataType: float
+            default: 0.25
+          - name: Trap_Cooldown
+            dataType: float
+          - name: Explosion_Launch_Speed
+            dataType: float
+            default: Player_Damage * 0.1
+          - name: Explosion2
+            dataType: uint16
+            description: ID of explosion effect.
+          - name: Broken
+            dataType: flag
+          - name: Explosive
+            dataType: flag
+          - name: Damage_Tires
+            dataType: flag
+  - className: ItemBoxAsset
+    classPrettyName: Box
+    assetProperties:
+      - name: Generate
+        dataType: int32
+      - name: Destroy
+        dataType: int32
+      - name: Drops
+        dataType: int32
+        description: The number of `Drop_#` that will be specified.
+      - name: Drop_#
+        dataType: int32
+        description:  
+      - name: Item_Origin
+        dataType: enum
+        options:
+        - Unbox
+        - Unwrap
+      - name: Probability_Model
+        dataType: enum
+        options:
+        - Original
+        - Equalized
+      - name: Contains_Bonus_Items
+        dataType: boolean
+  - className: ItemCaliberAsset
+    classPrettyName: Caliber
+    assetProperties:
+      - name: Calibers
+        dataType: uint8
+        description: The number of calibers applicable.
+      - name: Caliber_#
+        dataType: uint16
+        description: ID of an applicable caliber.
+      - name: Recoil_X
+        dataType: float
+        default: 1
+      - name: Recoil_Y
+        dataType: float
+        default: 1
+      - name: Spread
+        dataType: float
+        default: 1
+      - name: Sway
+        dataType: float
+        default: 1
+      - name: Shake
+        dataType: float
+        default: 1
+      - name: Damage
+        dataType: float
+        default: 1
+      - name: Firerate
+        dataType: uint8
+      - name: Ballistic_Damage_Multiplier
+        dataType: float
+        default: Damage
+      - name: Paintable
+        dataType: flag
+        description: Specified if skins can retexture the attachment.
+      - name: Bipod
+        dataType: flag
+        description: Specified if effects only take place when prone.
+    subclasses:
+      - className: ItemBarrelAsset
+        classPrettyName: Barrel
+        assetProperties:
+          - name: Braked
+            dataType: flag
+            description: Specified if a muzzle flash is hidden.
+          - name: Silenced
+            dataType: flag
+            descripton: Specified if alerts are not generated.
+          - name: Volume
+            dataType: float
+            description: Amount to multiply gunfire sound volume.
+          - name: Durability
+            dataType: uint8
+          - name: Ballistic_Drop
+            dataType: float
+            default: 1
+          - name: Gunshot_Rolloff_Distance_Multiplier
+            dataType: float
+            default: 1 (standard), 0.5 (suppressed)
+      - className: ItemGripAsset
+        classPrettyName: Grip
+      - className: ItemMagazineAsset
+        classPrettyName: Magazine
+        assetProperties:
+          - name: Pellets
+            dataType: uint8
+            description: Number of bullet rays shot.
+          - name: Stuck
+            dataType: uint8
+            description: Amount of quality to lose when hit. Fired projectiles can be picked back up until quality reaches 0.
+          - name: Projectile_Damage_Multiplier
+            dataType: float
+            default: 1
+            description: Multiplier on the damage dealt by projectile weapons.
+          - name: Projectile_Blast_Radius_Multiplier
+            dataType: float
+            default: 1
+            description: Multiplier on the blast radius of projectiles fired from projectile weapons.
+          - name: Projectile_Launch_Force_Multiplier
+            dataType: float
+            default: 1
+            description: Multiplier on the launch force applied to projectiles fired from projectile weapons.
+          - name: Range
+            dataType: float
+          - name: Player_Damage
+            dataType: float
+          - name: Zombie_Damage
+            dataType: float
+          - name: Animal_Damage
+            dataType: float
+          - name: Barricade_Damage
+            dataType: float
+          - name: Structure_Damage
+            dataType: float
+          - name: Vehicle_Damage
+            dataType: float
+          - name: Resource_Damage
+            dataType: float
+          - name: Object_Damage
+            dataType: float
+            default: Resource_Damage
+          - name: Explosion_Launch_Speed
+            dataType: float
+            default: Player_Damage * 0.1
+          - name: Explosion
+            dataType: uint16
+            description: Explosion effect ID.
+          - name: Tracer
+            dataType: uint16
+            description: Tracer effect ID.
+          - name: Impact
+            dataType: uint16
+            description: Impact effect ID.
+          - name: Speed
+            dataType: float
+            description: Multiplier on reload speed.
+          - name: Explosive
+            dataType: flag
+          - name: Spawn_Explosion_On_Dedicated_Server
+            dataType: flag
+          - name: Delete_Empty
+            dataType: flag
+            description: Specified if the magazine should be deleted when depleted.
+          - name: Should_Fill_After_Detach
+            dataType: boolean 
+            description: Specified if ammunition is fully refilled when reloaded, effectively allowing for infinite ammunition only limited by reload time.
+      - className: ItemSightAsset
+        classPrettyName: Sights
+        assetProperties:
+          - name: Vision
+            dataType: enum
+            options:
+            - NONE
+            - MILITARY
+            - CIVILIAN
+            - HEADLAMP
+            description: Type of night vision device. MILITARY does not impose any limits on colors. Civilian clamps all colors to whatever the R values is. HEADLAMP allows you to set spotlight options.
+          - name: Nightvision_Color
+            dataType: RGB
+            default: 102, 102, 102 (CIVILIAN), 20, 120, 80 (MILITARY)
+            description: This key is entered as 3 seperate keys, `Nightvision_Color_R`, `Nightvision_Color_G`, and `Nightvision_Color_B`. Each is a uint8.
+          - name: Nightvision_Fog_Intensity
+            dataType: float
+            default: 0.5(CIVILIAN), 0.25(MILITARY)
+          - name: Zoom
+            dataType: float
+            description: Minimum of 1.
+          - name: Holographic
+            dataType: flag
+      - className: ItemTacticalAsset
+        classPrettyName: Tactical
+        assetProperties:
+          - name: Laser
+            dataType: flag
+          - name: Light
+            dataType: flag
+          - name: Rangefinder
+            dataType: flag
+          - name: Melee
+            dataType: flag
+          - name: SpotLight_Range
+            dataType: float
+            default: 64
+          - name: SpotLight_Angle
+            dataType: float
+            default: 90
+          - name: SpotLight_Intensity
+            dataType: float
+            default: 1.3
+          - name: Spotlight_Color
+            dataType: RGB
+            default: 245, 223, 147
+
   - className: ItemClothingAsset
     classPrettyName: Clothing
     assetProperties:
