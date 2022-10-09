@@ -48,7 +48,8 @@
               "enum",
               "boolean",
               "string",
-              "RGB"
+              "RGB",
+              "masterBundleReference"
             ]
           },
           "default": {

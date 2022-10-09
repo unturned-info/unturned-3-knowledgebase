@@ -542,8 +542,7 @@ subclasses:
             - NONE
             - MILITARY
             - CIVILIAN
-            - HEADLAMP
-            description: Type of night vision device. MILITARY does not impose any limits on colors. Civilian clamps all colors to whatever the R values is. HEADLAMP allows you to set spotlight options.
+            description: Type of night vision device. MILITARY does not impose any limits on colors. Civilian clamps all colors to whatever the R values is. Setting HEADLAMP will result in having in a vison type of NONE.
           - name: Nightvision_Color
             dataType: RGB
             default: 102, 102, 102 (CIVILIAN), 20, 120, 80 (MILITARY)
@@ -553,20 +552,25 @@ subclasses:
             default: 0.5(CIVILIAN), 0.25(MILITARY)
           - name: Zoom
             dataType: float
-            description: Minimum of 1.
+            description: Sight zoom amount. Minimum of 1.
           - name: Holographic
             dataType: flag
+            description: Use the holographic sight effect.
       - className: ItemTacticalAsset
         classPrettyName: Tactical
         assetProperties:
           - name: Laser
             dataType: flag
+            description: Specified if the tactical has a toggleable laser.
           - name: Light
             dataType: flag
+            description: Specified if the tactical has a toggleable light.
           - name: Rangefinder
             dataType: flag
+            description: Specified if the tactical has a rangefinder
           - name: Melee
             dataType: flag
+            description: Specified if the tactical can perform a melee attack.
           - name: SpotLight_Range
             dataType: float
             default: 64
@@ -579,7 +583,6 @@ subclasses:
           - name: Spotlight_Color
             dataType: RGB
             default: 245, 223, 147
-
   - className: ItemClothingAsset
     classPrettyName: Clothing
     assetProperties:
@@ -680,4 +683,586 @@ subclasses:
             assetProperties:
               - name: Earpiece
                 dataType: flag
-  
+  - className: ItemCloudAsset
+    classPrettyName: Parachute
+    assetProperties:
+      - name: Gravity
+        dataType: float
+        description: Decimal multiplier on the influence of gravity.
+  - className: ItemDetonatorAsset
+    classPrettyName: Detonator
+  - className: ItemFilterAsset
+    classPrettyName: Filter
+  - className: ItemFisherAsset
+    classPrettyName: Fishing Poles
+    assetProperties:
+      - name: Reward_ID
+        dataType: uint16
+        description: ID of the spawn table to pull catchable items from.
+  - className: ItemFuelAsset
+    classPrettyName: Fuel Canister
+    assetProperties:
+      - name: Fuel
+        dataType: uint16
+        description: Number of fuel units added to target.
+  - className: ItemGrowerAsset
+  - className: ItemKeyAsset
+    assetProperties:
+      - name: Exchange_With_Target_Item
+        dataType: flag
+  - className: ItemMapAsset
+    classPrettyName: Mapping Equipment
+    assetProperties:
+      - name: Enables_Compass
+        dataType: flag
+        description: Specified if this item should enable the player's compass display.
+      - name: Enables_Chart
+        dataType: flag
+        description: Specified if this item should enable the player's chart display.
+      - name: Enables_Map
+        dataType: flag
+        description: Specified if this item should enable the player's satellite map display.
+  - className: ItemOpticAsset
+    dataType: Handheld Optic
+    assetProperties:
+      - name: Zoom
+        dataType: float
+        description: Sight zoom amount. Minimum of 1.
+  - className: ItemRefillAsset
+    assetProperties:
+      - name: Water
+        dataType: float
+        description: Used as the default value of `Clean_Water`.
+
+      - name: Clean_Health
+        dataType: float
+      - name: Salty_Health
+        dataType: float
+        default: Clean_Health * 0.25
+      - name: Dirty_Health
+        dataType: float
+        default: Clean_Health * 0.6
+
+      - name: Clean_Food
+        dataType: float
+      - name: Salty_Food
+        dataType: float
+        default: Clean_Food * 0.25
+      - name: Dirty_Food
+        dataType: float
+        default: Clean_Food * 0.6
+
+      - name: Clean_Water
+        dataType: float
+      - name: Salty_Water
+        dataType: float
+        default: Clean_Water * 0.25
+      - name: Dirty_Water
+        dataType: float
+        default: Clean_Water * 0.6
+
+      - name: Clean_Virus
+        dataType: float
+      - name: Salty_Virus
+        dataType: float
+        default: Clean_Water * -0.75
+      - name: Dirty_Virus
+        dataType: float
+        default: Clean_Water * -0.399999976
+
+      - name: Clean_Stamina
+        dataType: float
+      - name: Salty_Stamina
+        dataType: float
+        default: Clean_Stamina * 0.25
+      - name: Dirty_Stamina
+        dataType: float
+        default: Clean_Stamina * 0.6
+
+      - name: Clean_Oxygen
+        dataType: float
+      - name: Salty_Oxygen
+        dataType: float
+        default: Clean_Oxygen * 0.25
+      - name: Dirty_Oxygen
+        dataType: float
+        default: Clean_Oxygen * 0.6
+  - className: ItemStructureAsset
+    classPrettyName: Structure
+    assetProperties:
+      - name: Has_Clip_Prefab
+        dataType: boolean
+      - name: Construct
+        dataType: enum
+        options:
+        - FLOOR
+        - WALL
+        - RAMPART
+        - ROOF
+        - PILLAR
+        - POST
+        - FLOOR_POLY
+        - ROOF_POLY
+      - name: Health
+        dataType: uint16
+      - name: Range
+        dataType: float
+      - name: Explosion
+        dataType: uint16
+      - name: Can_Be_Damaged
+        dataType: boolean
+        default: true
+      - name: Eligible_For_Pooling
+        dataType: boolean
+        default: true
+      - name: Requires_Pillars
+        dataType: boolean
+        default: true
+      - name: Vulnerable
+        dataType: flag
+      - name: Unrepairable
+        dataType: flag
+      - name: Proof_Explosion
+        dataType: flag
+      - name: Unpickupable
+        dataType: flag
+      - name: Unsalvageable
+        dataType: flag
+      - name: Salvage_Duration_Multiplier
+        dataType: float
+        default: 1
+      - name: Unsaveable
+        dataType: flag
+      - name: Armor_Tier
+        dataType: enum
+        options:
+        - LOW
+        - HIGH
+        default: LOW
+        description: Defaults to high if the name contains Metal or Brick.
+      - name: Foliage_Cut_Radius
+        dataType: float
+        default: 6
+        description: Radius, in meters, in which foliage is removed from around the structure. Only applicable to floor structure types.
+  - className: ItemSupplyAsset
+  - className: ItemToolAsset
+    classPrettyName: Tool
+    subclasses:
+      - className: ItemVehicleRepairToolAsset
+        subclasses:
+          - className: ItemTireAsset
+            assetProperties:
+              - name: Mode
+                dataType: enum
+                options:
+                - ADD
+                - REMOVE
+                description: Settting `ADD` will allow use in a safezone. Setting `REMOVE` will cause friendly sentry turrets to target the user.
+  - className: ItemWeaponAsset
+    classPrettyName: Weapon
+    assetProperties:
+      - name: BladeIDs
+        dataType: int32
+      - name: BladeID_#
+        dataType: uint8
+      - name: BladeID
+        dataType: uint8
+      - name: Range
+        dataType: float
+      - name: Player_Damage
+        dataType: float
+      - name: Player_Leg_Multiplier
+        dataType: float
+      - name: Player_Arm_Multiplier
+        dataType: float
+      - name: Player_Spine_Multiplier
+        dataType: float
+      - name: Player_Skull_Multiplier
+        dataType: float
+      - name: Player_Damage_Bleeding
+        dataType: enum
+        options:
+        - Default
+        - Always
+        - Never
+        - Heal
+      - name: Player_Damage_Bones
+        dataType: enum
+        options:
+        - None
+        - Always
+        - Heal
+      - name: Player_Damage_Food
+        dataType: float
+      - name: Player_Damage_Water
+        dataType: float
+      - name: Player_Damage_Virus
+        dataType: float
+      - name: Player_Damage_Hallucination
+        dataType: float
+      - name: Zombie_Damage
+        dataType: float
+      - name: Zombie_Leg_Multiplier
+        dataType: float
+      - name: Zombie_Arm_Multiplier
+        dataType: float
+      - name: Zombie_Spine_Multiplier
+        dataType: float
+      - name: Zombie_Skull_Multiplier
+        dataType: float
+      - name: Animal_Damage
+        dataType: float
+      - name: Animal_Leg_Multiplier
+        dataType: float
+      - name: Animal_Spine_Multiplier
+        dataType: float
+      - name: Animal_Skull_Multiplier
+        dataType: float
+      - name: Barricade_Damage
+        dataType: float
+      - name: Structure_Damage
+        dataType: float
+      - name: Vehicle_Damage
+        dataType: float
+      - name: Resource_Damage
+        dataType: float
+      - name: Object_Damage
+        dataType: float
+      - name: Durability
+        dataType: float
+      - name: Wear
+        dataType: uint8
+        description: Min of 1.
+      - name: Invulnerable
+        dataType: flag
+      - name: Allow_Flesh_Fx
+        dataType: boolean
+      - name: Stun_Zombie_Always
+        dataType: flag
+      - name: Stun_Zombie_Never
+        dataType: flag
+      - name: Bypass_Allowed_To_Damage_Player
+        dataType: boolean
+    subclasses:
+      - className: ItemConsumeableAsset
+        classPrettyName: Consumeable
+        assetProperties:
+          - name: Health
+            dataType: uint8
+          - name: Food
+            dataType: uint8
+          - name: Water
+            dataType: uint8
+          - name: Virus
+            dataType: uint8
+          - name: Disinfectant
+            dataType: uint8
+          - name: Energy
+            dataType: uint8
+          - name: Vision
+            dataType: uint8
+          - name: Oxygen
+            dataType: int8
+          - name: Warmth
+            dataType: uint32
+          - name: Experience
+            dataType: int32
+          - name: Bleeding
+            dataType: flag
+          - name: Bleeding_Modifier
+            dataType: enum
+            options:
+            - None
+            - Heal
+            - Cut
+          - name: Broken
+            dataType: flag
+          - name: Bones_Modifier
+            dataType: enum
+            options:
+            - None
+            - Heal
+            - Break
+          - name: Aid
+            dataType: flag
+          - name: Should_Delete_After_Use
+            dataType: boolean
+            default: true
+          - name: Quest_Rewards
+            dataType: uint8
+            #TODO
+          - name: Quest_Reward_#
+            dataType:
+          - name: Item_Reward_Spawn_ID
+            dataType: uint16
+          - name: Min_Item_Rewards
+            dataType: int32
+          - name: Max_Item_Rewards
+            dataType: int32
+          - name: Explosion
+            dataType: uint16
+        subclasses:
+          - className: ItemFoodAsset
+            classPrettyName: Food
+          - className: ItemMedicalAsset
+            classPrettyName: Medical
+          - className: ItemWaterAsset
+            classPrettyName: Water
+      - className: ItemGunAsset
+        classPrettyName: Gun
+        assetProperties:
+          - name: Ammo_Min
+            dataType: uint8
+          - name: Ammo_Max
+            dataType: uint8
+          - name: Sight
+            dataType: uint16
+          - name: Tactical
+            dataType: uint16
+          - name: Grip
+            dataType: uint16
+          - name: Barrel
+            dataType: uint16
+          - name: Magazine
+            dataType: uint16
+          - name: Magazine_Replacements
+            dataType: int32
+          - name: Magazine_Replacement_#_ID
+            dataType: uint16
+          - name: Magazine_Replacement_#_Map
+            dataType: string
+          - name: Unplace
+            dataType: float
+          - name: Replace
+            dataType: float
+          - name: Hook_Sight
+            dataType: flag
+          - name: Hook_Tactical
+            dataType: flag
+          - name: Hook_Grip
+            dataType: fkag
+          - name: Hook_Barrel
+            dataType: flag
+          - name: Magazine_Calibers
+            dataType: int32
+          - name: Magazine_Caliber_#
+            dataType: uint16
+          - name: Attachment_Calibers
+            dataType: int32
+          - name: Attachment_Caliber_#
+            dataType: uint16
+          - name: Caliber
+            dataType: uint16
+          - name: Firerate
+            dataType: uint8
+          - name: Action
+            dataType: enum
+            options:
+            - Trigger
+            - Bolt
+            - Pump
+            - Rail
+            - String
+            - Break
+            - Rocket
+            - Minigun
+          - name: Delete_Empty_Magazines
+            dataType: flag
+          - name: Should_Delete_Empty_Magazines
+            dataType: boolean
+            default: true if Pump, Rail, String, Rocket, Break
+          - name: Requires_NonZero_Attachment_Caliber
+            dataType: boolean
+          - name: Bursts
+            dataType: int32
+          - name: Safety
+            dataType: flag
+          - name: Semi
+            dataType: flag
+          - name: Auto
+            dataType: flag
+          - name: Turret
+            dataType: flag
+          - name: Spread_Aim
+            dataType: float
+          - name: Spread_Hip
+            dataType: float
+          - name: Spread_Sprint
+            dataType: 1.25
+          - name: Spread_Crouch
+            dataType: 0.85
+          - name: Spread_Prone
+            dataType: 0.7
+          - name: Recoil_Aim
+            dataType: float
+            description: default of 1 if not present.
+          - name: Recoil_Min_X
+            dataType: float
+          - name: Recoil_Min_Y
+            dataType: float
+          - name: Recoil_Max_X
+            dataType: float
+          - name: Recoil_Max_Y
+            dataType: float
+          - name: Recover_X
+            dataType: float
+          - name: Recover_Y
+            dataType: float
+          - name: Recoil_Sprint
+            dataType: float
+            default: 1.25
+          - name: Recoil_Crouch
+            dataType: float
+            default: 0.85
+          - name: Recoil_Prone
+            dataType: float
+            default: 0.7
+          - name: Shake_Min_X
+            dataType: float
+          - name: Shake_Min_Y
+            dataType: float
+          - name: Shake_Min_Z
+            dataType: float
+          - name: Shake_Max_X
+            dataType: float
+          - name: Shake_Max_Y
+            dataType: float
+          - name: Shake_Max_Z
+            dataType: float
+          - name: Ballistic_Steps
+            dataType: uint8
+          - name: Ballistic_Travel
+            dataType: float
+          - name: Ballistic_Drop
+            dataType: float
+            description: default of `1 / 500` if not specified.
+          - name: Ballistic_Force
+            dataType: float
+            description: default of `1 / 500` if not specified.
+          - name: Damage_Falloff_Range
+            dataType: float
+            default: 1
+          - name: Damage_Falloff_Multiplier
+            dataType: float
+            default: 1
+          - name: Projectile_Lifespan
+            dataType: float
+            default: 30
+          - name: Projectile_Penetrate_Buildables
+            dataType: flag
+          - name: Projectile_Explosion_Launch_Speed
+            dataType: float
+            default: Player_Damage * 0.1
+          - name: Reload_Time
+            dataType: float
+          - name: Hammer_Timer
+            dataType: float
+          - name: Muzzle
+            dataType: uint16
+          - name: Explosion
+            dataType: uint16
+          - name: Shell
+            dataType: uint16
+          - name: Alert_Radius
+            dataType: float
+            description: 48 if not specified
+          - name: Range_Rangefinder
+            dataType: float
+          - name: Range
+            dataType: float
+          - name: Instakill_Headshots
+            dataType: boolean
+          - name: Infinite_Ammo
+            dataType: boolean
+          - name: Ammo_Per_Shot
+            dataType: uint8
+            default: 1
+          - name: Fire_Delay_Seconds
+            dataType: float
+            description: "`Fire_Delay_Seconds / 50` rounded to nearest integer"
+          - name: Allow_Magazine_Change
+            dataType: boolean
+            default: true
+          - name: Can_Aim_During_Sprint
+            dataType: boolean
+          - name: Can_Ever_Jam
+            dataType: flag
+          - name: Jam_Quality_Threshold
+            dataType: float
+            default: 0.4
+          - name: Jam_Max_Chance
+            dataType: float
+            default: 0.1
+          - name: Unjam_Chamber_Anim
+            dataType: string
+            default: UnjamChamber
+          - name: Gunshot_Rolloff_Distance
+            dataType: float
+            default: 16 (string), 64 (rocket), 512 (everything else)
+            #TODO quest rewards
+          - name: Shoot_Quest_Reward_#
+        subclasses:
+          - className: ItemMeleeAsset
+            classPrettyName: Melee
+            assetProperties:
+              - name: Strength
+                dataType: float
+              - name: Weak
+                dataType: float
+                description: If below 0.01, the value is set to 0.5
+              - name: Strong
+                dataType: float
+                description: If below 0.01, the value is set to 0.33
+              - name: Stamina
+                dataType: uint8
+              - name: Repair
+                dataType: flag
+              - name: Repeated
+                dataType: flag
+              - name: Light
+                dataType: flag
+              - name: SpotLight_Range
+                dataType: float
+                default: 64
+              - name: SpotLight_Angle
+                dataType: float
+                default: 90
+              - name: SpotLight_Intensity
+                dataType: float
+                default: 1.3
+              - name: Spotlight_Color
+                dataType: RGB
+                default: 245, 223, 147
+              - name: Alert_Radius
+                dataType: float
+                description: Defaults to 8 if not specified.
+              - name: ImpactAudioDef
+                dataType: masterBundleReference
+          - className: ItemThrowableAsset
+            classPrettyName: Throwable
+            assetProperties:
+              - name: Explosion
+                dataType: uint16
+              - name: Explosive
+                dataType: flag
+              - name: Flash
+                dataType: flag
+              - name: Sticky
+                dataType: flag
+              - name: Explode_On_Impact
+                dataType: flag
+              - name: Fuse_Length
+                dataType: float
+                description: Defaults to 2.5 if not specified and is `Explosive` or `Flash`, and 180 otherwise.
+              - name: Explosion_Launch_Speed
+                dataType: float
+                default: Player_Damage * 0.1
+              - name: Strong_Throw_Force
+                dataType: float
+                default: 1100
+              - name: Weak_Throw_Force
+                dataType: float
+                default: 600
+              - name: Boost_Throw_Force_Multiplier
+                dataType: float
+                default: 1.4
