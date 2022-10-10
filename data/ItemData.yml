@@ -110,11 +110,31 @@ assetProperties:
     default: 90
   - name: Backward
     dataType: flag
+  - name: Procedurally_Animate_Inertia
+    dataType: boolean
+    default: true
+    description: see https://store.steampowered.com/news/app/304930/view/3294970071150257255
   - name: Useable
     dataType: string
   - name: Can_Player_Equip
     dataType: boolean
     description: False if the item is not a useable.
+  - name: Equipable_Movement_Speed_Multiplier
+    dataType: float
+    default: 1
+  - name: InspectAudioDef
+    dataType: masterBundleReference
+    description: Reference to audio
+  - name: InventoryAudio
+    dataType: masterBundleReference
+    description: |-
+      Reference to audio. If not specified, uses `Sounds/Inventory/LightGrab.asset` (for items less than 2x2) or `Sounds/Inventory/RoughGrab.asset` from the core masterbundle. 
+      Backpacks use `Sounds/Inventory/LightMetalEquipment.asset` (less than or equal to 3x3 base size), `Sounds/Inventory/MediumMetalEquipment.asset` (less than or equal to 6x6 base size), or `Sounds/Inventory/HeavyMetalEquipment.asset` (all others).
+      Barricades use `Sounds/Inventory/Seeds.asset` (if the name contains "Seed"), `Sounds/Inventory/SmallMetal.asset` (if the name contains Metal), `Sounds/Inventory/LightMetalEquipment.asset` (if the size is less than or equal to 1x1), `Sounds/Inventory/MediumMetalEquipment.asset` (if the size is less than or equal to 2x2), or `Sounds/Inventory/HeavyMetalEquipment.asset` (for everything else not covered).
+      Calibre assets use `Sounds/Inventory/SmallGunAttachment.asset`
+      Clothing assets use `Sounds/Inventory/LightCloth.asset` (if the size_x and size_y is less than or equal to 1x1), `Sounds/Inventory/LightClothEquipment.asset` (if it is a rarity of common or uncommon), or `Sounds/Inventory/MediumClothEquipment.asset` (all others).
+      Guns assets use the base default for bows, `Sounds/Inventory/SmallGunAttachment.asset` (if the size_x and size_y is less than or equal to 1x1), or `Sounds/Inventory/LargeGunAttachment.asset`.
+  
   - name: Slot
     dataType: enum
     options:
@@ -136,11 +156,14 @@ assetProperties:
 subclasses:
   - className: ItemArrestEnd
   - className: ItemArrestStart
-  - className: BarricadeAsset
+  - className: ItemBarricadeAsset
     classPrettyName: Barricade
     assetProperties:
       - name: Has_Clip_Prefab
         dataType: flag
+      - name: PlacementPreviewPrefab
+        dataType: masterBundleReference
+        description: Should reference a GameObject.
       - name: Health
         dataType: uint16
       - name: Range
@@ -422,6 +445,9 @@ subclasses:
       - name: Recoil_Y
         dataType: float
         default: 1
+      - name: Aiming_Recoil_Multiplier
+        dataType: float
+        default: 1
       - name: Spread
         dataType: float
         default: 1
@@ -457,6 +483,7 @@ subclasses:
             descripton: Specified if alerts are not generated.
           - name: Volume
             dataType: float
+            default: 1
             description: Amount to multiply gunfire sound volume.
           - name: Durability
             dataType: uint8
@@ -618,6 +645,9 @@ subclasses:
         dataType: boolean
         default: true
         description: Specifies if the should the mesh be mirrored for left handed player models.
+      - name: WearAudio
+        dataType: masterBundleReference
+        description: Uses `Sounds/Zipper.mp3` (if the clothing is a backpack or vest), or `Sounds/Sleeve.mp3` (all others).
     subclasses:
       - className: ItemBagAsset
         classPrettyName: Bag
@@ -1104,6 +1134,9 @@ subclasses:
             dataType: float
           - name: Recoil_Max_Y
             dataType: float
+          - name: Aiming_Recoil_Multiplier
+            dataType: float
+            default: 1
           - name: Recover_X
             dataType: float
           - name: Recover_Y
@@ -1185,6 +1218,9 @@ subclasses:
             default: true
           - name: Can_Aim_During_Sprint
             dataType: boolean
+          - name: Aiming_Movement_Speed_Multiplier
+            dataType: float
+            default: 1 (Can_Aim_During_Sprint is true), or 0.75 (Can_Aim_During_Sprint is false)
           - name: Can_Ever_Jam
             dataType: flag
           - name: Jam_Quality_Threshold
