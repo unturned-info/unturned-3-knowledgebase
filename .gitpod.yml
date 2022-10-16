@@ -10,3 +10,7 @@ ports:
   - name: website
     port: 8000
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - yzhang.markdown-all-in-one
