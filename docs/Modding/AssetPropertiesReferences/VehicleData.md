@@ -23,7 +23,7 @@
 
 __ID__: The item ID is used to spawn the item into the game, and is represented as an unsigned 16 bit integer (a range of 0–65535). It is recommended not to use a value less than 2,000 as those are reserved for official content. It is also recommended to avoid any ID range being used by curated content, as those are often used by modded servers and custom Workshop maps. Vehicles ID ranges do not conflict with those of Items or Objects.
 
-__Bypass\_ID\_Limit__: Allows you to use an ID that is within the space reserved for vanilla content.
+__Bypass\_ID\_Limit__: Allows you to use an ID that is within the space reserved for vanilla content, the game will throw an exception if you use an ID below 200 otherwise.
 
 __Size2\_Z__: Controls orthogonal camera size for vehicle skin icons. Basically irrelevant since very few vehicles have skins. Defaults to `0.0`
 
@@ -163,7 +163,7 @@ __Pitch\_Idle__: Changes the pitch of the engine audio at idle. If your audio cl
 
 __Pitch\_Drive__: Changes the pitch of the engine audio while driving. If your audio clip is named Engine_Large or Engine_Medium this is preset to .075 and .025
 
-__Exit__: Exit distance from vehicle.
+__Exit__: Exit distance from vehicle, defaults to `2.0`.
 
 __Cam_Follow_Distance__: Camera distance from player while in vehicle. Defaults to `5.5` unless __Cam_Follow_Distance__ is present, in which case the default value is `0.0`.
 
