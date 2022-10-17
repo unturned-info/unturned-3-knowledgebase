@@ -3,7 +3,6 @@
     <img src="docs/img/Unturned_Info_Logo.svg" alt="Logo" width="100" height="100">
   </a>
 </h1>
-
 <div align="center">
   Unturned.Info
   <br />
@@ -22,6 +21,7 @@
 
 
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/unturned-info/unturned-3-knowledgebase/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![Contribute with GitPod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/unturned-info/unturned-3-knowledgebase)
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/unturned-info/unturned-3-knowledgebase/Deploy%20MKDocs?label=MKDocs%20Deployment&style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unturned-info/unturned-3-knowledgebase/gh-pages?style=flat-square)
