@@ -1,7 +1,19 @@
 # Contributing
 
-Note:
-This documentation is a WIP and you should always use common sense when reading it. It is intended to be a quick overview of my workflow and not an accurate reference outside (or inside) of this repository
+> **Note**
+> This documentation is a WIP and you should always use common sense when reading it. It is intended to be a quick overview of my workflow and not an accurate reference outside (or inside) of this repository. When in doubt or if you have any questions, ask on our Discord server.
+
+## Developer Certificate of Origin
+
+All commits are required to contain a signoff certifying you agree to the [Developer Certificate of Origin](https://developercertificate.org/).
+
+Commits made via the Github web ui should automatically sign off commits. Unfortunately it seems that this doesn't always happen, so if your commit interface doesn't mention "Sign off" anywhere, or look like the image below, add the text `Signed-off-by: Name <email>` to the commit description.
+
+![Github web UI commit button displaying "Sign off and commit changes"](https://user-images.githubusercontent.com/22665282/196296929-bd33aefe-5a3c-4efa-8bae-a7eafe90500e.png)
+
+If you're not using the Github web UI, you need to either add `-s` or `--signoff` to your git command line options. For instance `git commit --signoff --message "Commit Message"`.
+
+For changes done with VSCode, make sure you select the commit and sign off option instead of the standard commit button.
 
 ## Standards
 
@@ -13,6 +25,12 @@ Anything outside of the `docs/` directory is not included in the final build. Th
 
 Simple fixes can easily be done online through the GitHub editor, and proposed via pull request. All pages use markdown for styling with some extra extensions which won't be shown in GitHubs preview. Edits can also be suggested via creating an issue on github.
 
+## Gitpod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unturned-info/unturned-3-knowledgebase)
+
+Gitpod is an online service that provides an automatically provisioned VSCode instance. If you want a better editing experience than using the Github online editor, but don't want to deal with installing VSCode and all of our dependencies to review your changes, it may be worth a try.
+
 ## Locally
 
 More advanced changes are best done locally via forking and cloning the repo locally. After you've completed your changes you can submit a pull request to the main repository from your fork, and it will be reviewed.
@@ -21,7 +39,7 @@ More advanced changes are best done locally via forking and cloning the repo loc
 
 If you are planning on writing  or editing a larger amount of markdown, its worth getting an environment that suites you. I personally use VSCode with Spell Right, Markdown All in One, and markdownlint along with some git related extensions. Visual studio lets you easily preview some markdown (but not the extensions the full site uses)
 
-For previewing within the site, you can install mkdocs-material via pip `pip install mkdocs-material`, and run it's local development server `mkdocs serve` in the repository directory.
+For previewing within the site, you can install mkdocs-material via pip `pip install -r requirements.txt`, and run it's local development server `mkdocs serve` in the repository directory.
 
 Documentation for mkdocs-material can be found at <https://squidfunk.github.io/mkdocs-material/getting-started/>
 
