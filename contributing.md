@@ -9,7 +9,9 @@ All commits are required to contain a signoff certifying you agree to the [Devel
 
 Commits made via the Github web ui should automatically sign off commits. Unfortunately it seems that this doesn't always happen, so if your commit interface doesn't mention "Sign off" anywhere, or look like the image below, add the text `Signed-off-by: Name <email>` to the commit description.
 
-![Github web UI commit button displaying "Sign off and commit changes"](https://user-images.githubusercontent.com/22665282/196296929-bd33aefe-5a3c-4efa-8bae-a7eafe90500e.png)
+![Github web UI commit button displaying "Sign off and commit changes"](https://user-images.githubusercontent.com/22665282/196296929-bd33aefe-5a3c-4efa-8bae-a7eafe90500e.png#gh-light-mode-only)
+![Github web UI commit button displaying "Sign off and commit changes"](https://user-images.githubusercontent.com/22665282/196369582-115dfee5-337c-4061-82ee-be101364daa8.png#gh-dark-mode-only)
+
 
 If you're not using the Github web UI, you need to either add `-s` or `--signoff` to your git command line options. For instance `git commit --signoff --message "Commit Message"`.
 
