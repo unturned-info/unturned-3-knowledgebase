@@ -49,4 +49,4 @@ If you plan to work with the repository on your own computer, you'll want to fir
 
 In order to preview or test the site, you'll need to have a recent version of python installed (>=3.7) as well as the sites dependencies. To install it's python dependencies, run `pip install -r requirements.txt` in a terminal or install PDM and run `pdm sync`.
 
-The MKdocs dev server is ran with `mkdocs serve` or `pdm serve`, if you installed the dependencies with pdm. It can be exited with ctrl+c.
+The MKdocs dev server is ran with `mkdocs serve` or `pdm serve`, depending on whether you installed the dependencies with pip or pdm. It can be exited with ctrl+c.
