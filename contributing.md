@@ -23,6 +23,9 @@ To the extent possible, anything you write or edit should follow the commonmark 
 
 Anything outside of the `docs/` directory is not included in the final build. That mean any images included within your markdown should be well organized in their own folder near your files.
 
+Documentation for mkdocs-material can be found at [https://squidfunk.github.io/mkdocs-material/getting-started/](https://squidfunk.github.io/mkdocs-material/reference/)
+
+
 ## GithHub web ediitor
 
 Simple fixes can easily be done online through the GitHub editor, and proposed via pull request. All pages use markdown for styling with some extra extensions which won't be shown in GitHubs preview. Edits can also be suggested via creating an issue on GitHub.
@@ -47,21 +50,3 @@ If you plan to work with the repository on your own computer, you'll want to fir
 In order to preview or test the site, you'll need to have a recent version of python installed (>=3.7) as well as the sites dependencies. To install it's python dependencies, run `pip install -r requirements.txt` in a terminal or install PDM and run `pdm sync`.
 
 The MKdocs dev server is ran with `mkdocs serve` or `pdm serve`, if you installed the dependencies with pdm. It can be exited with ctrl+c.
-
-### Advanced local editing
-
-If you are planning on writing  or editing a larger amount of markdown, its worth getting an environment that suites you. I personally use VSCode with Spell Right, Markdown All in One, and markdownlint along with some git related extensions. Visual studio lets you easily preview some markdown (but not the extensions the full site uses)
-
-If you want to update dependencies, you must install and use PDM, as the requirements.txt file is derived from it (and currently only manually, so it may even be outdated).
-
-For previewing within the site, you can install mkdocs-material via pip `pip install -r requirements.txt`, and run it's local development server `mkdocs serve` in the repository directory.
-
-Documentation for mkdocs-material can be found at <https://squidfunk.github.io/mkdocs-material/getting-started/>
-
-## GitHub pages deployment
-
-MKdocs is deployed to GitHub pages via an action that runs on all commits to master. It generates documentation and pushes it to the gh-pages branch, which GitHub uses to serve the site.
-
-## Disclaimers
-
-All submissions are subject to final review by one of the repositories designated reviewer and may not be accepted.
