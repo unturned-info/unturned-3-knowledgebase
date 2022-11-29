@@ -80,12 +80,13 @@ markdown_extensions:
   - abbr
   - pymdownx.snippets:
       auto_append:
-        - includes/abbreviations.md
+        - include/abbreviations.md
 plugins:
   - git-revision-date-localized:
       type: date
   - search
   - macros:
+      include_dir: include
       include_yaml:
         - item_data: data/ItemData.yml
   - minify:
