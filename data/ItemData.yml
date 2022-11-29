@@ -128,12 +128,12 @@ assetProperties:
   - name: InventoryAudio
     dataType: masterBundleReference
     description: |-
-      Reference to audio. If not specified, uses `Sounds/Inventory/LightGrab.asset` (for items less than 2x2) or `Sounds/Inventory/RoughGrab.asset` from the core masterbundle. 
-      Backpacks use `Sounds/Inventory/LightMetalEquipment.asset` (less than or equal to 3x3 base size), `Sounds/Inventory/MediumMetalEquipment.asset` (less than or equal to 6x6 base size), or `Sounds/Inventory/HeavyMetalEquipment.asset` (all others).
-      Barricades use `Sounds/Inventory/Seeds.asset` (if the name contains "Seed"), `Sounds/Inventory/SmallMetal.asset` (if the name contains Metal), `Sounds/Inventory/LightMetalEquipment.asset` (if the size is less than or equal to 1x1), `Sounds/Inventory/MediumMetalEquipment.asset` (if the size is less than or equal to 2x2), or `Sounds/Inventory/HeavyMetalEquipment.asset` (for everything else not covered).
-      Calibre assets use `Sounds/Inventory/SmallGunAttachment.asset`
-      Clothing assets use `Sounds/Inventory/LightCloth.asset` (if the size_x and size_y is less than or equal to 1x1), `Sounds/Inventory/LightClothEquipment.asset` (if it is a rarity of common or uncommon), or `Sounds/Inventory/MediumClothEquipment.asset` (all others).
-      Guns assets use the base default for bows, `Sounds/Inventory/SmallGunAttachment.asset` (if the size_x and size_y is less than or equal to 1x1), or `Sounds/Inventory/LargeGunAttachment.asset`.
+      Reference to audio. If not specified, uses `Sounds/Inventory/LightGrab.asset` (for items less than 2x2) or `Sounds/Inventory/RoughGrab.asset` from the core masterbundle.  
+      Backpacks use `Sounds/Inventory/LightMetalEquipment.asset` (less than or equal to 3x3 base size), `Sounds/Inventory/MediumMetalEquipment.asset` (less than or equal to 6x6 base size), or `Sounds/Inventory/HeavyMetalEquipment.asset` (all others). 
+      Barricades use `Sounds/Inventory/Seeds.asset` (if the name contains "Seed"), `Sounds/Inventory/SmallMetal.asset` (if the name contains Metal), `Sounds/Inventory/LightMetalEquipment.asset` (if the size is less than or equal to 1x1), `Sounds/Inventory/MediumMetalEquipment.asset` (if the size is less than or equal to 2x2), or `Sounds/Inventory/HeavyMetalEquipment.asset` (for everything else not covered). 
+      Calibre assets use `Sounds/Inventory/SmallGunAttachment.asset` 
+      Clothing assets use `Sounds/Inventory/LightCloth.asset` (if the size_x and size_y is less than or equal to 1x1), `Sounds/Inventory/LightClothEquipment.asset` (if it is a rarity of common or uncommon), or `Sounds/Inventory/MediumClothEquipment.asset` (all others). 
+      Guns assets use the base default for bows, `Sounds/Inventory/SmallGunAttachment.asset` (if the size_x and size_y is less than or equal to 1x1), or `Sounds/Inventory/LargeGunAttachment.asset`. 
   
   - name: Slot
     dataType: enum
