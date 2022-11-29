@@ -3,6 +3,12 @@
 {{ item_data }}
 ```
 
+{% macro pretty_print_enum(enum) %}
+{%- for value in enum %}
+`{{value}}`{%- if loop.last %}.{%- else %}, {%- endif %}
+{%- endfor %}
+{% endmacro %}
+
 {% macro generate_properties(data, depth) %}
 {% for i in range(depth + 1) %}#{% endfor %}{%+ if data.classPrettyName is defined %}{{ data.classPrettyName }}{% else %}{{ data.className }}{% endif %}
 
@@ -11,8 +17,9 @@
 {% endif %}
 {% for property in data.assetProperties %}
 
-**{{ property.name }}** <{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}\>: {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
+**{{ property.name }}** <{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}\>: {%+ if property.dataType == "enum" %}{{ pretty_print_enum(property.options) }}{% endif %} {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
 {%- endfor %}
+
 {% for subclass in data.subclasses %}
 {{- generate_properties(subclass, depth + 1) -}}
 {% endfor %}
