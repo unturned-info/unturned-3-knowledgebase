@@ -49,7 +49,9 @@
               "boolean",
               "string",
               "RGB",
-              "masterBundleReference"
+              "masterBundleReference",
+              "assetReference",
+              "generic"
             ]
           },
           "default": {
