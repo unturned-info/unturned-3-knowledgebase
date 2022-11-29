@@ -1023,6 +1023,119 @@ subclasses:
             #TODO
           - name: Quest_Reward_#
             dataType:
+            - name: Quest_Reward_#_Type
+              dataType: enum
+              options:
+              - NONE
+              - EXPERIENCE
+              - REPUTATION
+              - FLAG_BOOL
+              - FLAG_SHORT
+              - FLAG_SHORT_RANDOM
+              - QUEST
+              - ITEM
+              - ITEM_RANDOM
+              - ACHIEVEMENT
+              - VEHICLE
+              - TELEPORT
+              - EVENT
+              - FLAG_MATH
+              - CURRENCY
+              - HINT
+              - PLAYER_SPAWNPOINT
+          - name: Quest_Reward_#_Value
+            dataType: generic
+            description: |
+
+            
+              |Type       |datatype|  
+              |-----------|--------|  
+              |EXPERIENCE |uint32  |  
+              |REPUTATION |int32   |  
+              |FLAG_BOOL  |boolean |  
+              |FLAG_SHORT |int16   |  
+              |Currency   |uint32  |
+          - name: Quest_Reward_#_ID
+            dataType: generic
+            description: May contain a uint16 or GUID. For `ACHIEVEMENT`, this is a string instead.
+          - name: Quest_Reward_#_Min_Value
+            dataType: int16
+            description: Applies to `FLAG_SHORT_RANDOM` type.
+          - name: Quest_Reward_#_Max_Value
+            dataType: int16
+            description: Applies to `FLAG_SHORT_RANDOM` type.
+          - name: Quest_Reward_#_Modification
+            dataType: enum
+            options:
+            - NONE
+            - ASSIGN
+            - INCREMENT
+            - DECREMENT
+            description: Applies to `FLAG_SHORT` and `FLAG_SHORT_RANDOM` types.
+          - name: Quest_Reward_#_Auto_Equip
+            dataType: boolean
+            description: Applies to `ITEM` and `ITEM_RANDOM` types.
+          - name: Quest_Reward_#_Amount
+            dataType: uint8
+            default: 0
+            description: Applies to `ITEM` and `ITEM_RANDOM` types.
+          - name: Quest_Reward_#_Sight
+            dataType: uint16
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Tactical
+            dataType: uint16
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Grip
+            dataType: uint16
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Barrel
+            dataType: uint16
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Magazine
+            dataType: uint16
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Ammo
+            dataType: uint8
+            default: 0
+            description: Applies to `ITEM` type.
+          - name: Quest_Reward_#_Spawnpoint
+            dataType: string
+            description: For `VEHICLE`, where they should spawn. For `TELEPORT`, where the player will be teleported to.
+          - name: Quest_Reward_#_A_ID
+            dataType: uint16
+            description: Applies to `FLAG_MATH` type.
+          - name: Quest_Reward_#_B_ID
+            dataType: uint16
+            description: Applies to `FLAG_MATH` type.
+          - name: Quest_Reward_#_B_Value
+            dataType: int16
+            description: Applies to `FLAG_MATH` type.
+          - name: Quest_Reward_#_Operation
+            dataType: enum
+            options:
+            - NONE
+            - ASSIGN
+            - ADDITION
+            - SUBTRACTION
+            - MULTIPLICATION
+            - DIVISION
+            - MODULO
+            description: Applies to `FLAG_MATH` type.
+          - name: Quest_Reward_#_GUID
+            dataType: assetReference
+            description: Applies to `CURRENCY` type.
+          - name: Quest_Reward_#_Text
+            dataType: string
+            description: Applies to `HINT` type.
+          - name: Quest_Reward_#_Duration
+            dataType: float
+            default: 2
+            description: Applies to `HINT` type.
           - name: Item_Reward_Spawn_ID
             dataType: uint16
           - name: Min_Item_Rewards
