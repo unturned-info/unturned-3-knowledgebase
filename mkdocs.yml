@@ -77,6 +77,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
 plugins:
   - git-revision-date-localized:
       type: date
