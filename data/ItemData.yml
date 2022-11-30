@@ -675,7 +675,7 @@ subclasses:
             description: Spherical radius in meters within which is considered powered. Maximum range of 256.
           - name: Burn
             dataType: float
-            description: Number of seconds taken to burn one unity of fuel.
+            description: Number of seconds taken to burn one unit of fuel.
       - className: ItemLibraryAsset
         classPrettyName: Library
         assetProperties:
