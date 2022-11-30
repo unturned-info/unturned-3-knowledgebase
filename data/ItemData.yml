@@ -122,6 +122,8 @@ assetProperties:
   - name: Equipable_Movement_Speed_Multiplier
     dataType: float
     default: 1
+  - name: EquipAudioClip
+    dataType: masterBundleReference
   - name: InspectAudioDef
     dataType: masterBundleReference
     description: Reference to audio
@@ -152,7 +154,219 @@ assetProperties:
   - name: Actions
     dataType: uint8
     description: Count of Actions.
-
+  - name: Blueprint_#_Type
+    dataType: enum
+    options:
+      - TOOL
+      - APPAREL
+      - SUPPLY
+      - GEAR
+      - AMMO
+      - BARRICADE
+      - STRUCTURE
+      - UTILITIES
+      - FURNITURE
+      - REPAIR
+  - name: Blueprint_#_Supplies
+    dataType: uint8
+    description: Count of provided supplies.
+  - name: Blueprint_#_Supply_#_ID
+    dataType: uint16
+  - name: Blueprint_#_Supply_#_Critical
+    dataType: flag
+  - name: Blueprint_#_Supply_#_Amount
+    dataType: uint8
+    description: Must be at least 1.
+  - name: Blueprint_#_Outputs
+    dataType: uint8
+  - name: Blueprint_#_Output_#_ID
+    dataType: uint16
+  - name: Blueprint_#_Output_#_Amount
+    dataType: uint8
+  - name: Blueprint_#_Output_#_Origin
+    dataType: enum
+    options:
+    - WORLD
+    - ADMIN
+    - CRAFT
+    - NATURE
+  - name: Blueprint_#_Product
+    dataType: uint16
+  - name: Blueprint_#_Products
+    dataType: uint8
+  - name: Blueprint_#_Origin
+    dataType: enum
+    options:
+    - WORLD
+    - ADMIN
+    - CRAFT
+    - NATURE
+    default: CRAFT
+  - name: Blueprint_#_Tool
+    dataType: uint16
+  - name: Blueprint_#_Tool_Critical
+    dataType: flag
+  - name: Blueprint_#_Build
+    dataType: guidOrLegacy
+  - name: Blueprint_#_Level
+    dataType: uint8
+  - name: Blueprint_#_Skill
+    dataType: enum
+    options:
+    - NONE
+    - CRAFT
+    - COOK
+    - REPAIR
+  - name: Blueprint_#_State_Transfer
+    dataType: flag
+  - name: Blueprint_#_Map
+    dataType: string
+  - name: Blueprint_#_Conditions
+    dataType: uint18
+  #TODO conditions
+  - name: Blueprint_#_Reward_#_Type
+    dataType: enum
+    options:
+    - NONE
+    - EXPERIENCE
+    - REPUTATION
+    - FLAG_BOOL
+    - FLAG_SHORT
+    - FLAG_SHORT_RANDOM
+    - QUEST
+    - ITEM
+    - ITEM_RANDOM
+    - ACHIEVEMENT
+    - VEHICLE
+    - TELEPORT
+    - EVENT
+    - FLAG_MATH
+    - CURRENCY
+    - HINT
+    - PLAYER_SPAWNPOINT
+  - name: Blueprint_#_Reward_#_Value
+    dataType: generic
+    description: |
+    
+      |Type       |datatype|  
+      |-----------|--------|  
+      |EXPERIENCE |uint32  |  
+      |REPUTATION |int32   |  
+      |FLAG_BOOL  |boolean |  
+      |FLAG_SHORT |int16   |  
+      |Currency   |uint32  |
+  - name: Blueprint_#_Reward_#_ID
+    dataType: generic
+    description: May contain a uint16 or GUID. For `ACHIEVEMENT`, this is a string instead.
+  - name: Blueprint_#_Reward_#_Min_Value
+    dataType: int16
+    description: Applies to `FLAG_SHORT_RANDOM` type.
+  - name: Blueprint_#_Reward_#_Max_Value
+    dataType: int16
+    description: Applies to `FLAG_SHORT_RANDOM` type.
+  - name: Blueprint_#_Reward_#_Modification
+    dataType: enum
+    options:
+    - NONE
+    - ASSIGN
+    - INCREMENT
+    - DECREMENT
+    description: Applies to `FLAG_SHORT` and `FLAG_SHORT_RANDOM` types.
+  - name: Blueprint_#_Reward_#_Auto_Equip
+    dataType: boolean
+    description: Applies to `ITEM` and `ITEM_RANDOM` types.
+  - name: Blueprint_#_Reward_#_Amount
+    dataType: uint8
+    default: 0
+    description: Applies to `ITEM` and `ITEM_RANDOM` types.
+  - name: Blueprint_#_Reward_#_Sight
+    dataType: uint16
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Tactical
+    dataType: uint16
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Grip
+    dataType: uint16
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Barrel
+    dataType: uint16
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Magazine
+    dataType: uint16
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Ammo
+    dataType: uint8
+    default: 0
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Reward_#_Spawnpoint
+    dataType: string
+    description: For `VEHICLE`, where they should spawn. For `TELEPORT`, where the player will be teleported to.
+  - name: Blueprint_#_Reward_#_A_ID
+    dataType: uint16
+    description: Applies to `FLAG_MATH` type.
+  - name: Blueprint_#_Reward_#_B_ID
+    dataType: uint16
+    description: Applies to `FLAG_MATH` type.
+  - name: Blueprint_#_Reward_#_B_Value
+    dataType: int16
+    description: Applies to `FLAG_MATH` type.
+  - name: Blueprint_#_Reward_#_Operation
+    dataType: enum
+    options:
+    - NONE
+    - ASSIGN
+    - ADDITION
+    - SUBTRACTION
+    - MULTIPLICATION
+    - DIVISION
+    - MODULO
+    description: Applies to `FLAG_MATH` type.
+  - name: Blueprint_#_Reward_#_GUID
+    dataType: assetReference
+    description: Applies to `CURRENCY` type.
+  - name: Blueprint_#_Reward_#_Text
+    dataType: string
+    description: Applies to `HINT` type.
+  - name: Blueprint_#_Reward_#_Duration
+    dataType: float
+    default: 2
+    description: Applies to `HINT` type.
+  - name: Action_#_Type
+    dataType: enum
+    options:
+    - BLUEPRINT
+  - name: Action_#_Blueprints
+    dataType: uint8
+  - name: Action_#_Blueprint_#_index
+    dataType: uint8
+  - name: Action_#_Blueprint_#_Link
+    dataType: flag
+  - name: Action_#_key
+    dataType: string
+  - name: Action_#_Text
+    dataType: string
+  - name: Action_#_Tooltip
+    dataType: string
+    default: _Text
+  - name: Action_#_Source
+    dataType: uint16
+  - name: Bypass_Hash_Verification
+    dataType: flag
+  - name: Override_Show_Quality
+    dataType: flag
+  - name: Should_Drop_On_Death
+    dataType: boolean
+    default: true
+  - name: Allow_Manual_Drop
+    dataType: boolean
+    default: true
+  - name: Should_Delete_At_Zero_Quality
+    dataType: boolean
 subclasses:
   - className: ItemArrestEnd
   - className: ItemArrestStart
@@ -1023,26 +1237,26 @@ subclasses:
             #TODO
           - name: Quest_Reward_#
             dataType:
-            - name: Quest_Reward_#_Type
-              dataType: enum
-              options:
-              - NONE
-              - EXPERIENCE
-              - REPUTATION
-              - FLAG_BOOL
-              - FLAG_SHORT
-              - FLAG_SHORT_RANDOM
-              - QUEST
-              - ITEM
-              - ITEM_RANDOM
-              - ACHIEVEMENT
-              - VEHICLE
-              - TELEPORT
-              - EVENT
-              - FLAG_MATH
-              - CURRENCY
-              - HINT
-              - PLAYER_SPAWNPOINT
+          - name: Quest_Reward_#_Type
+            dataType: enum
+            options:
+            - NONE
+            - EXPERIENCE
+            - REPUTATION
+            - FLAG_BOOL
+            - FLAG_SHORT
+            - FLAG_SHORT_RANDOM
+            - QUEST
+            - ITEM
+            - ITEM_RANDOM
+            - ACHIEVEMENT
+            - VEHICLE
+            - TELEPORT
+            - EVENT
+            - FLAG_MATH
+            - CURRENCY
+            - HINT
+            - PLAYER_SPAWNPOINT
           - name: Quest_Reward_#_Value
             dataType: generic
             description: |

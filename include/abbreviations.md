@@ -8,5 +8,7 @@
 *[int32]: signed 32 bit integer from -2,147,483,648 to 2,147,483,647
 *[int64]: signed 64 bit integer from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 *[float]: 32 bit floating point number from ±1.5 x 10−45 to ±3.4 x 1038 including decimal values.
-*[boolean]: a simple true/false value
-*[RGB]: Represented by providing 3 lines with R/G/B data
+*[boolean]: a simple true/false value.
+*[RGB]: Represented by providing 3 lines with R/G/B data.
+*[guidOrLegacy]: Either a uint16 id or a GUID.
+*[generic]: Can be multiple datatypes.

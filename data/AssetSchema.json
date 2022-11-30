@@ -51,6 +51,7 @@
               "RGB",
               "masterBundleReference",
               "assetReference",
+              "guidOrLegacy",
               "generic"
             ]
           },
