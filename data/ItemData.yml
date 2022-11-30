@@ -224,6 +224,165 @@ assetProperties:
   - name: Blueprint_#_Conditions
     dataType: uint18
   #TODO conditions
+  - name: Blueprint_#_Rewards_Type
+    dataType: enum
+    options:
+    - NONE
+    - EXPERIENCE
+    - REPUTATION
+    - FLAG_BOOL
+    - FLAG_SHORT
+    - QUEST
+    - SKILLSET
+    - ITEM
+    - KILLS_ZOMBIE
+    - KILLS_HORDE
+    - KILLS_ANIMAL
+    - COMPARE_FLAGS
+    - TIME_OF_DAY
+    - PLAYER_LIFE_HEALTH
+    - PLAYER_LIFE_FOOD
+    - PLAYER_LIFE_WATER
+    - PLAYER_LIFE_VIRUS
+    - HOLIDAY
+    - KILLS_PLAYER
+    - KILLS_OBJECT
+    - CURRENCY
+    - KILLS_TREE
+    - WEATHER_STATUS
+    - WEATHER_BLEND_ALPHA
+    - IS_FULL_MOON
+  - name: Blueprint_#_Rewards_Reset
+    dataType: flag
+  - name: Blueprint_#_Rewards_Logic
+    dataType: enum
+    options:
+    - NONE
+    - LESS_THAN
+    - LESS_THAN_OR_EQUAL_TO
+    - EQUAL
+    - NOT_EQUAL
+    - GREATER_THAN_OR_EQUAL_TO
+    - GREATER_THAN
+    default: NONE
+  - name: Blueprint_#_Rewards_Value
+    dataType: generic
+    description: |
+    
+    
+      |Type              |datatype|  
+      |------------------|--------|  
+      |`EXPERIENCE`        |uint32  |  
+      |`REPUTATION`        |int32   |  
+      |`FLAG_BOOL`         |boolean |  
+      |`FLAG_SHORT`        |int16   |
+      |`SKILLSET`          |enum(`NONE`,`ACTIVE`,`READY`,`COMPLETED`|
+      |`KILLS_ZOMBIE`|int16|
+      |`KILLS_HORDE`|int16|
+      |`KILLS_ANIMAL`|int16|
+      |`PLAYER_LIFE_HEALTH`|int32|
+      |`PLAYER_LIFE_FOOD`|int32|
+      |`PLAYER_LIFE_WATER`|int32|
+      |`PLAYER_LIFE_VIRUS`|int32|
+      |`HOLIDAY`|enum(`NONE`, `HALLOWEEN`, `CHRISTMAS`, `APRIL_FOOLS`, `MAX`)|
+      |`KILLS_PLAYER`|int16|
+      |`KILLS_OBJECT`|int16|
+      |`CURRENCY`|int32|
+      |`KILLS_TREE`|int16|
+      |`WEATHER_STATUS`|enum(`Active`,`Transitioning_In`,`Fully_Transitioned_In`,`Transitioning_Out`,`Fully_Transitioned_Out`,`Transitioning`)|
+      |`WEATHER_BLEND_ALPHA`|float|
+      |`IS_FULL_MOON`|boolean|
+
+  - name: Blueprint_#_Rewards_ID
+    dataType: uint16
+    description: Applies to `FLAG_BOOL`, `FLAG_SHORT`, `QUEST` type.
+  - name: Blueprint_#_Rewards_Allow_Unset
+    dataType: flag
+    description: Applies to `FLAG_BOOL`, `FLAG_SHORT` types.
+  - name: Blueprint_#_Rewards_Status
+    dataType: enum
+    options:
+    - NONE
+    - ACTIVE
+    - READY
+    - COMPLETED
+  - name: Blueprint_#_Rewards_Ignore_NPC
+    dataType: boolean
+    description: Applies to `QUEST` type.
+  - name: Blueprint_#_Rewards_Amount
+    dataType: uint16
+    description: Applies to `ITEM` type.
+  - name: Blueprint_#_Rewards_Zombie
+    dataType: enum
+    options:
+    - NONE
+    - NORMAL
+    - MEGA
+    - CRAWLER
+    - SPRINTER
+    - FLANKER_FRIENDLY
+    - FLANKER_STALK
+    - BURNER
+    - ACID
+    - BOSS_ELECTRIC
+    - BOSS_WIND
+    - BOSS_FIRE
+    - BOSS_ALL
+    - BOSS_MAGMA
+    - SPIRIT
+    - BOSS_SPIRIT
+    - BOSS_NUCLEAR
+    - DL_RED_VOLATILE
+    - DL_BLUE_VOLATILE
+    - BOSS_ELVER_STOMPER
+    - BOSS_KUWAIT
+    default: NONE
+    description: Applies to `KILLS_ZOMBIE` type.
+  - name: Blueprint_#_Rewards_Spawn_Quantity
+    dataType: int32
+    description: Applies to `KILLS_ZOMBIE` type.
+  - name: Blueprint_#_Rewards_Nav
+    dataType: uint8
+    description: Applies to `KILLS_ZOMBIE`, `KILLS_HORDE` type.
+  - name: Blueprint_#_Rewards_Radius
+    dataType: float
+    default: 512
+    description: Applies to `KILLS_ZOMBIE` type.
+  - name: Blueprint_#_Rewards_MinRadius
+    dataType: float
+    description: Applies to `KILLS_ZOMBIE` type.
+  - name: Blueprint_#_Rewards_Spawn
+    dataType: flag
+    description: Applies to `KILLS_ZOMBIE` type.
+  - name: Blueprint_#_Rewards_Animal
+    dataType: uint16
+    description: Applies to `KILLS_ANIMAL` type.
+  - name: Blueprint_#_Rewards_A_ID
+    dataType: uint16
+    description: Applies to `COMPARE_FLAGS` type.
+  - name: Blueprint_#_Rewards_B_ID
+    dataType: uint16
+    description: Applies to `COMPARE_FLAGS` type.
+  - name: Blueprint_#_Rewards_Allow_A_Unset
+    dataType: flag
+    description: Applies to `COMPARE_FLAGS` type.
+  - name: Blueprint_#_Rewards_Allow_B_Unset
+    dataType: flag
+    description: Applies to `COMPARE_FLAGS` type.
+  - name: Blueprint_#_Rewards_Second
+    dataType: int32
+    description: Applies to `TIME_OF_DAY` type.
+  - name: Blueprint_#_Rewards_Object
+    dataType: guid
+    description: Applies to `KILLS_OBJECT` type.
+  - name: Blueprint_#_Rewards_Tree
+    dataType: guid
+    description: Applies to `KILLS_TREE` type.
+  - name: Blueprint_#_Rewards_GUID
+    dataType: assetReference
+    description: Applies to `CURRENCY`, `WEATHER_STATUS`, `WEATHER_BLEND_ALPHA` types. For `CURRENCY` it should be an `ItemCurrencyAsset`. For `WEATHER_STATUS` and `WEATHER_BLEND_ALPHA` it should be a `WeatherAssetBase`.
+
+
   - name: Blueprint_#_Reward_#_Type
     dataType: enum
     options:
@@ -248,6 +407,7 @@ assetProperties:
     dataType: generic
     description: |
     
+
       |Type       |datatype|  
       |-----------|--------|  
       |EXPERIENCE |uint32  |  
@@ -255,6 +415,7 @@ assetProperties:
       |FLAG_BOOL  |boolean |  
       |FLAG_SHORT |int16   |  
       |Currency   |uint32  |
+
   - name: Blueprint_#_Reward_#_ID
     dataType: generic
     description: May contain a uint16 or GUID. For `ACHIEVEMENT`, this is a string instead.
