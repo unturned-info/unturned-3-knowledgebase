@@ -2,10 +2,7 @@
 
 className: ItemAsset
 classPrettyName: Item
-classDescription: |-
-  A complex description
-  that last for multiple
-  lines
+classDescription: The basic Item class that all other item types inherit from. Any of its properties can be applied to all other items.
 assetProperties:
   - name: Pro
     dataType: flag
