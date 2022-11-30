@@ -12,7 +12,7 @@ assetProperties:
     description: Should Item be a cosmetic
   - name: Type
     dataType: enum
-    description: type
+    description: Each category of item has its own type. The type is used for the item's context type as viewed in the context menu.
     options:
     - HAT
     - PANTS
@@ -78,7 +78,7 @@ assetProperties:
   - name: Size_X
     dataType: uint8
     default: 1
-    description: Minimum of 1.
+    description: Minimum of 1. The width of the item in the inventory.
   - name: Size_Y
     dataType: uint8
     default: 1
@@ -1337,7 +1337,7 @@ subclasses:
         dataType: float
       - name: Wear
         dataType: uint8
-        description: Min of 1.
+        description: Min of 1. Increment to degrade quality by. Only applicable to items where durability represents a decimal probability chance of quality loss.
       - name: Invulnerable
         dataType: flag
       - name: Allow_Flesh_Fx
