@@ -4,7 +4,7 @@
 !!! info
     Creating plugins for Unturned requires a general knowledge of C#. If you currently do not have any knowledge behind C#, please check out [Microsoft's introduction to the language.](https://dotnet.microsoft.com/en-us/learntocode "dotnet.microsoft.com/en-us/learntocode")
 
-All plugins normally begin with public class that inherits the `RocketPlugin` class. Below is an example of how to properly implement this:
+All plugins normally begin with class that inherits the `RocketPlugin` class. Below is an example of how to properly implement this:
 
 ```csharp
 using Rocket.API;
