@@ -143,6 +143,8 @@ nav:
       - 'Plugins/Plugins.md'
       - 'Plugins/CreatingPlugins.md'
       - 'Plugins/CreatingCommands.md'
+      - Tips & Tricks:
+        - 'Plugins/ChangingChatColor.md'
   - Server Hosting:
     - Server Hosting: 'Server-Hosting/ServerHosting.md'
     - 'Server-Hosting/PortForwarding.md'
