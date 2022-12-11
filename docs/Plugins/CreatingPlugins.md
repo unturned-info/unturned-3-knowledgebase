@@ -1,8 +1,8 @@
-# Creating Your First Plugin
+# Creating Plugins
 
-Creating plugins for Unturned requires a general knowledge of C#. If you currently do not have any knowledge behind C#, please check out [Microsoft's introduction to the language.](https://dotnet.microsoft.com/en-us/learntocode "dotnet.microsoft.com/en-us/learntocode")
-
-### Setting Up
+!!! note The following documentation is for RocketMod (LDM).
+!!! info
+    Creating plugins for Unturned requires a general knowledge of C#. If you currently do not have any knowledge behind C#, please check out [Microsoft's introduction to the language.](https://dotnet.microsoft.com/en-us/learntocode "dotnet.microsoft.com/en-us/learntocode")
 
 All plugins normally begin with public class that inherits the `RocketPlugin` class. Below is an example of how to properly implement this:
 
@@ -47,7 +47,7 @@ namespace ExamplePlugin
     }
 }
 ```
-The plugin will now log in the server console that the plugin has been loaded and unloaded.
+The plugin will also now log in the server console that the plugin has been loaded and unloaded.
 
 You can also subscribe and unsubscribe to events when the plugin loads and unloads:
 
@@ -82,7 +82,7 @@ namespace ExamplePlugin
 }
 ```
 
-The plugin now subscribes and unsubscribes to the `U.Events.OnPlayerConnected`event on load and unload.
+The plugin will subscribe and unsubscribe to the `U.Events.OnPlayerConnected`event on load and unload.
 
 You can also now greet the player when they connect to the server:
 
