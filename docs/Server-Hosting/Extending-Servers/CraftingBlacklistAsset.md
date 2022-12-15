@@ -1,5 +1,7 @@
 # Crafting Blacklist Asset
 
+!!! note This is an [Asset v2](../../Modding/AssetTypes/AssetsV2.md) class.
+
 Prevents specific items or blueprints from being used while crafting. They are hidden from the item quick actions menu and recipe list.
 
 `Input_Items` array of Item [Asset Pointers](../../Modding/AssetPtr.md): Any blueprints consuming these items are cannot be crafted.
@@ -30,6 +32,3 @@ Prevents specific items or blueprints from being used while crafting. They are h
     }
 ]
 ```
-
-!!! note
-    This is an [Asset v2](../../Modding/AssetTypes/AssetsV2.md) class.
