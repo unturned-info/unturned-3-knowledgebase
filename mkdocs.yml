@@ -126,6 +126,7 @@ nav:
     - 'Modding/AssetValidation.md'
     - 'Modding/CharacterMeshReplacement.md'
     - 'Modding/Currency.md'
+    - 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
     - 'Modding/StereoSongAsset.md'
     - 'Modding/UnityUpgrade.md'
     - 'Modding/WeatherAsset.md'
