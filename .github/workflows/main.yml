@@ -12,7 +12,7 @@ jobs:
         with:
           # This is needed for article revision dates, it fetches all git history 
               fetch-depth: 0
-      - uses: actions/cache@v3.2.1
+      - uses: actions/cache@v3.2.5
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/pdm.lock') }}
