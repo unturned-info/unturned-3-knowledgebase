@@ -9,7 +9,7 @@ Two pieces of information: the [port range](#port-range) and [local device addre
 
 ## Port Range
 
-Each Unturned server uses three consecutive ports while running. The first is used for game traffic, the second for server list queries, and the third for communicating with the Steam backend services.
+Each Unturned server uses two consecutive ports while running. The first is used for game traffic, and the second for server list queries.
 
 By default 27015 and 27016 are used. Setting a different value with the `Port` command uses that value and value + 1. Recommended `Port` command settings are 27015 for the first server, 27017 for the second server, 27019 for the third server, so on and so forth.
 
@@ -53,7 +53,7 @@ In general, the steps are along the lines of:
 6. Input 27015 as the starting port(s), and 27016 as the ending port(s).
 
     !!! Note
-        On some routers, it may not be possible to input multiple ports within a single rule. In that case, multiple rules can be set up; one for each of the three ports.
+        On some routers, it may not be possible to input multiple ports within a single rule. In that case, multiple rules can be set up; one for each of the ports.
 
 7. Enable TCP **and** UDP protocols.
 8. Set destination internal IP to the localhost address. In the previous example, our localhost address was `192.168.0.6`
