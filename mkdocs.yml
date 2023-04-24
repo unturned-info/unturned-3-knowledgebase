@@ -149,6 +149,12 @@ nav:
       - 'Modding/mapmaking/Landscape.md'
       - 'Modding/mapmaking/LevelAsset.md'
       - 'Modding/mapmaking/LevelConfig.md'
+  - Plugins:
+      - 'Plugins/Plugins.md'
+      - 'Plugins/CreatingPlugins.md'
+      - 'Plugins/CreatingCommands.md'
+      - Tips & Tricks:
+        - 'Plugins/ChangingChatColor.md'
   - Server Hosting:
     - Server Hosting: 'Server-Hosting/ServerHosting.md'
     - 'Server-Hosting/PortForwarding.md'
