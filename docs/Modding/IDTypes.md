@@ -11,4 +11,4 @@ At the time of writing a useful tool for generating GUIDs is: https://www.guidge
 
 ## IDs
 
-Legacy IDs are unsigned 16 bit integers with a [0, 65535] range, whereas GUIDs are 128 bits with an unimaginably huge range. This allows them to be generated without coordination or registration between developers. The main goal was to replace the legacy ushort IDs with GUIDs, but that goal fell out of reach. It is quite important to note that while the legacy IDs are used mainly, asset conflicts can still occur with GUIDs.
+Legacy IDs are unsigned 16 bit integers with a [0, 65535] range, whereas GUIDs are 128 bits with an unimaginably huge range. This allows them to be generated without coordination or registration between developers. The main goal is to replace the legacy ushort IDs with GUIDs. For instance, in versions past [3.23.4.0](https://store.steampowered.com/news/app/304930/view/3712694972139442648), Object asset types no longer need legacy ushort IDs to function properly. It is quite important to note that while the legacy IDs are used mainly, asset conflicts can still occur with GUIDs.
