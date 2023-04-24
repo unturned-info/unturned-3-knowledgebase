@@ -1,8 +1,7 @@
-from mkdocs_macros import MacrosPlugin
 import re
 
 
-def define_env(env: MacrosPlugin):
+def define_env(env):
     """
     This is the hook for defining variables, macros and filters
 
