@@ -77,10 +77,18 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - include/abbreviations.md
 plugins:
   - git-revision-date-localized:
       type: date
   - search
+  - macros:
+      include_dir: include
+      include_yaml:
+        - item_data: data/ItemData.yml
   - minify:
       minify_html: true
   - redirects:

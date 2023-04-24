@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://unturned.info/data/asset.schema.json",
+  "title": "Asset Class",
+  "description": "A class inheriting from the Asset class",
+  "type": "object",
+
+  "properties": {
+    "className": {
+      "description": "The name of the class",
+      "type": "string"
+    },
+
+    "classPrettyName": {
+      "description": "The user facing name of the class",
+      "type": "string"
+    },
+
+    "classDescription": {
+      "description": "Description of the class",
+      "type": "string"
+    },
+
+    "assetProperties": {
+      "description": "All possible properties of the asset class",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "assetProperty": {
+          "name": {
+            "type": "string",
+            "description": "The name of the item property"
+          },
+          "dataType": {
+            "type": "string",
+            "description": "Data type accepted by the property",
+            "enum": [
+              "uint8",
+              "uint16",
+              "uint32",
+              "uint64",
+              "int8",
+              "int16",
+              "int32",
+              "int64",
+              "float",
+              "flag",
+              "enum",
+              "boolean",
+              "string",
+              "RGB",
+              "masterBundleReference",
+              "assetReference",
+              "guidOrLegacy",
+              "generic"
+            ]
+          },
+          "default": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "A list of all possible values"
+            }
+          }
+        },
+
+        "assetPropertyDescription": {
+            "type": "string",
+            "description": "Description of this property"
+        }
+      },
+      "uniqueItems": true
+    },
+    "subclasses": {
+      "type": "array",
+      "description": "A list of classes which inherit from this one",
+      "class": {
+        "$ref": "AssetSchema.json"
+      }
+    }
+  },
+
+  "required": ["className"]
+}
