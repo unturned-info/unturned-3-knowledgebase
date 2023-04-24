@@ -6,13 +6,13 @@
 {% endmacro %}
 
 {% macro generate_properties(data, depth) %}
-{% for i in range(depth + 1) %}#{% endfor %}{%+ if data.classPrettyName is defined %}{{ data.classPrettyName }}{% else %}{{ data.className }}{% endif %}
+{% for i in range(depth + 1) %}#{% endfor %}{%+ if data.classPrettyName is defined %}{{ escape_markdown(data.classPrettyName) }}{% else %}{{ escape_markdown(data.className) }}{% endif %}
 {% if data.classDescription is defined %}
 {{ data.classDescription }}
 {% endif %}
 {% for property in data.assetProperties %}
 
-**{{ property.name }}** <{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}\>: {%+ if property.dataType == "enum" %}{{ pretty_print_enum(property.options) }}{% endif %} {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
+**{{ escape_markdown(property.name) }}** <{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}\>: {%+ if property.dataType == "enum" %}{{ pretty_print_enum(property.options) }}{% endif %} {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
 {%- endfor %}
 <hr />
 
