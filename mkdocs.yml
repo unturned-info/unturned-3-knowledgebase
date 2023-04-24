@@ -107,6 +107,7 @@ plugins:
         'Modding/mapmaking/FavoriteSearches.md': "Modding/mapmaking/Objects.md"
         'Modding/Unity2018': 'Modding/UnityUpgrade'
         'support/Common Issues.md': 'support/CommonIssues.md'
+        'Modding/GUID.md': 'Modding/IDTypes.md'
         
 extra_css:
   - stylesheets/extra.css
@@ -118,13 +119,13 @@ nav:
   - Modding:
     - 'Modding/GettingStarted.md'
     - 'Modding/Layers.md'
-    - 'Modding/AssetBundles.md'
-    - 'Modding/GUID.md'
+    - 'Modding/IDTypes.md'
     - 'Modding/ModHooks.md'
     - 'Modding/ItemIcons.md'
     - Assets:
       - 'Modding/AssetTypes/AssetsV1.md'
       - 'Modding/AssetTypes/AssetsV2.md'
+      - 'Modding/AssetBundles.md'
       - 'Modding/AssetPtr.md'
       - 'Modding/AssetTesting.md'
       - 'Modding/MasterBundlePtr.md'
@@ -133,6 +134,7 @@ nav:
     - 'Modding/AssetValidation.md'
     - 'Modding/CharacterMeshReplacement.md'
     - 'Modding/Currency.md'
+    - Crafting Blacklist Asset: 'Server-Hosting/Extending-Servers/CraftingBlacklistAsset.md'
     - 'Modding/StereoSongAsset.md'
     - 'Modding/UnityUpgrade.md'
     - 'Modding/WeatherAsset.md'
