@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://unturned.info/data/asset.schema.json",
+  "$id": "https://raw.githubusercontent.com/unturned-info/unturned-3-knowledgebase/master/data/AssetSchema.json",
   "title": "Asset Class",
   "description": "A class inheriting from the Asset class",
   "type": "object",
