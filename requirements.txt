@@ -27,7 +27,7 @@ mkdocs-minify-plugin==0.6.4
 mkdocs-redirects==1.2.0
 packaging==23.1
 pygments==2.15.1
-pymdown-extensions==9.11
+pymdown-extensions==10.0
 python-dateutil==2.8.2
 pytz==2023.3
 pyyaml==6.0
