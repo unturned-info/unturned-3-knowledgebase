@@ -30,12 +30,4 @@ OR
         "AssetPath" "Effects/Ambience/Cave_0/Cave_0.ogg"
     }
 
-OR
-
-    "Song"
-    {
-        "Name" "core.content"
-        "Path" "assets/resources/bundles/songs/unturned_theme.mp3"
-    }
-
 `Link_URL` string: optional URL to open in web browser when external link button is clicked.
