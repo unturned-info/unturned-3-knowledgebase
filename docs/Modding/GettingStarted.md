@@ -3,7 +3,7 @@
 !!! info
     Looking for plugin documentation? visit [ldmcommunity.net](https://ldmcommunity.net/docs/ "https://ldmcommunity.net/docs/")
 
-Installing the Unity Editor is required for exporting custom content into the game. Any 2020.3 (or 2019.4, if still installed) LTS version should be compatible. [View Download Links](https://unity3d.com/unity/qa/lts-releases?version=2019.4)
+Installing the Unity Editor is required for exporting custom content into the game. 2020.3.38f1 (or 2019.4, if still installed) LTS version should be compatible. [View Download Links](https://unity.com/releases/editor/qa/lts-releases?version=2020.3)
 
 Once Unity is installed a project can be created to house custom content. At this point it is recommended to import Unturned's provided source packages:
 
