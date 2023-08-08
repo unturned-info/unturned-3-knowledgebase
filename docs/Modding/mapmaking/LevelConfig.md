@@ -132,33 +132,33 @@ __Spawn\_Loadouts__ Array of items to grant when spawning in any mode. Refer to 
 
 __Allow\_Holiday\_Redirects__ _bool_: Whether certain assets like objects, trees and landscapes should load alternative versions during holiday events.
 
-### HUD
+## HUD
 
 Disable various elements of the heads-up display.
 
-__PlayerUI\_HealthVisible__ bool
+__PlayerUI\_HealthVisible__ _bool_
 
-__PlayerUI\_FoodVisible__ bool
+__PlayerUI\_FoodVisible__ _bool_
 
-__PlayerUI\_WaterVisible__ bool
+__PlayerUI\_WaterVisible__ _bool_
 
-__PlayerUI\_VirusVisible__ bool
+__PlayerUI\_VirusVisible__ _bool_
 
-__PlayerUI\_StaminaVisible__ bool
+__PlayerUI\_StaminaVisible__ _bool_
 
 __PlayerUI\_OxygenVisible__ _bool_
 
 __PlayerUI\_GunVisible__ _bool_
 
-__Allow\_Crafting__ bool
+__Allow\_Crafting__ _bool_
 
-__Allow\_Skills__ bool
+__Allow\_Skills__ _bool_
 
-__Allow\_Information__ bool
+__Allow\_Information__ _bool_
 
-### Deprecated
+## Deprecated
 
-__Use\_Legacy\_Fog\_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
+__Category__ _`ESingleplayerMapCategory`_: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
 
 __Load\_From\_Resources__ _bool_: Used in the past for curated maps with assets in the vanilla Resources/Bundles/* directory. Master Bundles completely replaced this.
 
@@ -166,4 +166,10 @@ __Item__ _int_: Kept for backwards compatibility. Ignored if Associated_Stockpil
 
 __Has\_Discord\_Rich\_Presence__ _bool_: Only valid for official maps. If discord integration is enabled and this flag is true discord will check for a map icon configured in their partner page.
 
-__Category__ _`ESingleplayerMapCategory`_: Mostly automated now. Can be set to Misc to explicitly show in the miscellaneous map category.
+__Use\_Legacy\_Ground__ _bool_: Should default terrain be created? Alternative is to use devkit landscape tiles. Defaults to true.
+
+__Use\_Legacy\_Water__ _bool_: Should global water plane be enabled? Alternative is to use water volumes in devkit. Defaults to true.
+
+__Use\_Legacy\_Objects__ _bool_: Should objects be loaded from Objects.dat file? Using devkit objects is not as well supported, so safest to leave at true.
+
+__Use\_Legacy\_Fog\_Height__ _bool_: Should default terrain height be used for fog falloff? If false, devkit landscape tile limits are used instead. Defaults to true.
