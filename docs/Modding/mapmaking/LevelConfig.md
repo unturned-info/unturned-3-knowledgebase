@@ -88,13 +88,7 @@ __Terrain\_Snow\_Sparkle__ _bool_: Should IS_SNOWING shader keyword be enabled?
 
 __Use\_Legacy\_Clip\_Borders__ _bool_: Should invisible walls matching map size be created? Defaults to true.
 
-__Use\_Legacy\_Ground__ _bool_: Should default terrain be created? Alternative is to use devkit landscape tiles. Defaults to true.
-
-__Use\_Legacy\_Water__ _bool_: Should global water plane be enabled? Alternative is to use water volumes in devkit. Defaults to true.
-
 __Use\_Vanilla\_Bubbles__ _bool_: Should vanilla water bubble effects be enabled? Defaults to true.
-
-__Use\_Legacy\_Objects__ _bool_: Should objects be loaded from Objects.dat file? Using devkit objects is not as well supported, so safest to leave at true.
 
 __Use\_Legacy\_Snow\_Height__ _bool_: Should travelling vertically past snow height threshold enable snow effects? Defaults to true.
 
