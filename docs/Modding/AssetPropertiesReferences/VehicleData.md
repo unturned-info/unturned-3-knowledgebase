@@ -175,7 +175,7 @@ __Bumper_Multiplier__: Multiplies bumper damage
 
 __Passenger_Explosion_Armor__: Defaults to `0.0`
 
-__Can_Be_Locked__: If present it will not be possible to lock the vehicle.
+__Can_Be_Locked__: `false, true` Specifies if the vehicle can be locked. Defaults to `true`.
 
 __Trunk_Storage_X__: Width of trunk storage.
 
