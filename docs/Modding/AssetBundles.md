@@ -15,7 +15,7 @@ Prior to using any of these tools they must be imported into a Unity project
 
 ## Individual Asset Bundles (*.unity3d)
 
-Most official files have transitioned to the master bundle system, but some uses still exist like the per-map road textures and testing individual assets.
+Most official files have transitioned to the master bundle system, but some uses still exist, such as the per-map road textures and testing individual assets.
 
 ### Required \*.dat File Lines
 
