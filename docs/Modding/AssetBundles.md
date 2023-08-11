@@ -19,7 +19,7 @@ Most official files have transitioned to the master bundle system, but some uses
 
 ### Required \*.dat File Lines
 
-__Asset\_Bundle\_Version__: `2, 3, 4`. Used to determine shader consolidation. Version 2 is Unity 2017 LTS. Version 3 is Unity 2018 and 2019 LTS. Version 4 is Unity 2020 LTS.
+__Asset\_Bundle\_Version__: `2, 3, 4`. Used to determine shader consolidation. Version 2 is Unity 2017 LTS, version 3 is Unity 2018 and 2019 LTS, and version 4 is Unity 2020 LTS.
 
 __Exclude\_From\_Master\_Bundle__: Indicates that the game should look for an individual *.unity3d asset bundle instead.
 
