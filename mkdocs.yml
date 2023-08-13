@@ -140,6 +140,7 @@ nav:
     - 'Modding/WeatherAsset.md'
     - Asset Properties References:
       - 'Modding/AssetPropertiesReferences/ItemData.md'
+      - 'Modding/AssetPropertiesReferences/ResourceData.md'
       - 'Modding/AssetPropertiesReferences/VehicleData.md'
       - 'Modding/VehiclePhysicsProfile.md'
     - Mapmaking:
