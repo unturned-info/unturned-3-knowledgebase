@@ -40,7 +40,7 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 !!! warning
     The game no longer loads .content files. MasterBundles now support all the features of a .content file, and the .content file tooling has been removed from Project.unitypackage
 
-This format was originally used by devkit landscapes, material palettes and radio songs, but has now been replaced by masterbundles.
+This format was originally used for devkit landscapes, material palettes, and radio songs, but it has now been replaced by masterbundles.```
 
 ### Tool Usage
 
