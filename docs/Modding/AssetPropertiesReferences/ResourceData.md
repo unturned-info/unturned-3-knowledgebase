@@ -31,8 +31,6 @@ __Holiday_Restriction__ &lt;enum&gt;: `NONE`, `HALLOWEEN`, `CHRISTMAS`, `APRIL_F
 
 __Halloween_Redirect__ &lt;guid&gt;: Asset used during Halloween.
 
-__Ignore_Solid_Foundation__ <<abbr title="a simple true/false value.">boolean</abbr>>: Specifies if the resource should ignore solid foundations.
-
 __Log__ <<abbr title="unsigned 16 bit integer from 0 to 65,535.">uint16</abbr>>: The log item spawned when destroyed.
 
 __No_Debris__ <<abbr title="a value that is either present or not.">flag</abbr>>: Specifies if the resource has debris.
