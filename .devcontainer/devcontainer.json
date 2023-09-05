@@ -20,7 +20,7 @@
 		}
 	},
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/pdm:2.0.9": {}
+		"ghcr.io/devcontainers-contrib/features/pdm:2": {}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
