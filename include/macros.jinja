@@ -12,7 +12,7 @@
 {% endif %}
 {% for property in data.assetProperties %}
 
-**{{ escape_markdown(property.name) }}** <{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}\>: {%+ if property.dataType == "enum" %}{{ pretty_print_enum(property.options) }}{% endif %} {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
+**{{ escape_markdown(property.name) }}** &lt;{{ property.dataType }}{%+ if property.default is defined %}: `{{ property.default|e }}`{% endif %}&gt;: {%+ if property.dataType == "enum" %}{{ pretty_print_enum(property.options) }}{% endif %} {%+ if property.description is defined %}{{ property.description }}{% else %}N/A{% endif %}
 {%- endfor %}
 <hr />
 
