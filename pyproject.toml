@@ -6,7 +6,7 @@ authors = [
     { name = "Khakers", email = "22665282+khakers@users.noreply.github.com" },
 ]
 dependencies = [
-    "mkdocs-material==9.*",
+    "mkdocs-material==9.2.*",
     "mkdocs-git-revision-date-localized-plugin",
     "mkdocs-minify-plugin",
     "mkdocs-redirects",
