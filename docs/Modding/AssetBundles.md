@@ -13,9 +13,15 @@ Prior to using any of these tools they must be imported into a Unity project
 3. Navigate to the Bundles/Sources directory.
 4. Import the Project.unitypackage.
 
-### Individual Asset Bundles (*.unity3d)
+## Individual Asset Bundles (*.unity3d)
 
-Most official files have transitioned to the master bundle system, but some uses still exist like the per-map road textures.
+Most official files have transitioned to the master bundle system, but some uses still exist, such as the per-map road textures and testing individual assets.
+
+### Required \*.dat File Lines
+
+__Asset\_Bundle\_Version__: `2, 3, 4`. Used to determine shader consolidation. Version 2 is Unity 2017 LTS, version 3 is Unity 2018 and 2019 LTS, and version 4 is Unity 2020 LTS.
+
+__Exclude\_From\_Master\_Bundle__: Indicates that the game should look for an individual *.unity3d asset bundle instead.
 
 ### Tool Usage
 
@@ -34,7 +40,7 @@ When beginning development of 3.0, it was key to support runtime loading of cust
 !!! warning
     The game no longer loads .content files. MasterBundles now support all the features of a .content file, and the .content file tooling has been removed from Project.unitypackage
 
-This format was by devkit landscapes, material palettes and radio songs, but has now replaced by master bundles.
+This format was originally used for devkit landscapes, material palettes, and radio songs, but it has now been replaced by masterbundles.```
 
 ### Tool Usage
 
