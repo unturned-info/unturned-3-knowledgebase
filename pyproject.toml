@@ -6,7 +6,7 @@ authors = [
     { name = "Khakers", email = "22665282+khakers@users.noreply.github.com" },
 ]
 dependencies = [
-    "mkdocs-material==9.2.*",
+    "mkdocs-material==9.5.*",
     "mkdocs-git-revision-date-localized-plugin",
     "mkdocs-minify-plugin",
     "mkdocs-redirects",
@@ -32,6 +32,7 @@ deploy = {cmd = [
     "gh-deploy",
     "--force"
 ]}
+requirements = "pdm export -o requirements.txt --without-hashes"
 
 [build-system]
 requires = ["pdm-pep517"]
